@@ -5609,13 +5609,7 @@
   },
   "public_transport/stop_position_trolleybus": {
     "icon": "temaki-trolleybus",
-    "fields": [
-      "name",
-      "ref_stop_position",
-      "network",
-      "operator",
-      "vehicles"
-    ],
+    "fields": [],
     "moreFields": [],
     "geometry": [
       "vertex"
@@ -5627,17 +5621,12 @@
     "reference": {
       "key": "public_transport",
       "value": "stop_position"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/stop_position_tram": {
     "icon": "temaki-tram",
-    "fields": [
-      "name",
-      "ref_stop_position",
-      "network",
-      "operator",
-      "vehicles"
-    ],
+    "fields": [],
     "moreFields": [],
     "geometry": [
       "vertex"
@@ -5654,17 +5643,12 @@
     "reference": {
       "key": "public_transport",
       "value": "stop_position"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/stop_position_train": {
     "icon": "temaki-train",
-    "fields": [
-      "name",
-      "ref_stop_position",
-      "network",
-      "operator",
-      "vehicles"
-    ],
+    "fields": [],
     "moreFields": [],
     "geometry": [
       "vertex"
@@ -5681,17 +5665,12 @@
     "reference": {
       "key": "railway",
       "value": "stop"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/stop_position_subway": {
     "icon": "temaki-subway",
-    "fields": [
-      "name",
-      "ref_stop_position",
-      "network",
-      "operator",
-      "vehicles"
-    ],
+    "fields": [],
     "moreFields": [],
     "geometry": [
       "vertex"
@@ -5708,17 +5687,12 @@
     "reference": {
       "key": "railway",
       "value": "stop"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/stop_position_monorail": {
     "icon": "temaki-monorail",
-    "fields": [
-      "name",
-      "ref_stop_position",
-      "network",
-      "operator",
-      "vehicles"
-    ],
+    "fields": [],
     "moreFields": [],
     "geometry": [
       "vertex"
@@ -5735,17 +5709,12 @@
     "reference": {
       "key": "railway",
       "value": "stop"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/stop_position_light_rail": {
     "icon": "temaki-light_rail",
-    "fields": [
-      "name",
-      "ref_stop_position",
-      "network",
-      "operator",
-      "vehicles"
-    ],
+    "fields": [],
     "moreFields": [],
     "geometry": [
       "vertex"
@@ -5762,17 +5731,12 @@
     "reference": {
       "key": "railway",
       "value": "stop"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/stop_position_ferry": {
     "icon": "temaki-ferry",
-    "fields": [
-      "name",
-      "ref_stop_position",
-      "network",
-      "operator",
-      "vehicles"
-    ],
+    "fields": [],
     "moreFields": [],
     "geometry": [
       "vertex"
@@ -5784,17 +5748,12 @@
     "reference": {
       "key": "public_transport",
       "value": "stop_position"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/stop_position_bus": {
     "icon": "temaki-bus",
-    "fields": [
-      "name",
-      "ref_stop_position",
-      "network",
-      "operator",
-      "vehicles"
-    ],
+    "fields": [],
     "moreFields": [],
     "geometry": [
       "vertex"
@@ -5806,17 +5765,12 @@
     "reference": {
       "key": "public_transport",
       "value": "stop_position"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/stop_position_aerialway": {
     "icon": "temaki-gondola_lift",
-    "fields": [
-      "name",
-      "ref_stop_position",
-      "network",
-      "operator",
-      "vehicles"
-    ],
+    "fields": [],
     "moreFields": [],
     "geometry": [
       "vertex"
@@ -5828,17 +5782,12 @@
     "reference": {
       "key": "public_transport",
       "value": "stop_position"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/stop_position": {
     "icon": "temaki-transit",
-    "fields": [
-      "name",
-      "ref_stop_position",
-      "network",
-      "operator",
-      "vehicles"
-    ],
+    "fields": [],
     "geometry": [
       "vertex"
     ],
@@ -5846,16 +5795,12 @@
       "public_transport": "stop_position"
     },
     "matchScore": 0.2,
+    "readOnly": true,
     "moreFields": []
   },
   "public_transport/stop_area": {
     "icon": "iD-relation",
-    "fields": [
-      "name",
-      "ref",
-      "network",
-      "operator"
-    ],
+    "fields": [],
     "geometry": [
       "relation"
     ],
@@ -5867,40 +5812,13 @@
       "key": "public_transport",
       "value": "stop_area"
     },
+    "readOnly": true,
     "moreFields": []
   },
   "public_transport/station_trolleybus": {
     "icon": "temaki-trolleybus",
-    "fields": [
-      "name",
-      "network",
-      "operator",
-      "vehicles",
-      "address",
-      "building_area",
-      "internet_access",
-      "internet_access/fee"
-    ],
-    "moreFields": [
-      "email",
-      "fax",
-      "mobile",
-      "phone",
-      "website",
-      "internet_access",
-      "internet_access/fee",
-      "internet_access/ssid",
-      "opening_hours",
-      "air_conditioning",
-      "baby_feeding",
-      "changing_table",
-      "gnis/feature_id-US",
-      "level",
-      "toilets",
-      "toilets/wheelchair",
-      "toilets/menstrual_products_poi",
-      "wheelchair"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "point",
       "area"
@@ -5917,40 +5835,13 @@
     "reference": {
       "key": "amenity",
       "value": "bus_station"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/station_tram": {
     "icon": "temaki-board_tram",
-    "fields": [
-      "name",
-      "network",
-      "operator",
-      "vehicles",
-      "address",
-      "building_area",
-      "internet_access",
-      "internet_access/fee"
-    ],
-    "moreFields": [
-      "email",
-      "fax",
-      "mobile",
-      "phone",
-      "website",
-      "internet_access",
-      "internet_access/fee",
-      "internet_access/ssid",
-      "opening_hours",
-      "air_conditioning",
-      "baby_feeding",
-      "changing_table",
-      "gnis/feature_id-US",
-      "level",
-      "toilets",
-      "toilets/wheelchair",
-      "toilets/menstrual_products_poi",
-      "wheelchair"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "point",
       "area"
@@ -5962,40 +5853,13 @@
     "reference": {
       "key": "public_transport",
       "value": "station"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/station_train_halt": {
     "icon": "temaki-rail_flag",
-    "fields": [
-      "name",
-      "network",
-      "operator",
-      "vehicles",
-      "address",
-      "building_area",
-      "internet_access",
-      "internet_access/fee"
-    ],
-    "moreFields": [
-      "email",
-      "fax",
-      "mobile",
-      "phone",
-      "website",
-      "internet_access",
-      "internet_access/fee",
-      "internet_access/ssid",
-      "opening_hours",
-      "air_conditioning",
-      "baby_feeding",
-      "changing_table",
-      "gnis/feature_id-US",
-      "level",
-      "toilets",
-      "toilets/wheelchair",
-      "toilets/menstrual_products_poi",
-      "wheelchair"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "point",
       "area"
@@ -6008,40 +5872,13 @@
     "reference": {
       "key": "railway",
       "value": "halt"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/station_train": {
     "icon": "temaki-board_train",
-    "fields": [
-      "name",
-      "network",
-      "operator",
-      "vehicles",
-      "address",
-      "building_area",
-      "internet_access",
-      "internet_access/fee"
-    ],
-    "moreFields": [
-      "email",
-      "fax",
-      "mobile",
-      "phone",
-      "website",
-      "internet_access",
-      "internet_access/fee",
-      "internet_access/ssid",
-      "opening_hours",
-      "air_conditioning",
-      "baby_feeding",
-      "changing_table",
-      "gnis/feature_id-US",
-      "level",
-      "toilets",
-      "toilets/wheelchair",
-      "toilets/menstrual_products_poi",
-      "wheelchair"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "vertex",
       "point",
@@ -6059,40 +5896,13 @@
     "reference": {
       "key": "railway",
       "value": "station"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/station_subway": {
     "icon": "temaki-board_subway",
-    "fields": [
-      "name",
-      "network",
-      "operator",
-      "vehicles",
-      "address",
-      "building_area",
-      "internet_access",
-      "internet_access/fee"
-    ],
-    "moreFields": [
-      "email",
-      "fax",
-      "mobile",
-      "phone",
-      "website",
-      "internet_access",
-      "internet_access/fee",
-      "internet_access/ssid",
-      "opening_hours",
-      "air_conditioning",
-      "baby_feeding",
-      "changing_table",
-      "gnis/feature_id-US",
-      "level",
-      "toilets",
-      "toilets/wheelchair",
-      "toilets/menstrual_products_poi",
-      "wheelchair"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "point",
       "vertex",
@@ -6111,40 +5921,13 @@
     "reference": {
       "key": "station",
       "value": "subway"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/station_monorail": {
     "icon": "temaki-board_monorail",
-    "fields": [
-      "name",
-      "network",
-      "operator",
-      "vehicles",
-      "address",
-      "building_area",
-      "internet_access",
-      "internet_access/fee"
-    ],
-    "moreFields": [
-      "email",
-      "fax",
-      "mobile",
-      "phone",
-      "website",
-      "internet_access",
-      "internet_access/fee",
-      "internet_access/ssid",
-      "opening_hours",
-      "air_conditioning",
-      "baby_feeding",
-      "changing_table",
-      "gnis/feature_id-US",
-      "level",
-      "toilets",
-      "toilets/wheelchair",
-      "toilets/menstrual_products_poi",
-      "wheelchair"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "point",
       "vertex",
@@ -6162,40 +5945,13 @@
     "reference": {
       "key": "railway",
       "value": "station"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/station_light_rail": {
     "icon": "temaki-board_light_rail",
-    "fields": [
-      "name",
-      "network",
-      "operator",
-      "vehicles",
-      "address",
-      "building_area",
-      "internet_access",
-      "internet_access/fee"
-    ],
-    "moreFields": [
-      "email",
-      "fax",
-      "mobile",
-      "phone",
-      "website",
-      "internet_access",
-      "internet_access/fee",
-      "internet_access/ssid",
-      "opening_hours",
-      "air_conditioning",
-      "baby_feeding",
-      "changing_table",
-      "gnis/feature_id-US",
-      "level",
-      "toilets",
-      "toilets/wheelchair",
-      "toilets/menstrual_products_poi",
-      "wheelchair"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "point",
       "vertex",
@@ -6214,40 +5970,13 @@
     "reference": {
       "key": "station",
       "value": "light_rail"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/station_ferry": {
     "icon": "temaki-board_ferry",
-    "fields": [
-      "name",
-      "network",
-      "operator",
-      "vehicles",
-      "address",
-      "building_area",
-      "internet_access",
-      "internet_access/fee"
-    ],
-    "moreFields": [
-      "email",
-      "fax",
-      "mobile",
-      "phone",
-      "website",
-      "internet_access",
-      "internet_access/fee",
-      "internet_access/ssid",
-      "opening_hours",
-      "air_conditioning",
-      "baby_feeding",
-      "changing_table",
-      "gnis/feature_id-US",
-      "level",
-      "toilets",
-      "toilets/wheelchair",
-      "toilets/menstrual_products_poi",
-      "wheelchair"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "vertex",
       "point",
@@ -6265,40 +5994,13 @@
     "reference": {
       "key": "amenity",
       "value": "ferry_terminal"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/station_bus": {
     "icon": "temaki-board_bus",
-    "fields": [
-      "name",
-      "network",
-      "operator",
-      "vehicles",
-      "address",
-      "building_area",
-      "internet_access",
-      "internet_access/fee"
-    ],
-    "moreFields": [
-      "email",
-      "fax",
-      "mobile",
-      "phone",
-      "website",
-      "internet_access",
-      "internet_access/fee",
-      "internet_access/ssid",
-      "opening_hours",
-      "air_conditioning",
-      "baby_feeding",
-      "changing_table",
-      "gnis/feature_id-US",
-      "level",
-      "toilets",
-      "toilets/wheelchair",
-      "toilets/menstrual_products_poi",
-      "wheelchair"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "point",
       "area"
@@ -6315,42 +6017,13 @@
     "reference": {
       "key": "amenity",
       "value": "bus_station"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/station_aerialway": {
     "icon": "temaki-gondola_lift",
-    "fields": [
-      "name",
-      "network",
-      "operator",
-      "vehicles",
-      "address",
-      "building_area",
-      "internet_access",
-      "internet_access/fee",
-      "aerialway/access",
-      "aerialway/summer/access"
-    ],
-    "moreFields": [
-      "email",
-      "fax",
-      "mobile",
-      "phone",
-      "website",
-      "internet_access",
-      "internet_access/fee",
-      "internet_access/ssid",
-      "opening_hours",
-      "air_conditioning",
-      "baby_feeding",
-      "changing_table",
-      "gnis/feature_id-US",
-      "level",
-      "toilets",
-      "toilets/wheelchair",
-      "toilets/menstrual_products_poi",
-      "wheelchair"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "point",
       "vertex",
@@ -6366,40 +6039,13 @@
     "reference": {
       "key": "aerialway",
       "value": "station"
-    }
+    },
+    "readOnly": true
   },
   "public_transport/station": {
     "icon": "temaki-transit",
-    "fields": [
-      "name",
-      "network",
-      "operator",
-      "vehicles",
-      "address",
-      "building_area",
-      "internet_access",
-      "internet_access/fee"
-    ],
-    "moreFields": [
-      "email",
-      "fax",
-      "mobile",
-      "phone",
-      "website",
-      "internet_access",
-      "internet_access/fee",
-      "internet_access/ssid",
-      "opening_hours",
-      "air_conditioning",
-      "baby_feeding",
-      "changing_table",
-      "gnis/feature_id-US",
-      "level",
-      "toilets",
-      "toilets/wheelchair",
-      "toilets/menstrual_products_poi",
-      "wheelchair"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "point",
       "area"
@@ -6407,7 +6053,8 @@
     "tags": {
       "public_transport": "station"
     },
-    "matchScore": 0.2
+    "matchScore": 0.2,
+    "readOnly": true
   },
   "public_transport/platform_point": {
     "icon": "temaki-sign_and_bench",
@@ -15464,64 +15111,26 @@
   },
   "highway/unclassified": {
     "icon": "iD-highway-unclassified",
-    "fields": [
-      "name",
-      "oneway",
-      "maxspeed",
-      "lanes",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/ref",
-      "bridge/name",
-      "covered_no",
-      "cycleway",
-      "sidewalk",
-      "bicycle_road",
-      "cyclestreet-BE-NL",
-      "flood_prone",
-      "hazard_highway",
-      "incline",
-      "junction_line",
-      "lane_markings",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxweight",
-      "maxwidth",
-      "not/name",
-      "oneway/bicycle",
-      "parking/side/parking",
-      "parking/side/orientation",
-      "smoothness",
-      "traffic_calming_road",
-      "trolley_wire",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
     "tags": {
       "highway": "unclassified"
-    }
+    },
+    "readOnly": true
   },
   "highway/turning_loop": {
     "icon": "roentgen-turning_loop",
     "geometry": [
       "vertex"
     ],
-    "fields": [
-      "name",
-      "highway"
-    ],
+    "fields": [],
     "tags": {
       "highway": "turning_loop"
     },
+    "readOnly": true,
     "moreFields": []
   },
   "highway/turning_circle": {
@@ -15529,49 +15138,17 @@
     "geometry": [
       "vertex"
     ],
-    "fields": [
-      "turning_circle"
-    ],
+    "fields": [],
     "tags": {
       "highway": "turning_circle"
     },
+    "readOnly": true,
     "moreFields": []
   },
   "highway/trunk_link": {
     "icon": "iD-highway-trunk-link",
-    "fields": [
-      "destination_oneway",
-      "destination/ref_oneway",
-      "junction/ref_oneway",
-      "oneway",
-      "maxspeed",
-      "lanes",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "charge_toll",
-      "covered_no",
-      "destination/symbol_oneway",
-      "hazard_highway",
-      "incline",
-      "junction_line",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxweight_bridge",
-      "maxwidth",
-      "ref_road_number",
-      "smoothness",
-      "toll",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
@@ -15583,41 +15160,14 @@
         "ca",
         "us"
       ]
-    }
+    },
+    "readOnly": true
   },
   "highway/trunk_link-US-CA": {
     "name": "{highway/trunk_link}",
     "icon": "iD-highway-trunk-link",
-    "fields": [
-      "destination_oneway",
-      "destination/ref_oneway",
-      "junction/ref_oneway",
-      "oneway",
-      "maxspeed/advisory",
-      "lanes",
-      "surface",
-      "structure",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/ref",
-      "charge_toll",
-      "covered_no",
-      "destination/symbol_oneway",
-      "incline",
-      "junction_line",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed",
-      "maxweight_bridge",
-      "maxwidth",
-      "ref_road_number",
-      "smoothness",
-      "toll",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
@@ -15629,73 +15179,32 @@
         "ca",
         "us"
       ]
-    }
+    },
+    "readOnly": true
   },
   "highway/trunk": {
     "icon": "iD-highway-trunk",
-    "fields": [
-      "name",
-      "ref_road_number",
-      "oneway",
-      "maxspeed",
-      "lanes",
-      "expressway-US",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/ref",
-      "bridge/name",
-      "charge_toll",
-      "covered_no",
-      "hazard_highway",
-      "incline",
-      "junction_line",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxspeed/hgv",
-      "maxweight_bridge",
-      "maxwidth",
-      "minspeed",
-      "not/name",
-      "smoothness",
-      "toll",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
     "tags": {
       "highway": "trunk"
-    }
+    },
+    "readOnly": true
   },
   "highway/trailhead": {
     "icon": "fas-hiking",
-    "fields": [
-      "name",
-      "operator",
-      "ele_node",
-      "address",
-      "access_simple",
-      "fee",
-      "payment_multi_fee",
-      "charge_fee"
-    ],
-    "moreFields": [
-      "gnis/feature_id-US",
-      "opening_hours"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "vertex"
     ],
     "tags": {
       "highway": "trailhead"
-    }
+    },
+    "readOnly": true
   },
   "highway/traffic_signals": {
     "icon": "temaki-traffic_signals",
@@ -15729,37 +15238,15 @@
   },
   "highway/track": {
     "icon": "fas-truck-monster",
-    "fields": [
-      "name",
-      "tracktype",
-      "surface",
-      "width",
-      "structure",
-      "tunnel/name",
-      "access",
-      "incline",
-      "smoothness"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "covered_no",
-      "flood_prone",
-      "horse_scale",
-      "maxweight_bridge",
-      "mtb/scale",
-      "mtb/scale/imba",
-      "mtb/scale/uphill",
-      "oneway",
-      "stroller",
-      "wheelchair"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
     "tags": {
       "highway": "track"
-    }
+    },
+    "readOnly": true
   },
   "highway/toll_gantry": {
     "locationSet": {
@@ -15768,123 +15255,39 @@
       ]
     },
     "icon": "temaki-toll_gantry",
-    "fields": [
-      "ref",
-      "operator",
-      "access",
-      "maxheight",
-      "opening_hours",
-      "payment_multi"
-    ],
+    "fields": [],
     "geometry": [
       "vertex"
     ],
     "tags": {
       "highway": "toll_gantry"
     },
+    "readOnly": true,
     "moreFields": []
   },
   "highway/tertiary_link": {
     "icon": "iD-highway-tertiary-link",
-    "fields": [
-      "destination_oneway",
-      "destination/ref_oneway",
-      "oneway",
-      "maxspeed",
-      "lanes",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "charge_toll",
-      "covered_no",
-      "cycleway",
-      "sidewalk",
-      "destination/symbol_oneway",
-      "flood_prone",
-      "hazard_highway",
-      "incline",
-      "junction_line",
-      "junction/ref_oneway",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxweight_bridge",
-      "maxwidth",
-      "oneway/bicycle",
-      "parking/side/parking",
-      "parking/side/orientation",
-      "ref_road_number",
-      "smoothness",
-      "toll",
-      "trolley_wire",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
     "tags": {
       "highway": "tertiary_link"
-    }
+    },
+    "readOnly": true
   },
   "highway/tertiary": {
     "icon": "iD-highway-tertiary",
-    "fields": [
-      "name",
-      "oneway",
-      "maxspeed",
-      "lanes",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "ref_road_number",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "charge_toll",
-      "covered_no",
-      "cycleway",
-      "sidewalk",
-      "expressway-US",
-      "flood_prone",
-      "hazard_highway",
-      "incline",
-      "junction_line",
-      "lane_markings",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxspeed/hgv",
-      "maxweight_bridge",
-      "maxwidth",
-      "not/name",
-      "oneway/bicycle",
-      "parking/side/parking",
-      "parking/side/orientation",
-      "smoothness",
-      "toll",
-      "traffic_calming_road",
-      "trolley_wire",
-      "width",
-      "bicycle_road",
-      "cyclestreet-BE-NL"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
     "tags": {
       "highway": "tertiary"
-    }
+    },
+    "readOnly": true
   },
   "highway/street_lamp": {
     "icon": "temaki-street_lamp_arm",
@@ -15908,16 +15311,14 @@
   },
   "highway/stop": {
     "icon": "temaki-stop",
-    "fields": [
-      "stop",
-      "direction_vertex"
-    ],
+    "fields": [],
     "geometry": [
       "vertex"
     ],
     "tags": {
       "highway": "stop"
     },
+    "readOnly": true,
     "moreFields": []
   },
   "highway/steps": {
@@ -15966,17 +15367,12 @@
       "point",
       "vertex"
     ],
-    "fields": [
-      "direction_point",
-      "direction_vertex",
-      "maxspeed"
-    ],
-    "moreFields": [
-      "maxspeed/advisory"
-    ],
+    "fields": [],
+    "moreFields": [],
     "tags": {
       "highway": "speed_display"
-    }
+    },
+    "readOnly": true
   },
   "highway/speed_camera": {
     "icon": "temaki-security_camera",
@@ -15984,40 +15380,17 @@
       "point",
       "vertex"
     ],
-    "fields": [
-      "direction",
-      "ref",
-      "maxspeed"
-    ],
+    "fields": [],
     "tags": {
       "highway": "speed_camera"
     },
+    "readOnly": true,
     "moreFields": []
   },
   "highway/services": {
     "icon": "maki-car",
-    "fields": [
-      "name",
-      "operator",
-      "opening_hours"
-    ],
-    "moreFields": [
-      "email",
-      "fax",
-      "mobile",
-      "phone",
-      "website",
-      "internet_access",
-      "internet_access/fee",
-      "internet_access/ssid",
-      "address",
-      "bin",
-      "caravans",
-      "drinking_water_available",
-      "picnic_table",
-      "toilets",
-      "wheelchair"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "point",
       "vertex",
@@ -16025,254 +15398,75 @@
     ],
     "tags": {
       "highway": "services"
-    }
+    },
+    "readOnly": true
   },
   "highway/service_area": {
     "icon": "iD-highway-service",
-    "fields": [
-      "name",
-      "service",
-      "maxspeed",
-      "surface",
-      "structure",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "covered_no",
-      "flood_prone",
-      "lit",
-      "maxheight",
-      "maxspeed/advisory",
-      "maxweight_bridge",
-      "smoothness",
-      "trolley_wire"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "area"
     ],
     "tags": {
       "highway": "service"
     },
-    "searchable": false
+    "searchable": false,
+    "readOnly": true
   },
   "highway/service": {
     "icon": "iD-highway-service",
-    "fields": [
-      "name",
-      "service",
-      "oneway",
-      "maxspeed",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "covered_no",
-      "sidewalk",
-      "flood_prone",
-      "hazard_highway",
-      "incline",
-      "lanes",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxweight_bridge",
-      "maxwidth",
-      "oneway/bicycle",
-      "parking/side/parking",
-      "parking/side/orientation",
-      "smoothness",
-      "trolley_wire",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
     "tags": {
       "highway": "service"
     },
-    "matchScore": 0.9
+    "matchScore": 0.9,
+    "readOnly": true
   },
   "highway/secondary_link": {
     "icon": "iD-highway-secondary-link",
-    "fields": [
-      "destination_oneway",
-      "destination/ref_oneway",
-      "oneway",
-      "maxspeed",
-      "lanes",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "charge_toll",
-      "covered_no",
-      "cycleway",
-      "sidewalk",
-      "destination/symbol_oneway",
-      "flood_prone",
-      "hazard_highway",
-      "incline",
-      "junction_line",
-      "junction/ref_oneway",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxweight_bridge",
-      "maxwidth",
-      "oneway/bicycle",
-      "parking/side/parking",
-      "parking/side/orientation",
-      "ref_road_number",
-      "smoothness",
-      "toll",
-      "trolley_wire",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
     "tags": {
       "highway": "secondary_link"
-    }
+    },
+    "readOnly": true
   },
   "highway/secondary": {
     "icon": "iD-highway-secondary",
-    "fields": [
-      "name",
-      "oneway",
-      "maxspeed",
-      "lanes",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "ref_road_number",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "charge_toll",
-      "covered_no",
-      "cycleway",
-      "sidewalk",
-      "expressway-US",
-      "flood_prone",
-      "hazard_highway",
-      "incline",
-      "junction_line",
-      "lane_markings",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxspeed/hgv",
-      "maxweight_bridge",
-      "maxwidth",
-      "not/name",
-      "oneway/bicycle",
-      "parking/side/parking",
-      "parking/side/orientation",
-      "smoothness",
-      "toll",
-      "traffic_calming_road",
-      "trolley_wire",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
     "tags": {
       "highway": "secondary"
-    }
+    },
+    "readOnly": true
   },
   "highway/road": {
     "icon": "iD-other-line",
-    "fields": [
-      "highway",
-      "name",
-      "oneway",
-      "maxspeed",
-      "lanes",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/ref",
-      "bridge/name",
-      "covered_no",
-      "cycleway",
-      "sidewalk",
-      "bicycle_road",
-      "cyclestreet-BE-NL",
-      "flood_prone",
-      "hazard_highway",
-      "incline",
-      "junction_line",
-      "lane_markings",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxweight",
-      "maxwidth",
-      "not/name",
-      "oneway/bicycle",
-      "parking/side/parking",
-      "parking/side/orientation",
-      "smoothness",
-      "traffic_calming_road",
-      "trolley_wire",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
     "tags": {
       "highway": "road"
-    }
+    },
+    "readOnly": true
   },
   "highway/rest_area": {
     "icon": "maki-highway-rest-area",
-    "fields": [
-      "name",
-      "operator",
-      "opening_hours"
-    ],
-    "moreFields": [
-      "email",
-      "fax",
-      "mobile",
-      "phone",
-      "website",
-      "internet_access",
-      "internet_access/fee",
-      "internet_access/ssid",
-      "address",
-      "bin",
-      "caravans",
-      "drinking_water_available",
-      "picnic_table",
-      "toilets",
-      "wheelchair"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "point",
       "vertex",
@@ -16280,68 +15474,24 @@
     ],
     "tags": {
       "highway": "rest_area"
-    }
+    },
+    "readOnly": true
   },
   "highway/residential": {
     "icon": "iD-highway-residential",
-    "fields": [
-      "name",
-      "oneway",
-      "maxspeed",
-      "lanes",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/ref",
-      "bridge/name",
-      "covered_no",
-      "cycleway",
-      "sidewalk",
-      "bicycle_road",
-      "cyclestreet-BE-NL",
-      "flood_prone",
-      "hazard_highway",
-      "incline",
-      "junction_line",
-      "lane_markings",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxweight",
-      "maxwidth",
-      "not/name",
-      "oneway/bicycle",
-      "parking/side/parking",
-      "parking/side/orientation",
-      "smoothness",
-      "traffic_calming_road",
-      "trolley_wire",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
     "tags": {
       "highway": "residential"
-    }
+    },
+    "readOnly": true
   },
   "highway/raceway": {
     "icon": "temaki-speedway_oval",
-    "fields": [
-      "name",
-      "oneway",
-      "surface",
-      "sport/sport_racing_motor",
-      "lit",
-      "width",
-      "lanes",
-      "structure"
-    ],
+    "fields": [],
     "geometry": [
       "line",
       "area"
@@ -16353,50 +15503,13 @@
       "highway": "raceway",
       "sport": "motor"
     },
+    "readOnly": true,
     "moreFields": []
   },
   "highway/primary_link": {
     "icon": "iD-highway-primary-link",
-    "fields": [
-      "destination_oneway",
-      "destination/ref_oneway",
-      "oneway",
-      "maxspeed",
-      "lanes",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "charge_toll",
-      "covered_no",
-      "cycleway",
-      "sidewalk",
-      "destination/symbol_oneway",
-      "flood_prone",
-      "hazard_highway",
-      "incline",
-      "junction_line",
-      "junction/ref_oneway",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxweight_bridge",
-      "maxwidth",
-      "oneway/bicycle",
-      "parking/side/parking",
-      "parking/side/orientation",
-      "ref_road_number",
-      "smoothness",
-      "toll",
-      "trolley_wire",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
@@ -16408,46 +15521,14 @@
         "ca",
         "us"
       ]
-    }
+    },
+    "readOnly": true
   },
   "highway/primary_link-US-CA": {
     "name": "{highway/primary_link}",
     "icon": "iD-highway-primary-link",
-    "fields": [
-      "destination_oneway",
-      "destination/ref_oneway",
-      "oneway",
-      "maxspeed/advisory",
-      "lanes",
-      "surface",
-      "structure",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/ref",
-      "charge_toll",
-      "covered_no",
-      "cycleway",
-      "sidewalk",
-      "destination/symbol_oneway",
-      "flood_prone",
-      "incline",
-      "junction_line",
-      "junction/ref_oneway",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed",
-      "maxweight_bridge",
-      "maxwidth",
-      "oneway/bicycle",
-      "ref_road_number",
-      "smoothness",
-      "toll",
-      "trolley_wire",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
@@ -16459,58 +15540,20 @@
         "ca",
         "us"
       ]
-    }
+    },
+    "readOnly": true
   },
   "highway/primary": {
     "icon": "iD-highway-primary",
-    "fields": [
-      "name",
-      "oneway",
-      "maxspeed",
-      "lanes",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "ref_road_number",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "charge_toll",
-      "covered_no",
-      "cycleway",
-      "sidewalk",
-      "expressway-US",
-      "flood_prone",
-      "hazard_highway",
-      "incline",
-      "junction_line",
-      "lane_markings",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxspeed/hgv",
-      "maxweight_bridge",
-      "maxwidth",
-      "not/name",
-      "oneway/bicycle",
-      "parking/side/parking",
-      "parking/side/orientation",
-      "smoothness",
-      "toll",
-      "traffic_calming_road",
-      "trolley_wire",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
     "tags": {
       "highway": "primary"
-    }
+    },
+    "readOnly": true
   },
   "highway/pedestrian_line": {
     "icon": "temaki-pedestrian",
@@ -16612,50 +15655,17 @@
     "geometry": [
       "vertex"
     ],
-    "fields": [
-      "name",
-      "highway"
-    ],
+    "fields": [],
     "tags": {
       "highway": "passing_place"
     },
+    "readOnly": true,
     "moreFields": []
   },
   "highway/motorway_link": {
     "icon": "iD-highway-motorway-link",
-    "fields": [
-      "destination_oneway",
-      "destination/ref_oneway",
-      "junction/ref_oneway",
-      "oneway",
-      "maxspeed",
-      "lanes",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "charge_toll",
-      "covered_no",
-      "destination/symbol_oneway",
-      "hazard_highway",
-      "incline",
-      "junction_line",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxweight_bridge",
-      "maxwidth",
-      "ref_road_number",
-      "smoothness",
-      "toll",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
@@ -16667,41 +15677,14 @@
         "ca",
         "us"
       ]
-    }
+    },
+    "readOnly": true
   },
   "highway/motorway_link-US-CA": {
     "name": "{highway/motorway_link}",
     "icon": "iD-highway-motorway-link",
-    "fields": [
-      "destination_oneway",
-      "destination/ref_oneway",
-      "junction/ref_oneway",
-      "oneway",
-      "maxspeed/advisory",
-      "lanes",
-      "surface",
-      "structure",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/ref",
-      "charge_toll",
-      "covered_no",
-      "destination/symbol_oneway",
-      "incline",
-      "junction_line",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed",
-      "maxweight_bridge",
-      "maxwidth",
-      "ref_road_number",
-      "smoothness",
-      "toll",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
@@ -16713,63 +15696,32 @@
         "ca",
         "us"
       ]
-    }
+    },
+    "readOnly": true
   },
   "highway/motorway_junction": {
     "icon": "temaki-junction",
-    "fields": [
-      "ref_highway_junction",
-      "name"
-    ],
+    "fields": [],
     "geometry": [
       "vertex"
     ],
     "tags": {
       "highway": "motorway_junction"
     },
+    "readOnly": true,
     "moreFields": []
   },
   "highway/motorway": {
     "icon": "iD-highway-motorway",
-    "fields": [
-      "name",
-      "ref_road_number",
-      "oneway_yes",
-      "maxspeed",
-      "lanes",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "charge_toll",
-      "covered_no",
-      "hazard_highway",
-      "incline",
-      "junction_line",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxspeed/hgv",
-      "maxweight_bridge",
-      "maxwidth",
-      "minspeed",
-      "not/name",
-      "smoothness",
-      "toll",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
     "tags": {
       "highway": "motorway"
-    }
+    },
+    "readOnly": true
   },
   "highway/mini_roundabout": {
     "icon": "maki-circle-stroked",
@@ -16779,9 +15731,8 @@
     "tags": {
       "highway": "mini_roundabout"
     },
-    "fields": [
-      "direction_clock"
-    ],
+    "fields": [],
+    "readOnly": true,
     "moreFields": []
   },
   "highway/milestone": {
@@ -16790,14 +15741,11 @@
       "point",
       "vertex"
     ],
-    "fields": [
-      "distance",
-      "ref",
-      "direction_vertex"
-    ],
+    "fields": [],
     "tags": {
       "highway": "milestone"
     },
+    "readOnly": true,
     "moreFields": []
   },
   "highway/living_street": {
@@ -16835,42 +15783,27 @@
   },
   "highway/ladder": {
     "icon": "temaki-crossing_markings-ladder",
-    "fields": [
-      "name",
-      "incline_steps",
-      "access_simple",
-      "handrail",
-      "step_count",
-      "material",
-      "width",
-      "height"
-    ],
-    "moreFields": [
-      "covered_no",
-      "level_semi",
-      "lit",
-      "oneway",
-      "ref"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "vertex",
       "line"
     ],
     "tags": {
       "highway": "ladder"
-    }
+    },
+    "readOnly": true
   },
   "highway/give_way": {
     "icon": "temaki-yield",
-    "fields": [
-      "direction_vertex_dual"
-    ],
+    "fields": [],
     "geometry": [
       "vertex"
     ],
     "tags": {
       "highway": "give_way"
     },
+    "readOnly": true,
     "moreFields": []
   },
   "highway/footway": {
@@ -16904,15 +15837,14 @@
   },
   "highway/escape": {
     "icon": "fas-truck-fast",
-    "fields": [
-      "surface"
-    ],
+    "fields": [],
     "geometry": [
       "line"
     ],
     "tags": {
       "highway": "escape"
     },
+    "readOnly": true,
     "moreFields": []
   },
   "highway/emergency_bay": {
@@ -16924,9 +15856,8 @@
     "tags": {
       "highway": "emergency_bay"
     },
-    "fields": [
-      "direction_vertex_dual"
-    ],
+    "fields": [],
+    "readOnly": true,
     "moreFields": []
   },
   "highway/emergency_access_point": {
@@ -16934,13 +15865,11 @@
     "geometry": [
       "point"
     ],
-    "fields": [
-      "ref",
-      "operator"
-    ],
+    "fields": [],
     "tags": {
       "highway": "emergency_access_point"
     },
+    "readOnly": true,
     "moreFields": []
   },
   "highway/elevator_line": {
@@ -17043,22 +15972,15 @@
   },
   "highway/cyclist_waiting_aid": {
     "icon": "temaki-guard_rail",
-    "fields": [
-      "footrest",
-      "handrest",
-      "direction_vertex",
-      "side",
-      "count"
-    ],
-    "moreFields": [
-      "capacity"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "vertex"
     ],
     "tags": {
       "highway": "cyclist_waiting_aid"
-    }
+    },
+    "readOnly": true
   },
   "highway/cycleway": {
     "icon": "fas-biking",
@@ -17146,21 +16068,8 @@
   },
   "highway/construction": {
     "icon": "maki-barrier",
-    "fields": [
-      "name",
-      "construction",
-      "opening_date",
-      "check_date",
-      "access",
-      "oneway",
-      "structure",
-      "tunnel/name",
-      "note"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
@@ -17170,54 +16079,25 @@
     "removeTags": {
       "highway": "construction",
       "construction": "*"
-    }
+    },
+    "readOnly": true
   },
   "highway/busway": {
     "icon": "temaki-bus",
-    "fields": [
-      "name",
-      "oneway",
-      "maxspeed",
-      "lanes",
-      "surface",
-      "operator",
-      "structure",
-      "tunnel/name",
-      "covered"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxweight_bridge",
-      "maxwidth",
-      "trolley_wire"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
     "tags": {
       "highway": "busway"
-    }
+    },
+    "readOnly": true
   },
   "highway/bus_guideway": {
     "icon": "temaki-bus_guided",
-    "fields": [
-      "name",
-      "operator",
-      "oneway",
-      "structure"
-    ],
-    "moreFields": [
-      "bridge/ref",
-      "covered_no",
-      "trolley_wire",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
@@ -17228,37 +16108,20 @@
       "highway": "bus_guideway",
       "access": "no",
       "bus": "designated"
-    }
+    },
+    "readOnly": true
   },
   "highway/bridleway": {
-    "fields": [
-      "name",
-      "surface",
-      "width",
-      "structure",
-      "tunnel/name",
-      "access",
-      "incline",
-      "horse_scale"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "covered_no",
-      "dog",
-      "lit",
-      "maxweight_bridge",
-      "smoothness",
-      "stroller",
-      "wheelchair"
-    ],
+    "fields": [],
+    "moreFields": [],
     "icon": "maki-horse-riding",
     "geometry": [
       "line"
     ],
     "tags": {
       "highway": "bridleway"
-    }
+    },
+    "readOnly": true
   },
   "highway/traffic_sign": {
     "icon": "fas-directions",
@@ -17366,39 +16229,8 @@
     "geometry": [
       "line"
     ],
-    "fields": [
-      "name",
-      "service",
-      "oneway",
-      "maxspeed",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "covered_no",
-      "sidewalk",
-      "flood_prone",
-      "hazard_highway",
-      "incline",
-      "lanes",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxweight_bridge",
-      "maxwidth",
-      "oneway/bicycle",
-      "parking/side/parking",
-      "parking/side/orientation",
-      "smoothness",
-      "trolley_wire",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "tags": {
       "highway": "service",
       "service": "parking_aisle"
@@ -17406,46 +16238,16 @@
     "reference": {
       "key": "service",
       "value": "parking_aisle"
-    }
+    },
+    "readOnly": true
   },
   "highway/service/emergency_access": {
     "icon": "iD-highway-service",
     "geometry": [
       "line"
     ],
-    "fields": [
-      "name",
-      "service",
-      "oneway",
-      "maxspeed",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "covered_no",
-      "sidewalk",
-      "flood_prone",
-      "hazard_highway",
-      "incline",
-      "lanes",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxweight_bridge",
-      "maxwidth",
-      "oneway/bicycle",
-      "parking/side/parking",
-      "parking/side/orientation",
-      "smoothness",
-      "trolley_wire",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "tags": {
       "highway": "service",
       "service": "emergency_access"
@@ -17453,46 +16255,16 @@
     "reference": {
       "key": "service",
       "value": "emergency_access"
-    }
+    },
+    "readOnly": true
   },
   "highway/service/driveway": {
     "icon": "iD-highway-service",
     "geometry": [
       "line"
     ],
-    "fields": [
-      "name",
-      "service",
-      "oneway",
-      "maxspeed",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "covered_no",
-      "sidewalk",
-      "flood_prone",
-      "hazard_highway",
-      "incline",
-      "lanes",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxweight_bridge",
-      "maxwidth",
-      "oneway/bicycle",
-      "parking/side/parking",
-      "parking/side/orientation",
-      "smoothness",
-      "trolley_wire",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "tags": {
       "highway": "service",
       "service": "driveway"
@@ -17500,46 +16272,16 @@
     "reference": {
       "key": "service",
       "value": "driveway"
-    }
+    },
+    "readOnly": true
   },
   "highway/service/drive-through": {
     "icon": "iD-highway-service",
     "geometry": [
       "line"
     ],
-    "fields": [
-      "name",
-      "service",
-      "oneway",
-      "maxspeed",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "covered_no",
-      "sidewalk",
-      "flood_prone",
-      "hazard_highway",
-      "incline",
-      "lanes",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxweight_bridge",
-      "maxwidth",
-      "oneway/bicycle",
-      "parking/side/parking",
-      "parking/side/orientation",
-      "smoothness",
-      "trolley_wire",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "tags": {
       "highway": "service",
       "service": "drive-through"
@@ -17547,46 +16289,16 @@
     "reference": {
       "key": "service",
       "value": "drive-through"
-    }
+    },
+    "readOnly": true
   },
   "highway/service/alley": {
     "icon": "iD-highway-service",
     "geometry": [
       "line"
     ],
-    "fields": [
-      "name",
-      "service",
-      "oneway",
-      "maxspeed",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/name",
-      "bridge/ref",
-      "covered_no",
-      "sidewalk",
-      "flood_prone",
-      "hazard_highway",
-      "incline",
-      "lanes",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxweight_bridge",
-      "maxwidth",
-      "oneway/bicycle",
-      "parking/side/parking",
-      "parking/side/orientation",
-      "smoothness",
-      "trolley_wire",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "tags": {
       "highway": "service",
       "service": "alley"
@@ -17594,50 +16306,13 @@
     "reference": {
       "key": "service",
       "value": "alley"
-    }
+    },
+    "readOnly": true
   },
   "highway/road/bridge": {
     "icon": "iD-other-line",
-    "fields": [
-      "highway",
-      "name",
-      "oneway",
-      "maxspeed",
-      "lanes",
-      "surface",
-      "structure",
-      "tunnel/name",
-      "access"
-    ],
-    "moreFields": [
-      "bridge/ref",
-      "bridge/name",
-      "covered_no",
-      "cycleway",
-      "sidewalk",
-      "bicycle_road",
-      "cyclestreet-BE-NL",
-      "flood_prone",
-      "hazard_highway",
-      "incline",
-      "junction_line",
-      "lane_markings",
-      "lit",
-      "maxaxleload_bridge",
-      "maxheight",
-      "maxlength",
-      "maxspeed/advisory",
-      "maxweight",
-      "maxwidth",
-      "not/name",
-      "oneway/bicycle",
-      "parking/side/parking",
-      "parking/side/orientation",
-      "smoothness",
-      "traffic_calming_road",
-      "trolley_wire",
-      "width"
-    ],
+    "fields": [],
+    "moreFields": [],
     "geometry": [
       "line"
     ],
@@ -17650,7 +16325,8 @@
       "bridge": "yes",
       "layer": "1"
     },
-    "matchScore": 0.25
+    "matchScore": 0.25,
+    "readOnly": true
   },
   "highway/raceway/motocross": {
     "icon": "fas-motorcycle",
@@ -17658,16 +16334,7 @@
       "line",
       "area"
     ],
-    "fields": [
-      "name",
-      "oneway",
-      "surface",
-      "sport/sport_racing_motor",
-      "lit",
-      "width",
-      "lanes",
-      "structure"
-    ],
+    "fields": [],
     "tags": {
       "highway": "raceway",
       "sport": "motocross"
@@ -17676,6 +16343,7 @@
       "key": "sport",
       "value": "motocross"
     },
+    "readOnly": true,
     "moreFields": []
   },
   "highway/raceway/karting": {
@@ -17684,16 +16352,7 @@
       "line",
       "area"
     ],
-    "fields": [
-      "name",
-      "oneway",
-      "surface",
-      "sport/sport_racing_motor",
-      "lit",
-      "width",
-      "lanes",
-      "structure"
-    ],
+    "fields": [],
     "tags": {
       "highway": "raceway",
       "sport": "karting"
@@ -17702,6 +16361,7 @@
       "key": "sport",
       "value": "karting"
     },
+    "readOnly": true,
     "moreFields": []
   },
   "highway/path/traffic_island_shared": {
@@ -22896,19 +21556,14 @@
       "line",
       "area"
     ],
-    "fields": [
-      "wall",
-      "height",
-      "material"
-    ],
-    "moreFields": [
-      "level"
-    ],
+    "fields": [],
+    "moreFields": [],
     "tags": {
       "barrier": "wall",
       "wall": "noise_barrier"
     },
-    "matchScore": 0.27
+    "matchScore": 0.27,
+    "readOnly": true
   },
   "barrier/kerb/rolled": {
     "icon": "temaki-kerb-rolled",
@@ -23052,19 +21707,14 @@
     "geometry": [
       "line"
     ],
-    "fields": [
-      "fence_type",
-      "height",
-      "material"
-    ],
-    "moreFields": [
-      "level"
-    ],
+    "fields": [],
+    "moreFields": [],
     "tags": {
       "barrier": "fence",
       "fence_type": "railing"
     },
-    "matchScore": 0.5
+    "matchScore": 0.5,
+    "readOnly": true
   },
   "attraction/water_slide": {
     "icon": "roentgen-slide_and_water",
