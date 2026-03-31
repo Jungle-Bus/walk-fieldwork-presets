@@ -5,14 +5,13 @@ permissions:
 
 on:
   push:
-    branches:
-      - main
+    branches-ignore:
+      - 'gh-pages'
 
 jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    if: github.repository == 'openstreetmap/id-tagging-schema'
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -25,11 +24,29 @@ jobs:
       - name: Install Node.js dependencies
         run: npm clean-install
 
-      - name: Build
-        run: npm run build
+      - name: Build presets
+        run: npm run dist
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@d92aa235d04922e8f08b40ce78cc5442fcfbfa2f # v4.8.0
+      - name: "Set up Python"
+        uses: actions/setup-python@v5
         with:
-          branch: interim
-          folder: interim
+          python-version: "3.12"
+
+      - name: "Checkout tools repo"
+        uses: actions/checkout@v6
+        with:
+            repository: nlehuby/alm_profile_builder
+            path: profile_builder
+
+      - name: Build profiles
+        run: |
+            cd ./profile_builder
+            python main.py ../dist/presets.json ../data/profiles.json -o ../dist -u ''
+
+      - name: Deploy
+        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: dist
+            enable_jekyll: true
