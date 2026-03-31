@@ -24,7 +24,8 @@
         "value": "traffic_island"
     },
     "fields": [
-        "{highway/cycleway/traffic_island_shared}"
+        "{highway/cycleway/traffic_island_shared}",
+        "{highway/path}"
     ],
     "moreFields": [
         "{highway/path}"

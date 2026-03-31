@@ -6,8 +6,7 @@
         "width",
         "structure",
         "tunnel/name",
-        "access",
-        "incline"
+        "access"
     ],
     "moreFields": [
         "bridge/name",
@@ -16,6 +15,11 @@
         "horse_scale",
         "informal",
         "lit",
+        "incline_percentage",
+        "incline_across_percentage",
+        "covered",
+        "guiding_strips",
+        "smoothness_simple",
         "mtb/scale",
         "mtb/scale/imba",
         "mtb/scale/uphill",

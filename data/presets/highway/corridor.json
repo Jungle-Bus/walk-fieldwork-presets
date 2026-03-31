@@ -8,7 +8,12 @@
         "wheelchair"
     ],
     "moreFields": [
+        "smoothness_simple",
+        "lit",
+        "incline_percentage",
+        "incline_across_percentage",
         "indoor",
+        "guiding_strips",
         "maxheight",
         "stroller"
     ],

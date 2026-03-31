@@ -13,8 +13,13 @@
     ],
     "moreFields": [
         "bridge/name",
+        "foot_simple",
         "bridge/ref",
         "covered_no",
+        "smoothness_simple",
+        "incline_percentage",
+        "incline_across_percentage",
+        "covered",
         "dog",
         "lit",
         "maxspeed",
