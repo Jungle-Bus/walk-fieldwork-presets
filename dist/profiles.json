@@ -50,6 +50,12 @@
         "highway/bus_guideway",
         "highway/busway",
         "highway/construction",
+        "highway/cycleway/_crossing",
+        "highway/cycleway/crossing/_marked",
+        "highway/cycleway/crossing/traffic_signals",
+        "highway/cycleway/crossing/uncontrolled",
+        "highway/cycleway/crossing/unmarked",
+        "highway/cycleway/traffic_island",
         "highway/cyclist_waiting_aid",
         "highway/emergency_access_point",
         "highway/emergency_bay",
@@ -170,6 +176,28 @@
           "kerb/height"
         ]
       },
+      "highway/bus_stop": {
+        "required": [
+          "name",
+          "platform_height",
+          "wheelchair_turning_cycle_simple",
+          "wheelchair_turning_cycle_simple_diameter",
+          "tactile_paving",
+          "tactile_paving_condition"
+        ]
+      },
+      "highway/corridor": {
+        "required": [
+          "surface",
+          "width",
+          "smoothness_simple",
+          "lit",
+          "incline_percentage",
+          "incline_across_percentage",
+          "indoor",
+          "guiding_strips"
+        ]
+      },
       "highway/crossing": {
         "required": [
           "crossing/markings",
@@ -186,6 +214,26 @@
           "crossing/signals",
           "traffic_signals/sound",
           "highway_shape"
+        ]
+      },
+      "highway/cycleway": {
+        "required": [
+          "foot_simple"
+        ]
+      },
+      "highway/cycleway/*": {
+        "required": [
+          "surface",
+          "width",
+          "smoothness_simple",
+          "structure",
+          "tunnel/name",
+          "lit",
+          "incline_percentage",
+          "incline_across_percentage",
+          "covered",
+          "indoor",
+          "guiding_strips"
         ]
       },
       "highway/elevator": {

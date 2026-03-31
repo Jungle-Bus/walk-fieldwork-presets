@@ -9597,7 +9597,7 @@
         {
             "key": "foot",
             "value": "designated",
-            "description": "🄿 Cycle & Foot Path, 🄿 Cycle & Foot Crossing, 🄵🅅 Allowed Access: `designated`",
+            "description": "🄿 Cycle & Foot Path, 🄿 Cycle & Foot Crossing, 🄵🅅 Foot access: `designated`, 🄵🅅 Allowed Access: `designated`",
             "object_types": [
                 "way"
             ],
@@ -19728,6 +19728,50 @@
             "description": "🄵 Footrest"
         },
         {
+            "key": "foot",
+            "description": "🄵 Foot access, 🄵 Allowed Access"
+        },
+        {
+            "key": "foot",
+            "value": "yes",
+            "description": "🄵🅅 Foot access: `yes`, 🄵🅅 Allowed Access: `yes`"
+        },
+        {
+            "key": "foot",
+            "value": "no",
+            "description": "🄵🅅 Foot access: `no`, 🄵🅅 Allowed Access: `no`"
+        },
+        {
+            "key": "foot",
+            "value": "permissive",
+            "description": "🄵🅅 Foot access: `permissive`, 🄵🅅 Allowed Access: `permissive`"
+        },
+        {
+            "key": "foot",
+            "value": "private",
+            "description": "🄵🅅 Foot access: `private`, 🄵🅅 Allowed Access: `private`"
+        },
+        {
+            "key": "foot",
+            "value": "destination",
+            "description": "🄵🅅 Foot access: `destination`, 🄵🅅 Allowed Access: `destination`"
+        },
+        {
+            "key": "foot",
+            "value": "customers",
+            "description": "🄵🅅 Foot access: `customers`, 🄵🅅 Allowed Access: `customers`"
+        },
+        {
+            "key": "foot",
+            "value": "permit",
+            "description": "🄵🅅 Foot access: `permit`, 🄵🅅 Allowed Access: `permit`"
+        },
+        {
+            "key": "foot",
+            "value": "unknown",
+            "description": "🄵🅅 Foot access: `unknown`, 🄵🅅 Allowed Access: `unknown`"
+        },
+        {
             "key": "flood_prone",
             "description": "🄵 Flood Prone"
         },
@@ -21885,52 +21929,8 @@
         },
         {
             "key": "foot",
-            "description": "🄵 Allowed Access"
-        },
-        {
-            "key": "foot",
-            "value": "yes",
-            "description": "🄵🅅 Allowed Access: `yes`"
-        },
-        {
-            "key": "foot",
-            "value": "no",
-            "description": "🄵🅅 Allowed Access: `no`"
-        },
-        {
-            "key": "foot",
-            "value": "permissive",
-            "description": "🄵🅅 Allowed Access: `permissive`"
-        },
-        {
-            "key": "foot",
-            "value": "private",
-            "description": "🄵🅅 Allowed Access: `private`"
-        },
-        {
-            "key": "foot",
-            "value": "destination",
-            "description": "🄵🅅 Allowed Access: `destination`"
-        },
-        {
-            "key": "foot",
-            "value": "customers",
-            "description": "🄵🅅 Allowed Access: `customers`"
-        },
-        {
-            "key": "foot",
             "value": "dismount",
             "description": "🄵🅅 Allowed Access: `dismount`"
-        },
-        {
-            "key": "foot",
-            "value": "permit",
-            "description": "🄵🅅 Allowed Access: `permit`"
-        },
-        {
-            "key": "foot",
-            "value": "unknown",
-            "description": "🄵🅅 Allowed Access: `unknown`"
         },
         {
             "key": "motor_vehicle",

@@ -20162,8 +20162,7 @@
             "width",
             "structure",
             "tunnel/name",
-            "access",
-            "incline"
+            "access"
         ],
         "moreFields": [
             "bridge/name",
@@ -20172,6 +20171,11 @@
             "horse_scale",
             "informal",
             "lit",
+            "incline_percentage",
+            "incline_across_percentage",
+            "covered",
+            "guiding_strips",
+            "smoothness_simple",
             "mtb/scale",
             "mtb/scale/imba",
             "mtb/scale/uphill",
@@ -20616,6 +20620,7 @@
         ],
         "moreFields": [
             "bridge/name",
+            "foot_simple",
             "bridge/ref",
             "covered_no",
             "dog",
@@ -20666,7 +20671,12 @@
             "wheelchair"
         ],
         "moreFields": [
+            "smoothness_simple",
+            "lit",
+            "incline_percentage",
+            "incline_across_percentage",
             "indoor",
+            "guiding_strips",
             "maxheight",
             "stroller"
         ],
@@ -21047,7 +21057,8 @@
             "value": "traffic_island"
         },
         "fields": [
-            "{highway/cycleway/traffic_island_shared}"
+            "{highway/cycleway/traffic_island_shared}",
+            "{highway/path}"
         ],
         "moreFields": [
             "{highway/path}"

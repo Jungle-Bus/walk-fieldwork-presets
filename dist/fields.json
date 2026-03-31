@@ -3011,6 +3011,21 @@
         "key": "footrest",
         "type": "check"
     },
+    "foot_simple": {
+        "key": "foot",
+        "type": "combo",
+        "options": [
+            "yes",
+            "no",
+            "permissive",
+            "private",
+            "designated",
+            "destination",
+            "customers",
+            "permit",
+            "unknown"
+        ]
+    },
     "flood_prone": {
         "key": "flood_prone",
         "type": "check"
