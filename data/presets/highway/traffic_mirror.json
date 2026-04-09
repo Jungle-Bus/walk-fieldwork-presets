@@ -7,6 +7,17 @@
     "fields": [
         "direction"
     ],
+    "moreFields": [
+        "obstacle_wheelchair",
+        "maxwidth/physical",
+        "width",
+        "length",
+        "height",
+        "visual_contrast",
+        "obstacle_blind",
+        "tactile_warning",
+        "min_height_obstacle"
+    ],
     "tags": {
         "highway": "traffic_mirror"
     },

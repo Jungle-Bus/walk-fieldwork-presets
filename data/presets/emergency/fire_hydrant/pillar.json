@@ -12,7 +12,13 @@
         "{emergency/fire_hydrant}"
     ],
     "moreFields": [
-        "{emergency/fire_hydrant}"
+        "{emergency/fire_hydrant}",
+        "obstacle_wheelchair",
+        "maxwidth/physical",
+        "width",
+        "length",
+        "height",
+        "visual_contrast"
     ],
     "tags": {
         "emergency": "fire_hydrant",

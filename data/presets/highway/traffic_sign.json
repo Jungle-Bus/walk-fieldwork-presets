@@ -1,12 +1,9 @@
 {
-    "icon": "temaki-billboard",
+    "icon": "fas-directions",
     "fields": [
-        "{advertising}",
-        "support"
+        "{traffic_sign}"
     ],
     "moreFields": [
-        "{advertising}",
-        "direction",
         "obstacle_wheelchair",
         "maxwidth/physical",
         "width",
@@ -19,16 +16,10 @@
     ],
     "geometry": [
         "point",
-        "vertex",
-        "line"
+        "vertex"
     ],
     "tags": {
-        "advertising": "billboard"
+        "highway": "traffic_sign"
     },
-    "terms": [
-        "ad",
-        "advertising",
-        "spam"
-    ],
-    "name": "Billboard"
+    "name": "{traffic_sign}"
 }

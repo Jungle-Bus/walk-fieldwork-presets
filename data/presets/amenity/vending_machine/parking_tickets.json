@@ -12,7 +12,16 @@
         "{amenity/vending_machine}"
     ],
     "moreFields": [
-        "{amenity/vending_machine}"
+        "{amenity/vending_machine}",
+        "obstacle_wheelchair",
+        "maxwidth/physical",
+        "width",
+        "length",
+        "height",
+        "visual_contrast",
+        "obstacle_blind",
+        "tactile_warning",
+        "min_height_obstacle"
     ],
     "tags": {
         "amenity": "vending_machine",

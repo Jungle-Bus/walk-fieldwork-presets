@@ -16,6 +16,11 @@
         "operator",
         "ref"
     ],
+    "moreFields": [
+        "obstacle_wheelchair",
+        "maxwidth/physical",
+        "visual_contrast"
+    ],
     "terms": [
         "gaslight",
         "lamp",

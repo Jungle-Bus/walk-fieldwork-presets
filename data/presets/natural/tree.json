@@ -14,6 +14,10 @@
         "taxon",
         "diameter_crown",
         "diameter",
+        "obstacle_wheelchair",
+        "maxwidth/physical",
+        "obstacle_blind",
+        "min_height_obstacle",
         "ref"
     ],
     "geometry": [

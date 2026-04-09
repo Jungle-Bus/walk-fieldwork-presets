@@ -13,6 +13,12 @@
     ],
     "moreFields": [
         "model",
+        "obstacle_wheelchair",
+        "maxwidth/physical",
+        "width",
+        "length",
+        "height",
+        "visual_contrast",
         "street_cabinet"
     ],
     "terms": [

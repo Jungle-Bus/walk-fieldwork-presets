@@ -5,11 +5,21 @@
         "description": "Ce profil permet de collecter les attributs obligatoires dans le standard CNIG Accessibilité. Il comprend des tags expérimentaux non approuvés par la communauté.",
         "presets": {
             "include": [
-                "barrier/*",
-                "public_transport/*",
-                "highway/*",
+                "advertising/*",
                 "amenity/parking_space/disabled",
+                "amenity/post_box",
+                "amenity/recycling_container",
+                "amenity/vending_machine/parking_tickets",
+                "barrier/*",
+                "emergency/fire_hydrant",
+                "emergency/fire_hydrant/pillar",
                 "entrance",
+                "highway/*",
+                "man_made/street_cabinet",
+                "man_made/street_cabinet/*",
+                "man_made/utility_pole",
+                "natural/tree",
+                "public_transport/*",
                 "railway/subway_entrance",
                 "railway/train_station_entrance"
             ],
@@ -105,6 +115,20 @@
             ]
         },
         "fields": {
+            "advertising/*": {
+                "required": [
+                    "obstacle_wheelchair",
+                    "maxwidth/physical",
+                    "width",
+                    "length",
+                    "height",
+                    "visual_contrast",
+                    "obstacle_blind",
+                    "tactile_warning",
+                    "min_height_obstacle",
+                    "panoramax"
+                ]
+            },
             "amenity/parking_space/disabled": {
                 "required": [
                     "orientation/orientation_parking",
@@ -116,6 +140,45 @@
                     "incline_percentage",
                     "incline_across_percentage",
                     "length_buffer"
+                ]
+            },
+            "amenity/post_box": {
+                "required": [
+                    "obstacle_wheelchair",
+                    "maxwidth/physical",
+                    "width",
+                    "length",
+                    "height",
+                    "visual_contrast",
+                    "obstacle_blind",
+                    "tactile_warning",
+                    "min_height_obstacle",
+                    "panoramax"
+                ]
+            },
+            "amenity/recycling_container": {
+                "required": [
+                    "obstacle_wheelchair",
+                    "maxwidth/physical",
+                    "width",
+                    "length",
+                    "height",
+                    "visual_contrast",
+                    "panoramax"
+                ]
+            },
+            "amenity/vending_machine/parking_tickets": {
+                "required": [
+                    "obstacle_wheelchair",
+                    "maxwidth/physical",
+                    "width",
+                    "length",
+                    "height",
+                    "visual_contrast",
+                    "obstacle_blind",
+                    "tactile_warning",
+                    "min_height_obstacle",
+                    "panoramax"
                 ]
             },
             "barrier/block": {
@@ -363,6 +426,22 @@
                     "obstacle_blind",
                     "tactile_warning",
                     "min_height_obstacle",
+                    "panoramax"
+                ]
+            },
+            "emergency/fire_hydrant": {
+                "required": [
+                    "fire_hydrant/type"
+                ]
+            },
+            "emergency/fire_hydrant/pillar": {
+                "required": [
+                    "obstacle_wheelchair",
+                    "maxwidth/physical",
+                    "width",
+                    "length",
+                    "height",
+                    "visual_contrast",
                     "panoramax"
                 ]
             },
@@ -635,6 +714,94 @@
                     "width",
                     "conveying_motion_sensor",
                     "supervised"
+                ]
+            },
+            "highway/street_lamp": {
+                "required": [
+                    "obstacle_wheelchair",
+                    "maxwidth/physical",
+                    "width",
+                    "length",
+                    "height",
+                    "visual_contrast",
+                    "obstacle_blind",
+                    "tactile_warning",
+                    "min_height_obstacle",
+                    "panoramax"
+                ]
+            },
+            "highway/traffic_sign": {
+                "required": [
+                    "obstacle_wheelchair",
+                    "maxwidth/physical",
+                    "width",
+                    "length",
+                    "height",
+                    "visual_contrast",
+                    "obstacle_blind",
+                    "tactile_warning",
+                    "min_height_obstacle",
+                    "panoramax"
+                ]
+            },
+            "highway/traffic_mirror": {
+                "required": [
+                    "obstacle_wheelchair",
+                    "maxwidth/physical",
+                    "width",
+                    "length",
+                    "height",
+                    "visual_contrast",
+                    "obstacle_blind",
+                    "tactile_warning",
+                    "min_height_obstacle",
+                    "panoramax"
+                ]
+            },
+            "man_made/street_cabinet": {
+                "required": [
+                    "obstacle_wheelchair",
+                    "maxwidth/physical",
+                    "width",
+                    "length",
+                    "height",
+                    "visual_contrast",
+                    "panoramax"
+                ]
+            },
+            "man_made/street_cabinet/*": {
+                "required": [
+                    "obstacle_wheelchair",
+                    "maxwidth/physical",
+                    "width",
+                    "length",
+                    "height",
+                    "visual_contrast",
+                    "panoramax"
+                ]
+            },
+            "man_made/utility_pole": {
+                "required": [
+                    "obstacle_wheelchair",
+                    "maxwidth/physical",
+                    "width",
+                    "length",
+                    "height",
+                    "visual_contrast",
+                    "obstacle_blind",
+                    "tactile_warning",
+                    "min_height_obstacle",
+                    "panoramax"
+                ]
+            },
+            "natural/tree": {
+                "required": [
+                    "obstacle_wheelchair",
+                    "maxwidth/physical",
+                    "obstacle_blind",
+                    "min_height_obstacle",
+                    "diameter",
+                    "panoramax"
                 ]
             },
             "public_transport/platform": {
