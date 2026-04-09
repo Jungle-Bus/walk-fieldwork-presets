@@ -9199,16 +9199,33 @@
   },
   "natural/tree": {
     "icon": "roentgen-tree",
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "diameter",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "obstacle_blind",
+      "min_height_obstacle"
+    ],
+    "moreFields": [
+      "leaf_type_singular",
+      "leaf_cycle_singular",
+      "denotation",
+      "height",
+      "circumference",
+      "genus",
+      "species",
+      "species/wikidata",
+      "taxon",
+      "diameter_crown",
+      "ref"
+    ],
     "geometry": [
       "point",
       "vertex"
     ],
     "tags": {
       "natural": "tree"
-    },
-    "readOnly": true
+    }
   },
   "natural/strait": {
     "icon": "iD-waterway-river",
@@ -10261,16 +10278,35 @@
   },
   "man_made/utility_pole": {
     "icon": "temaki-utility_pole",
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "height",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast",
+      "obstacle_blind",
+      "tactile_warning",
+      "min_height_obstacle"
+    ],
+    "moreFields": [
+      "ref",
+      "operator",
+      "utility_semi",
+      "material",
+      "line_attachment",
+      "colour",
+      "manufacturer",
+      "line_management"
+    ],
     "geometry": [
       "point",
       "vertex"
     ],
     "tags": {
       "man_made": "utility_pole"
-    },
-    "readOnly": true
+    }
   },
   "man_made/tunnel": {
     "icon": "temaki-tunnel",
@@ -10370,12 +10406,26 @@
       "point",
       "area"
     ],
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "height",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast"
+    ],
+    "moreFields": [
+      "ref",
+      "operator",
+      "utility_semi",
+      "colour",
+      "model",
+      "street_cabinet"
+    ],
     "tags": {
       "man_made": "street_cabinet"
-    },
-    "readOnly": true
+    }
   },
   "man_made/storage_tank": {
     "icon": "temaki-storage_tank",
@@ -11282,8 +11332,23 @@
       "point",
       "area"
     ],
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "height",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast"
+    ],
+    "moreFields": [
+      "ref",
+      "operator",
+      "utility_semi",
+      "colour",
+      "model",
+      "street_cabinet"
+    ],
     "tags": {
       "man_made": "street_cabinet",
       "street_cabinet": "waste"
@@ -11291,8 +11356,7 @@
     "reference": {
       "key": "man_made",
       "value": "street_cabinet"
-    },
-    "readOnly": true
+    }
   },
   "man_made/street_cabinet/transport_management": {
     "icon": "fas-door-closed",
@@ -11300,8 +11364,23 @@
       "point",
       "area"
     ],
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "height",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast"
+    ],
+    "moreFields": [
+      "ref",
+      "operator",
+      "utility_semi",
+      "colour",
+      "model",
+      "street_cabinet"
+    ],
     "tags": {
       "man_made": "street_cabinet",
       "street_cabinet": "transport_management"
@@ -11309,8 +11388,7 @@
     "reference": {
       "key": "man_made",
       "value": "street_cabinet"
-    },
-    "readOnly": true
+    }
   },
   "man_made/street_cabinet/traffic_monitoring": {
     "icon": "fas-door-closed",
@@ -11318,8 +11396,23 @@
       "point",
       "area"
     ],
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "height",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast"
+    ],
+    "moreFields": [
+      "ref",
+      "operator",
+      "utility_semi",
+      "colour",
+      "model",
+      "street_cabinet"
+    ],
     "tags": {
       "man_made": "street_cabinet",
       "street_cabinet": "traffic_monitoring"
@@ -11327,8 +11420,7 @@
     "reference": {
       "key": "man_made",
       "value": "street_cabinet"
-    },
-    "readOnly": true
+    }
   },
   "man_made/street_cabinet/traffic_control": {
     "icon": "fas-door-closed",
@@ -11336,8 +11428,23 @@
       "point",
       "area"
     ],
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "height",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast"
+    ],
+    "moreFields": [
+      "ref",
+      "operator",
+      "utility_semi",
+      "colour",
+      "model",
+      "street_cabinet"
+    ],
     "tags": {
       "man_made": "street_cabinet",
       "street_cabinet": "traffic_control"
@@ -11345,8 +11452,7 @@
     "reference": {
       "key": "man_made",
       "value": "street_cabinet"
-    },
-    "readOnly": true
+    }
   },
   "man_made/street_cabinet/postal_service": {
     "icon": "fas-door-closed",
@@ -11354,8 +11460,23 @@
       "point",
       "area"
     ],
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "height",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast"
+    ],
+    "moreFields": [
+      "ref",
+      "operator",
+      "utility_semi",
+      "colour",
+      "model",
+      "street_cabinet"
+    ],
     "tags": {
       "man_made": "street_cabinet",
       "street_cabinet": "postal_service"
@@ -11363,8 +11484,7 @@
     "reference": {
       "key": "street_cabinet",
       "value": "postal_service"
-    },
-    "readOnly": true
+    }
   },
   "man_made/storage_tank/water": {
     "icon": "temaki-storage_tank",
@@ -15259,6 +15379,33 @@
     "moreFields": [],
     "readOnly": true
   },
+  "highway/traffic_sign": {
+    "icon": "fas-directions",
+    "fields": [
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast",
+      "obstacle_blind",
+      "tactile_warning",
+      "min_height_obstacle"
+    ],
+    "moreFields": [
+      "traffic_sign",
+      "traffic_sign/direction",
+      "direction_point"
+    ],
+    "geometry": [
+      "point",
+      "vertex"
+    ],
+    "tags": {
+      "highway": "traffic_sign"
+    },
+    "name": "{traffic_sign}"
+  },
   "highway/traffic_mirror": {
     "icon": "maki-circle-stroked",
     "geometry": [
@@ -15266,12 +15413,22 @@
       "vertex"
     ],
     "fields": [
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast",
+      "obstacle_blind",
+      "tactile_warning",
+      "min_height_obstacle"
+    ],
+    "moreFields": [
       "direction"
     ],
     "tags": {
       "highway": "traffic_mirror"
-    },
-    "moreFields": []
+    }
   },
   "highway/track": {
     "icon": "fas-truck-monster",
@@ -15336,15 +15493,19 @@
       "highway": "street_lamp"
     },
     "fields": [
+      "height",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "visual_contrast"
+    ],
+    "moreFields": [
       "lamp_type",
       "support",
       "lamp_mount",
       "direction",
-      "height",
       "operator",
       "ref"
-    ],
-    "moreFields": []
+    ]
   },
   "highway/stop": {
     "icon": "temaki-stop",
@@ -16173,24 +16334,6 @@
       "highway": "bridleway"
     },
     "readOnly": true
-  },
-  "highway/traffic_sign": {
-    "icon": "fas-directions",
-    "fields": [
-      "traffic_sign",
-      "traffic_sign/direction",
-      "direction_point"
-    ],
-    "geometry": [
-      "point",
-      "vertex"
-    ],
-    "tags": {
-      "highway": "traffic_sign"
-    },
-    "searchable": false,
-    "name": "{traffic_sign}",
-    "moreFields": []
   },
   "highway/bus_stop": {
     "icon": "temaki-bus",
@@ -18716,16 +18859,27 @@
   },
   "emergency/fire_hydrant": {
     "icon": "temaki-fire_hydrant",
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "fire_hydrant/type"
+    ],
+    "moreFields": [
+      "ref",
+      "colour",
+      "fire_hydrant/position",
+      "water_source",
+      "couplings",
+      "fire_hydrant/diameter",
+      "fire_hydrant/pressure",
+      "level",
+      "survey/date"
+    ],
     "geometry": [
       "point",
       "vertex"
     ],
     "tags": {
       "emergency": "fire_hydrant"
-    },
-    "readOnly": true
+    }
   },
   "emergency/fire_hose": {
     "icon": "fas-tape",
@@ -18839,13 +18993,30 @@
       "point",
       "vertex"
     ],
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast"
+    ],
+    "moreFields": [
+      "ref",
+      "fire_hydrant/type",
+      "colour",
+      "fire_hydrant/position",
+      "water_source",
+      "couplings",
+      "fire_hydrant/diameter",
+      "fire_hydrant/pressure",
+      "level",
+      "survey/date"
+    ],
     "tags": {
       "emergency": "fire_hydrant",
       "fire_hydrant:type": "pillar"
-    },
-    "readOnly": true
+    }
   },
   "education/university": {
     "icon": "maki-college",
@@ -22582,8 +22753,27 @@
   },
   "amenity/recycling_container": {
     "icon": "maki-recycling",
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast"
+    ],
+    "moreFields": [
+      "operator",
+      "recycling_accepts",
+      "opening_hours",
+      "collection_times",
+      "colour",
+      "covered",
+      "indoor",
+      "level",
+      "manufacturer",
+      "material",
+      "ref"
+    ],
     "geometry": [
       "point",
       "area"
@@ -22595,8 +22785,7 @@
     "reference": {
       "key": "recycling_type",
       "value": "container"
-    },
-    "readOnly": true
+    }
   },
   "amenity/recycling_centre": {
     "icon": "maki-recycling",
@@ -22709,8 +22898,38 @@
   },
   "amenity/post_box": {
     "icon": "temaki-post_box",
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "height",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast",
+      "obstacle_blind",
+      "tactile_warning",
+      "min_height_obstacle"
+    ],
+    "moreFields": [
+      "operator",
+      "collection_times",
+      "ref",
+      "post_box/type-GB",
+      "royal_cypher-GB",
+      "access_simple",
+      "branch_brand",
+      "brand",
+      "colour",
+      "covered",
+      "drive_through",
+      "indoor",
+      "level",
+      "manufacturer",
+      "material",
+      "post_box/type",
+      "support",
+      "wheelchair"
+    ],
     "geometry": [
       "point",
       "vertex"
@@ -22722,8 +22941,7 @@
       "exclude": [
         "us"
       ]
-    },
-    "readOnly": true
+    }
   },
   "amenity/polling_station": {
     "icon": "fas-vote-yea",
@@ -24271,8 +24489,32 @@
       "point",
       "vertex"
     ],
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "height",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast",
+      "obstacle_blind",
+      "tactile_warning",
+      "min_height_obstacle"
+    ],
+    "moreFields": [
+      "vending",
+      "ref",
+      "operator",
+      "payment_multi",
+      "currency_multi",
+      "blind",
+      "branch_brand",
+      "brand",
+      "covered",
+      "indoor",
+      "level",
+      "manufacturer"
+    ],
     "tags": {
       "amenity": "vending_machine",
       "vending": "parking_tickets"
@@ -24281,8 +24523,7 @@
       "key": "vending",
       "value": "parking_tickets"
     },
-    "matchScore": 0.94,
-    "readOnly": true
+    "matchScore": 0.94
   },
   "amenity/vending_machine/newspapers": {
     "icon": "temaki-vending_newspaper",
@@ -27547,60 +27788,150 @@
   },
   "advertising/totem": {
     "icon": "temaki-billboard",
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "height",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast",
+      "obstacle_blind",
+      "tactile_warning",
+      "min_height_obstacle"
+    ],
+    "moreFields": [
+      "advertising",
+      "operator",
+      "lit",
+      "visibility",
+      "access_simple",
+      "message",
+      "direction"
+    ],
     "geometry": [
       "point",
       "line"
     ],
     "tags": {
       "advertising": "totem"
-    },
-    "readOnly": true
+    }
   },
   "advertising/poster_box": {
     "icon": "temaki-poster_box",
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "height",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast",
+      "obstacle_blind",
+      "tactile_warning",
+      "min_height_obstacle"
+    ],
+    "moreFields": [
+      "advertising",
+      "operator",
+      "lit",
+      "visibility",
+      "support",
+      "access_simple",
+      "message",
+      "direction"
+    ],
     "geometry": [
       "point",
       "line"
     ],
     "tags": {
       "advertising": "poster_box"
-    },
-    "readOnly": true
+    }
   },
   "advertising/column": {
     "icon": "roentgen-advertising_column",
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "height",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast"
+    ],
+    "moreFields": [
+      "advertising",
+      "operator",
+      "lit",
+      "visibility",
+      "access_simple",
+      "message"
+    ],
     "geometry": [
       "point",
       "area"
     ],
     "tags": {
       "advertising": "column"
-    },
-    "readOnly": true
+    }
   },
   "advertising/board": {
     "icon": "temaki-bulletin_board",
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "height",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast",
+      "obstacle_blind",
+      "tactile_warning",
+      "min_height_obstacle"
+    ],
+    "moreFields": [
+      "advertising",
+      "operator",
+      "lit",
+      "visibility",
+      "support",
+      "access_simple",
+      "message",
+      "direction"
+    ],
     "geometry": [
       "point",
       "vertex"
     ],
     "tags": {
       "advertising": "board"
-    },
-    "readOnly": true
+    }
   },
   "advertising/billboard": {
     "icon": "temaki-billboard",
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "height",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "width",
+      "length",
+      "height",
+      "visual_contrast",
+      "obstacle_blind",
+      "tactile_warning",
+      "min_height_obstacle"
+    ],
+    "moreFields": [
+      "advertising",
+      "operator",
+      "lit",
+      "visibility",
+      "support",
+      "access_simple",
+      "message",
+      "direction"
+    ],
     "geometry": [
       "point",
       "vertex",
@@ -27608,8 +27939,7 @@
     ],
     "tags": {
       "advertising": "billboard"
-    },
-    "readOnly": true
+    }
   },
   "addr/interpolation": {
     "fields": [],

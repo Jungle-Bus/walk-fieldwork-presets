@@ -8974,6 +8974,15 @@
         },
         {
             "key": "highway",
+            "value": "traffic_sign",
+            "description": "🄿 Traffic Sign",
+            "object_types": [
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-directions.svg"
+        },
+        {
+            "key": "highway",
             "value": "traffic_mirror",
             "description": "🄿 Traffic Mirror",
             "object_types": [
@@ -9362,15 +9371,6 @@
                 "way"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/horse-riding.svg"
-        },
-        {
-            "key": "highway",
-            "value": "traffic_sign",
-            "description": "🄿 Traffic Sign (unsearchable)",
-            "object_types": [
-                "node"
-            ],
-            "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-directions.svg"
         },
         {
             "key": "highway",

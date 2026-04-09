@@ -8976,6 +8976,7 @@
                     "name": "Traffic Signals",
                     "terms": "light,stoplight,traffic light"
                 },
+                "highway/traffic_sign": {},
                 "highway/traffic_mirror": {
                     "name": "Traffic Mirror",
                     "terms": "blind spot,convex,corner,curved,roadside,round,safety,sphere,visibility"
@@ -9167,7 +9168,6 @@
                     "name": "Bridle Path",
                     "terms": "bridleway,equestrian,horse,trail"
                 },
-                "highway/traffic_sign": {},
                 "highway/bus_stop": {
                     "name": "Bus Stop"
                 },
