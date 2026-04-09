@@ -3520,6 +3520,15 @@
         },
         {
             "key": "railway",
+            "value": "train_station_entrance",
+            "description": "🄿 Subway Entrance",
+            "object_types": [
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/entrance.svg"
+        },
+        {
+            "key": "railway",
             "value": "switch",
             "description": "🄿 Railway Switch",
             "object_types": [
@@ -16569,11 +16578,11 @@
         },
         {
             "key": "step:length",
-            "description": "🄵 Step Length"
+            "description": "🄵 Step Length (Meters)"
         },
         {
             "key": "step:height",
-            "description": "🄵 Step Height"
+            "description": "🄵 Step Height (Meters)"
         },
         {
             "key": "step_count",
@@ -17993,7 +18002,7 @@
         },
         {
             "key": "platform:height",
-            "description": "🄵 Platform Height"
+            "description": "🄵 Platform Height (Meters)"
         },
         {
             "key": "plant",
@@ -18975,7 +18984,7 @@
         },
         {
             "key": "length:buffer",
-            "description": "🄵 Extra length"
+            "description": "🄵 Extra length (Meters)"
         },
         {
             "key": "length",
@@ -19616,40 +19625,37 @@
             "description": "🄵 Handrest"
         },
         {
-            "key": "handrail:left",
+            "key": "handrail",
             "description": "🄵 Handrail"
-        },
-        {
-            "key": "handrail:left",
-            "value": "yes",
-            "description": "🄵🅅 Handrail: `yes`"
-        },
-        {
-            "key": "handrail:left",
-            "value": "no",
-            "description": "🄵🅅 Handrail: `no`"
-        },
-        {
-            "key": "handrail:right",
-            "description": "🄵 Handrail"
-        },
-        {
-            "key": "handrail:right",
-            "value": "yes",
-            "description": "🄵🅅 Handrail: `yes`"
-        },
-        {
-            "key": "handrail:right",
-            "value": "no",
-            "description": "🄵🅅 Handrail: `no`"
-        },
-        {
-            "key": "handrail:height",
-            "description": "🄵 Handrail Height"
         },
         {
             "key": "handrail",
-            "description": "🄵 Handrail"
+            "value": "rigth",
+            "description": "🄵🅅 Handrail: Rigth only"
+        },
+        {
+            "key": "handrail",
+            "value": "left",
+            "description": "🄵🅅 Handrail: Left only"
+        },
+        {
+            "key": "handrail",
+            "value": "both",
+            "description": "🄵🅅 Handrail: Both sides"
+        },
+        {
+            "key": "handrail",
+            "value": "center",
+            "description": "🄵🅅 Handrail: Only one handrail, on the center of the stairs"
+        },
+        {
+            "key": "handrail",
+            "value": "no",
+            "description": "🄵🅅 Handrail: None"
+        },
+        {
+            "key": "handrail:height",
+            "description": "🄵 Handrail Height (Meters)"
         },
         {
             "key": "handicap",
@@ -23576,7 +23582,7 @@
         },
         {
             "key": "maxwidth:physical",
-            "description": "🄵 Width Limit"
+            "description": "🄵 Width Limit (Meters)"
         },
         {
             "key": "maxspeed:hgv",
@@ -23691,7 +23697,7 @@
         },
         {
             "key": "kerb:height",
-            "description": "🄵 Kerb Height"
+            "description": "🄵 Kerb Height (Meters)"
         },
         {
             "key": "junction:ref",

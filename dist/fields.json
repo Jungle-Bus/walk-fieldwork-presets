@@ -51,8 +51,8 @@
     },
     "wheelchair_turning_cycle_simple_diameter": {
         "key": "wheelchair:turning_cycle:diameter",
-        "type": "roadheight",
-        "snake_case": false,
+        "type": "number",
+        "minValue": 0,
         "prerequisiteTag": {
             "key": "wheelchair:turning_cycle",
             "valueNot": "no"
@@ -827,13 +827,13 @@
     },
     "step_length": {
         "key": "step:length",
-        "type": "roadheight",
-        "snake_case": false
+        "type": "number",
+        "minValue": 0
     },
     "step_height": {
         "key": "step:height",
-        "type": "roadheight",
-        "snake_case": false
+        "type": "number",
+        "minValue": 0
     },
     "step_count": {
         "key": "step_count",
@@ -1664,8 +1664,8 @@
     },
     "platform_height": {
         "key": "platform:height",
-        "type": "roadheight",
-        "snake_case": false
+        "type": "number",
+        "minValue": 0
     },
     "plant": {
         "key": "plant",
@@ -2374,8 +2374,8 @@
     },
     "length_buffer": {
         "key": "length:buffer",
-        "type": "roadheight",
-        "snake_case": false
+        "type": "number",
+        "minValue": 0
     },
     "length": {
         "key": "length",
@@ -2872,28 +2872,24 @@
     },
     "handrail_side": {
         "key": "handrail",
-        "keys": [
-            "handrail:left",
-            "handrail:right"
-        ],
-        "reference": {
-            "key": "handrail"
-        },
-        "type": "directionalCombo",
+        "type": "combo",
         "autoSuggestions": false,
         "options": [
-            "yes",
+            "rigth",
+            "left",
+            "both",
+            "center",
             "no"
         ]
     },
     "handrail_height": {
         "key": "handrail:height",
-        "type": "roadheight",
+        "type": "number",
+        "minValue": 0,
         "prerequisiteTag": {
             "key": "handrail",
             "valueNot": "no"
-        },
-        "snake_case": false
+        }
     },
     "handrail": {
         "key": "handrail",
@@ -5924,8 +5920,8 @@
     },
     "maxwidth/physical": {
         "key": "maxwidth:physical",
-        "type": "roadheight",
-        "snake_case": false
+        "type": "number",
+        "minValue": 0
     },
     "maxspeed/hgv": {
         "key": "maxspeed:hgv",
@@ -6018,8 +6014,8 @@
     },
     "kerb/height": {
         "key": "kerb:height",
-        "type": "roadheight",
-        "snake_case": false
+        "type": "number",
+        "minValue": 0
     },
     "junction/ref_oneway": {
         "key": "junction:ref",

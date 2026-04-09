@@ -9,7 +9,9 @@
         "public_transport/*",
         "highway/*",
         "amenity/parking_space/disabled",
-        "entrance"
+        "entrance",
+        "railway/subway_entrance",
+        "railway/train_station_entrance"
       ],
       "exclude": [
         "barrier/fence/*",
@@ -91,6 +93,7 @@
         "highway/tertiary_link",
         "highway/toll_gantry",
         "highway/track",
+        "highway/traffic_signals",
         "highway/trailhead",
         "highway/trunk",
         "highway/trunk_link",
@@ -128,11 +131,13 @@
       },
       "barrier/kerb": {
         "required": [
-          "kerb/kerb_barrier",
+          "kerb",
           "tactile_paving",
           "tactile_paving_condition",
           "tactile_paving_defects",
           "kerb/height",
+          "kerb/incline",
+          "kerb/width",
           "kerb/visibility",
           "kerb/visibility_obstacle"
         ]
@@ -144,6 +149,8 @@
           "tactile_paving_condition",
           "tactile_paving_defects",
           "kerb/height",
+          "kerb/incline",
+          "kerb/width",
           "kerb/visibility",
           "kerb/visibility_obstacle"
         ]
@@ -563,6 +570,34 @@
           "wheelchair_turning_cycle_simple_diameter",
           "incline_percentage",
           "incline_across_percentage"
+        ]
+      },
+      "railway/subway_entrance": {
+        "required": [
+          "door",
+          "entrance_ramp",
+          "material",
+          "entrance_coloured_band",
+          "width",
+          "automatic_door",
+          "tactile_paving",
+          "tactile_paving_condition",
+          "wheelchair_turning_cycle_entrance",
+          "kerb/height"
+        ]
+      },
+      "railway/train_station_entrance": {
+        "required": [
+          "door",
+          "entrance_ramp",
+          "material",
+          "entrance_coloured_band",
+          "width",
+          "automatic_door",
+          "tactile_paving",
+          "tactile_paving_condition",
+          "wheelchair_turning_cycle_entrance",
+          "kerb/height"
         ]
       }
     },

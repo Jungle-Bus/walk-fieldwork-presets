@@ -6960,6 +6960,33 @@
             "railway": "wash"
         }
     },
+    "railway/train_station_entrance": {
+        "icon": "maki-entrance",
+        "geometry": [
+            "point",
+            "vertex"
+        ],
+        "fields": [
+            "name",
+            "level",
+            "wheelchair",
+            "ref"
+        ],
+        "moreFields": [
+            "door",
+            "material",
+            "entrance_coloured_band",
+            "width",
+            "automatic_door",
+            "tactile_paving",
+            "tactile_paving_condition",
+            "wheelchair_turning_cycle_entrance",
+            "kerb/height"
+        ],
+        "tags": {
+            "railway": "train_station_entrance"
+        }
+    },
     "railway/switch": {
         "icon": "temaki-junction",
         "fields": [
@@ -6986,6 +7013,17 @@
             "level",
             "wheelchair",
             "ref"
+        ],
+        "moreFields": [
+            "door",
+            "material",
+            "entrance_coloured_band",
+            "width",
+            "automatic_door",
+            "tactile_paving",
+            "tactile_paving_condition",
+            "wheelchair_turning_cycle_entrance",
+            "kerb/height"
         ],
         "tags": {
             "railway": "subway_entrance"
@@ -22076,7 +22114,7 @@
         ],
         "moreFields": [
             "{highway/crossing}",
-            "kerb"
+            "kerb/kerb_barrier"
         ],
         "geometry": [
             "vertex"
@@ -26083,7 +26121,7 @@
     "barrier/kerb": {
         "icon": "temaki-kerb-unspecified",
         "fields": [
-            "kerb/kerb_barrier",
+            "kerb",
             "tactile_paving",
             "wheelchair",
             "two_sided"

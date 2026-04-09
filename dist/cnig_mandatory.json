@@ -5250,6 +5250,33 @@
     "readOnly": true,
     "moreFields": []
   },
+  "railway/train_station_entrance": {
+    "icon": "maki-entrance",
+    "geometry": [
+      "point",
+      "vertex"
+    ],
+    "fields": [
+      "door",
+      "material",
+      "entrance_coloured_band",
+      "width",
+      "automatic_door",
+      "tactile_paving",
+      "tactile_paving_condition",
+      "wheelchair_turning_cycle_entrance",
+      "kerb/height"
+    ],
+    "moreFields": [
+      "name",
+      "level",
+      "wheelchair",
+      "ref"
+    ],
+    "tags": {
+      "railway": "train_station_entrance"
+    }
+  },
   "railway/switch": {
     "icon": "temaki-junction",
     "fields": [],
@@ -5268,12 +5295,26 @@
       "point",
       "vertex"
     ],
-    "fields": [],
+    "fields": [
+      "door",
+      "material",
+      "entrance_coloured_band",
+      "width",
+      "automatic_door",
+      "tactile_paving",
+      "tactile_paving_condition",
+      "wheelchair_turning_cycle_entrance",
+      "kerb/height"
+    ],
+    "moreFields": [
+      "name",
+      "level",
+      "wheelchair",
+      "ref"
+    ],
     "tags": {
       "railway": "subway_entrance"
-    },
-    "readOnly": true,
-    "moreFields": []
+    }
   },
   "railway/subway": {
     "icon": "temaki-subway",
@@ -15214,13 +15255,9 @@
     "tags": {
       "highway": "traffic_signals"
     },
-    "fields": [
-      "traffic_signals",
-      "traffic_signals/direction"
-    ],
-    "moreFields": [
-      "traffic_signals/countdown"
-    ]
+    "fields": [],
+    "moreFields": [],
+    "readOnly": true
   },
   "highway/traffic_mirror": {
     "icon": "maki-circle-stroked",
@@ -17919,7 +17956,7 @@
       "tactile_paving",
       "crossing",
       "flashing_lights",
-      "kerb"
+      "kerb/kerb_barrier"
     ],
     "geometry": [
       "vertex"
@@ -21109,7 +21146,7 @@
   "barrier/kerb": {
     "icon": "temaki-kerb-unspecified",
     "fields": [
-      "kerb/kerb_barrier",
+      "kerb",
       "tactile_paving",
       "tactile_paving_condition",
       "tactile_paving_defects",
@@ -21579,23 +21616,23 @@
   "barrier/kerb/rolled": {
     "icon": "temaki-kerb-rolled",
     "fields": [
-      "kerb/kerb_barrier",
       "tactile_paving",
       "kerb/height",
       "tactile_paving_condition",
       "tactile_paving_defects",
       "kerb/height",
       "kerb/visibility",
-      "kerb/visibility_obstacle"
+      "kerb/visibility_obstacle",
+      "kerb/incline",
+      "kerb/width"
     ],
     "moreFields": [
+      "kerb",
       "wheelchair",
       "two_sided",
       "material",
       "wheelchair",
-      "two_sided",
-      "kerb/incline",
-      "kerb/width"
+      "two_sided"
     ],
     "geometry": [
       "vertex",
@@ -21614,7 +21651,6 @@
   "barrier/kerb/raised": {
     "icon": "temaki-kerb-raised",
     "fields": [
-      "kerb/kerb_barrier",
       "tactile_paving",
       "kerb/height",
       "tactile_paving_condition",
@@ -21624,6 +21660,7 @@
       "kerb/visibility_obstacle"
     ],
     "moreFields": [
+      "kerb",
       "wheelchair",
       "two_sided",
       "material",
@@ -21647,23 +21684,23 @@
   "barrier/kerb/lowered": {
     "icon": "temaki-kerb-lowered",
     "fields": [
-      "kerb/kerb_barrier",
       "tactile_paving",
       "kerb/height",
       "tactile_paving_condition",
       "tactile_paving_defects",
       "kerb/height",
       "kerb/visibility",
-      "kerb/visibility_obstacle"
+      "kerb/visibility_obstacle",
+      "kerb/incline",
+      "kerb/width"
     ],
     "moreFields": [
+      "kerb",
       "wheelchair",
       "two_sided",
       "material",
       "wheelchair",
-      "two_sided",
-      "kerb/incline",
-      "kerb/width"
+      "two_sided"
     ],
     "geometry": [
       "vertex",
@@ -21686,22 +21723,22 @@
       "line"
     ],
     "fields": [
-      "kerb/kerb_barrier",
       "tactile_paving",
       "tactile_paving_condition",
       "tactile_paving_defects",
       "kerb/height",
       "kerb/visibility",
-      "kerb/visibility_obstacle"
+      "kerb/visibility_obstacle",
+      "kerb/incline",
+      "kerb/width"
     ],
     "moreFields": [
+      "kerb",
       "wheelchair",
       "two_sided",
       "material",
       "wheelchair",
-      "two_sided",
-      "kerb/incline",
-      "kerb/width"
+      "two_sided"
     ],
     "tags": {
       "barrier": "kerb",

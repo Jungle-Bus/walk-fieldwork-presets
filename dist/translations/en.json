@@ -686,10 +686,10 @@
                     "label": "Step stair nosing"
                 },
                 "step_length": {
-                    "label": "Step Length"
+                    "label": "Step Length (Meters)"
                 },
                 "step_height": {
-                    "label": "Step Height"
+                    "label": "Step Height (Meters)"
                 },
                 "step_count": {
                     "label": "Number of Steps"
@@ -1343,7 +1343,7 @@
                     }
                 },
                 "platform_height": {
-                    "label": "Platform Height"
+                    "label": "Platform Height (Meters)"
                 },
                 "plant": {
                     "label": "Plant"
@@ -1924,7 +1924,7 @@
                     "terms": "building floor,deck,storey,story"
                 },
                 "length_buffer": {
-                    "label": "Extra length"
+                    "label": "Extra length (Meters)"
                 },
                 "length": {
                     "label": "Length (Meters)"
@@ -2325,24 +2325,16 @@
                 },
                 "handrail_side": {
                     "label": "Handrail",
-                    "placeholder": "Yes, No",
-                    "types": {
-                        "handrail:left": "Left Side",
-                        "handrail:right": "Right Side"
-                    },
                     "options": {
-                        "yes": {
-                            "title": "Yes",
-                            "description": "There is a handrail"
-                        },
-                        "no": {
-                            "title": "No",
-                            "description": "No handrail"
-                        }
+                        "rigth": "Rigth only",
+                        "left": "Left only",
+                        "both": "Both sides",
+                        "center": "Only one handrail, on the center of the stairs",
+                        "no": "None"
                     }
                 },
                 "handrail_height": {
-                    "label": "Handrail Height"
+                    "label": "Handrail Height (Meters)"
                 },
                 "handrail": {
                     "label": "Handrail"
@@ -4586,7 +4578,7 @@
                     "label": "Nearest Building Address"
                 },
                 "maxwidth/physical": {
-                    "label": "Width Limit"
+                    "label": "Width Limit (Meters)"
                 },
                 "maxspeed/hgv": {
                     "label": "Truck Speed Limit",
@@ -4641,7 +4633,7 @@
                     }
                 },
                 "kerb/height": {
-                    "label": "Kerb Height"
+                    "label": "Kerb Height (Meters)"
                 },
                 "junction/ref_oneway": {
                     "label": "Junction Number"
@@ -6628,6 +6620,10 @@
                 "railway/train_wash": {
                     "name": "Train Wash",
                     "terms": "clean,wash"
+                },
+                "railway/train_station_entrance": {
+                    "name": "Subway Entrance",
+                    "terms": "metro,transit"
                 },
                 "railway/switch": {
                     "name": "Railway Switch",
