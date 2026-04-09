@@ -1,7 +1,7 @@
 {
     "icon": "temaki-kerb-unspecified",
     "fields": [
-        "kerb/kerb_barrier",
+        "kerb",
         "tactile_paving",
         "wheelchair",
         "two_sided"

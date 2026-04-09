@@ -1,6 +1,6 @@
 {
     "key": "kerb:height",
-    "type": "roadheight",
-    "snake_case": false,
-    "label": "Kerb Height"
+    "type": "number",
+    "minValue": 0,
+    "label": "Kerb Height (Meters)"
 }

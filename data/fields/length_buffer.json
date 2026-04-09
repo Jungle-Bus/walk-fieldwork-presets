@@ -1,6 +1,6 @@
 {
     "key": "length:buffer",
-    "type": "roadheight",
-    "snake_case": false,
-    "label": "Extra length"
+    "type": "number",
+    "minValue": 0,
+    "label": "Extra length (Meters)"
 }

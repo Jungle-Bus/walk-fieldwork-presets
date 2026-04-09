@@ -1,29 +1,14 @@
 {
     "key": "handrail",
-    "keys": [
-        "handrail:left",
-        "handrail:right"
-    ],
-    "reference": {
-        "key": "handrail"
-    },
-    "type": "directionalCombo",
     "label": "Handrail",
-    "placeholder": "Yes, No",
+    "type": "combo",
     "strings": {
-        "types": {
-            "handrail:left": "Left Side",
-            "handrail:right": "Right Side"
-        },
         "options": {
-            "yes": {
-                "title": "Yes",
-                "description": "There is a handrail"
-            },
-            "no": {
-                "title": "No",
-                "description": "No handrail"
-            }
+            "rigth": "Rigth only",
+            "left": "Left only",
+            "both": "Both sides",
+            "center": "Only one handrail, on the center of the stairs",
+            "no": "None"
         }
     },
     "autoSuggestions": false

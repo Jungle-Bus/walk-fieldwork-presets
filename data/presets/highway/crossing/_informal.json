@@ -6,7 +6,7 @@
     ],
     "moreFields": [
         "{highway/crossing}",
-        "kerb"
+        "kerb/kerb_barrier"
     ],
     "geometry": [
         "vertex"
