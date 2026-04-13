@@ -2226,12 +2226,12 @@
                     "terms": "icône,symbole,photo,photographie,image"
                 },
                 "incline": {
-                    "label": "Pente"
+                    "label": "Sens de l'Inclinaison"
                 },
                 "incline_steps": {
                     "options": {
-                        "down": "Descendante",
-                        "up": "Montante"
+                        "down": "Ça descend",
+                        "up": "Ça monte"
                     }
                 },
                 "indoor": {
@@ -4331,7 +4331,7 @@
                     }
                 },
                 "tactile_paving": {
-                    "label": "Surface podotactile"
+                    "label": "Bande d'Éveil à la Vigilance"
                 },
                 "takeaway": {
                     "label": "À emporter",
@@ -6076,7 +6076,7 @@
                     "terms": "bureau de vote,vote,élections,démocratie,démocratique"
                 },
                 "amenity/post_box": {
-                    "name": "Boîte aux lettres (envoi)",
+                    "name": "Boîte aux lettres",
                     "terms": "boîte aux lettres (envoi),boîte aux lettres d'expédition"
                 },
                 "amenity/post_depot": {
@@ -6722,7 +6722,7 @@
                     "terms": "barrière,portail,accès,fil,fer,barré,barbelé"
                 },
                 "barrier/handrail": {
-                    "name": "Rampe, Main courante"
+                    "name": "Main courante"
                 },
                 "barrier/hedge": {
                     "name": "Haie"
