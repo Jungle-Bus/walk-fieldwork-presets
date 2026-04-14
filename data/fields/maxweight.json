@@ -1,6 +1,8 @@
 {
     "key": "maxweight",
-    "type": "combo",
-    "label": "Weight Limit",
+    "type": "number",
+    "minValue": 0,
+    "label": "Weight Limit (with units)",
+    "placeholder": "800 kg, 1.2 T",
     "snake_case": false
 }

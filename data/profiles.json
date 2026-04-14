@@ -19,6 +19,7 @@
                 "man_made/street_cabinet/*",
                 "man_made/utility_pole",
                 "natural/tree",
+                "natural/tree/*",
                 "public_transport/*",
                 "railway/subway_entrance",
                 "railway/train_station_entrance"
@@ -795,6 +796,16 @@
                 ]
             },
             "natural/tree": {
+                "required": [
+                    "obstacle_wheelchair",
+                    "maxwidth/physical",
+                    "obstacle_blind",
+                    "min_height_obstacle",
+                    "diameter",
+                    "panoramax"
+                ]
+            },
+            "natural/tree/*": {
                 "required": [
                     "obstacle_wheelchair",
                     "maxwidth/physical",

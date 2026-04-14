@@ -357,7 +357,7 @@
                     }
                 },
                 "diameter": {
-                    "label": "Diamètre",
+                    "label": "Diamètre (en précisant l'unité)",
                     "placeholder": "5 mm, 10 cm, 15 in…"
                 },
                 "diameter_crown": {
@@ -391,7 +391,15 @@
                     "terms": "chiens,animaux,canin"
                 },
                 "door": {
-                    "label": "Porte"
+                    "label": "Porte",
+                    "options": {
+                        "hinged": "porte battante",
+                        "sliding": "porte coulissante",
+                        "revolving": "porte tambour",
+                        "folding": "porte accordéon",
+                        "yes": "porte non spécifiée",
+                        "no": "pas de porte"
+                    }
                 },
                 "door/width": {
                     "label": "Largeur de la porte (mètres)"
@@ -545,7 +553,7 @@
                     }
                 },
                 "kerb/height": {
-                    "label": "Hauteur de la Bordure de Trottoir (mètres)"
+                    "label": "Hauteur de la Marche (mètres)"
                 },
                 "kerb/kerb_barrier": {
                     "label": "Type"
@@ -618,7 +626,7 @@
                         "bronze": "Bronze",
                         "concrete": "Béton",
                         "dry_stone": "Pierre sèche",
-                        "glass": "Verre",
+                        "glass": "Verre / Matériau transparent",
                         "granite": "Granit",
                         "iron": "Fer",
                         "limestone": "Calcaire",
@@ -644,7 +652,8 @@
                     "placeholder": "30, 50, 70, 90, etc."
                 },
                 "maxweight": {
-                    "label": "Charge maximale"
+                    "label": "« Poids » max (en précisant l'unité)",
+                    "placeholder": "800 kg, 1.2 T"
                 },
                 "maxwidth": {
                     "label": "Largeur maximale"
@@ -1324,7 +1333,7 @@
                         "-8%": "très pentu (-8%)",
                         "-12%": "vraiment très pentu (-12%)"
                     },
-                    "label": "Incline"
+                    "label": "Pente"
                 },
                 "incline_across_percentage": {
                     "label": "Pente Latérale",

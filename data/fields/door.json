@@ -1,5 +1,15 @@
 {
     "key": "door",
     "type": "combo",
+    "strings": {
+        "options": {
+            "hinged": "hinged",
+            "sliding": "sliding",
+            "revolving": "revolving",
+            "folding": "folding",
+            "yes": "unspecified",
+            "no": "no door"
+        }
+    },
     "label": "Door"
 }
