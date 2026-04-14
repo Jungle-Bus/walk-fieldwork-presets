@@ -602,7 +602,7 @@
                     "label": "Weight Limit"
                 },
                 "maxweight": {
-                    "label": "Weight Limit"
+                    "label": "Weight Limit (with units)"
                 },
                 "maxspeed": {
                     "label": "Speed Limit",
@@ -833,33 +833,21 @@
                             "title": "Allowed",
                             "description": "Access allowed by law; a right of way"
                         },
-                        "no": {
-                            "title": "Prohibited",
-                            "description": "Access not allowed to the general public"
+                        "designated": {
+                            "title": "Designated",
+                            "description": "Access allowed according to signs or specific local laws"
                         },
                         "permissive": {
                             "title": "Permissive",
                             "description": "Access allowed until such time as the owner revokes the permission"
                         },
-                        "private": {
-                            "title": "Private",
-                            "description": "Access allowed only with permission of the owner on an individual basis"
-                        },
-                        "designated": {
-                            "title": "Designated",
-                            "description": "Access allowed according to signs or specific local laws"
-                        },
                         "destination": {
                             "title": "Destination",
                             "description": "Access allowed only to reach a destination"
                         },
-                        "customers": {
-                            "title": "Customers",
-                            "description": "Restricted to customers at the destination"
-                        },
-                        "permit": {
-                            "title": "Permit",
-                            "description": "Access allowed only with a valid permit or license"
+                        "no": {
+                            "title": "Prohibited",
+                            "description": "Access not allowed to the general public"
                         },
                         "unknown": {
                             "title": "Unknown",
@@ -933,7 +921,15 @@
                     "label": "Drive-Through"
                 },
                 "door": {
-                    "label": "Door"
+                    "label": "Door",
+                    "options": {
+                        "hinged": "hinged",
+                        "sliding": "sliding",
+                        "revolving": "revolving",
+                        "folding": "folding",
+                        "yes": "unspecified",
+                        "no": "no door"
+                    }
                 },
                 "dog": {
                     "label": "Dogs",
@@ -966,8 +962,8 @@
                     "placeholder": "4 m, 9', …"
                 },
                 "diameter": {
-                    "label": "Diameter",
-                    "placeholder": "5 mm, 10 cm, 15 in…"
+                    "label": "Diameter (with units)",
+                    "placeholder": "0.5 mm, 10 cm, 15 in…"
                 },
                 "departures_board": {
                     "label": "Departures/Arrivals Board",
@@ -5220,7 +5216,9 @@
                     "name": "Traffic Signals",
                     "terms": "light,stoplight,traffic light"
                 },
-                "highway/traffic_sign": {},
+                "highway/traffic_sign": {
+                    "name": "Traffic Sign"
+                },
                 "highway/traffic_mirror": {
                     "name": "Traffic Mirror",
                     "terms": "blind spot,convex,corner,curved,roadside,round,safety,sphere,visibility"
@@ -7431,7 +7429,6 @@
                     "name": "Irish Pub",
                     "terms": "irish bar"
                 },
-                "amenity/post_box/post_box-US": {},
                 "amenity/place_of_worship/taoist": {
                     "name": "Taoist Temple",
                     "terms": "daoist,monastery,temple"

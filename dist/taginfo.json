@@ -16489,7 +16489,7 @@
         },
         {
             "key": "maxweight",
-            "description": "🄵 Weight Limit"
+            "description": "🄵 Weight Limit, 🄵 Weight Limit (with units)"
         },
         {
             "key": "maxspeed",
@@ -16923,18 +16923,8 @@
         },
         {
             "key": "foot",
-            "value": "no",
-            "description": "🄵🅅 Foot access: `no`, 🄵🅅 Allowed Access: `no`"
-        },
-        {
-            "key": "foot",
             "value": "permissive",
             "description": "🄵🅅 Foot access: `permissive`, 🄵🅅 Allowed Access: `permissive`"
-        },
-        {
-            "key": "foot",
-            "value": "private",
-            "description": "🄵🅅 Foot access: `private`, 🄵🅅 Allowed Access: `private`"
         },
         {
             "key": "foot",
@@ -16943,13 +16933,8 @@
         },
         {
             "key": "foot",
-            "value": "customers",
-            "description": "🄵🅅 Foot access: `customers`, 🄵🅅 Allowed Access: `customers`"
-        },
-        {
-            "key": "foot",
-            "value": "permit",
-            "description": "🄵🅅 Foot access: `permit`, 🄵🅅 Allowed Access: `permit`"
+            "value": "no",
+            "description": "🄵🅅 Foot access: `no`, 🄵🅅 Allowed Access: `no`"
         },
         {
             "key": "foot",
@@ -17070,6 +17055,36 @@
             "description": "🄵 Door"
         },
         {
+            "key": "door",
+            "value": "hinged",
+            "description": "🄵🅅 Door: hinged"
+        },
+        {
+            "key": "door",
+            "value": "sliding",
+            "description": "🄵🅅 Door: sliding"
+        },
+        {
+            "key": "door",
+            "value": "revolving",
+            "description": "🄵🅅 Door: revolving"
+        },
+        {
+            "key": "door",
+            "value": "folding",
+            "description": "🄵🅅 Door: folding"
+        },
+        {
+            "key": "door",
+            "value": "yes",
+            "description": "🄵🅅 Door: unspecified"
+        },
+        {
+            "key": "door",
+            "value": "no",
+            "description": "🄵🅅 Door: no door"
+        },
+        {
             "key": "dog",
             "description": "🄵 Dogs"
         },
@@ -17118,7 +17133,7 @@
         },
         {
             "key": "diameter",
-            "description": "🄵 Diameter"
+            "description": "🄵 Diameter (with units)"
         },
         {
             "key": "departures_board",
@@ -17455,8 +17470,23 @@
         },
         {
             "key": "foot",
+            "value": "private",
+            "description": "🄵🅅 Allowed Access: `private`"
+        },
+        {
+            "key": "foot",
+            "value": "customers",
+            "description": "🄵🅅 Allowed Access: `customers`"
+        },
+        {
+            "key": "foot",
             "value": "dismount",
             "description": "🄵🅅 Allowed Access: `dismount`"
+        },
+        {
+            "key": "foot",
+            "value": "permit",
+            "description": "🄵🅅 Allowed Access: `permit`"
         },
         {
             "key": "motor_vehicle",

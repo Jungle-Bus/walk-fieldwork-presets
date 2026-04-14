@@ -15403,8 +15403,7 @@
     ],
     "tags": {
       "highway": "traffic_sign"
-    },
-    "name": "{traffic_sign}"
+    }
   },
   "highway/traffic_mirror": {
     "icon": "maki-circle-stroked",
@@ -22855,11 +22854,6 @@
     ],
     "tags": {
       "amenity": "post_box"
-    },
-    "locationSet": {
-      "exclude": [
-        "us"
-      ]
     }
   },
   "amenity/polling_station": {
@@ -25713,25 +25707,6 @@
         "ie"
       ]
     },
-    "readOnly": true
-  },
-  "amenity/post_box/post_box-US": {
-    "icon": "temaki-post_box",
-    "locationSet": {
-      "include": [
-        "us"
-      ]
-    },
-    "fields": [],
-    "moreFields": [],
-    "geometry": [
-      "point",
-      "vertex"
-    ],
-    "tags": {
-      "amenity": "post_box"
-    },
-    "name": "{amenity/post_box}",
     "readOnly": true
   },
   "amenity/place_of_worship/taoist": {

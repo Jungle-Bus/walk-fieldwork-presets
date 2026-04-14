@@ -683,7 +683,8 @@
     },
     "maxweight": {
         "key": "maxweight",
-        "type": "combo",
+        "type": "number",
+        "minValue": 0,
         "snake_case": false
     },
     "maxspeed": {
@@ -962,13 +963,10 @@
         "type": "combo",
         "options": [
             "yes",
-            "no",
-            "permissive",
-            "private",
             "designated",
+            "permissive",
             "destination",
-            "customers",
-            "permit",
+            "no",
             "unknown"
         ]
     },
@@ -1049,7 +1047,15 @@
     },
     "door": {
         "key": "door",
-        "type": "combo"
+        "type": "combo",
+        "options": [
+            "hinged",
+            "sliding",
+            "revolving",
+            "folding",
+            "yes",
+            "no"
+        ]
     },
     "dog": {
         "key": "dog",
@@ -1097,7 +1103,8 @@
     },
     "diameter": {
         "key": "diameter",
-        "type": "combo",
+        "minValue": 0,
+        "type": "number",
         "snake_case": false
     },
     "departures_board": {
