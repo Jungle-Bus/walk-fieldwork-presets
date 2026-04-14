@@ -9518,7 +9518,7 @@
         {
             "key": "crossing",
             "value": "marked",
-            "description": "🄿 Marked Cycle & Foot Crossing (unsearchable), 🄿 Marked Cycle Crossing (unsearchable), 🄿 Marked Crossing (unsearchable)",
+            "description": "🄿 Cycle & Foot Crossing (unsearchable), 🄿 Marked Crossing (unsearchable)",
             "object_types": [
                 "way"
             ],
@@ -9602,6 +9602,15 @@
                 "way"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-motorcycle.svg"
+        },
+        {
+            "key": "foot",
+            "value": "yes",
+            "description": "🄿 Cycle & Foot Path, 🄵🅅 Foot access: `yes`, 🄵🅅 Allowed Access: `yes`",
+            "object_types": [
+                "way"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/pedestrian_and_cyclist.svg"
         },
         {
             "key": "foot",
@@ -16915,11 +16924,6 @@
         {
             "key": "foot",
             "description": "🄵 Foot access, 🄵 Allowed Access"
-        },
-        {
-            "key": "foot",
-            "value": "yes",
-            "description": "🄵🅅 Foot access: `yes`, 🄵🅅 Allowed Access: `yes`"
         },
         {
             "key": "foot",

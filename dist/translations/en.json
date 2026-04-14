@@ -5444,7 +5444,9 @@
                     "name": "Karting Racetrack",
                     "terms": "carting,go carts,go karts,go-karts,gokarts,kart racing,karting track,motorsports,shifter karts,superkarts"
                 },
-                "highway/path/traffic_island_shared": {},
+                "highway/path/traffic_island_shared": {
+                    "name": "Cycle & Foot Refuge Island"
+                },
                 "highway/path/informal": {
                     "name": "Informal Path",
                     "terms": "bootleg trail,cow path,desire line,desire path,desireline,desirepath,elephant path,game trail,goat track,herd path,pig trail,shortcut,social trail,use trail"
@@ -5453,11 +5455,15 @@
                     "name": "Boardwalk",
                     "terms": "pier,plank walkway,wooden raised foot path"
                 },
-                "highway/path/bicycle_foot": {},
+                "highway/path/bicycle_foot": {
+                    "name": "Cycle & Foot Path"
+                },
                 "highway/path/crossing": {
                     "name": "Cycle & Foot Crossing"
                 },
-                "highway/path/crossing/bicycle_foot": {},
+                "highway/path/crossing/bicycle_foot": {
+                    "name": "Cycle & Foot Crossing"
+                },
                 "highway/path/crossing/unmarked": {
                     "name": "Unmarked Cycle & Foot Crossing"
                 },
@@ -5467,8 +5473,12 @@
                 "highway/path/crossing/traffic_signals": {
                     "name": "Cycle & Foot Crossing With Pedestrian Signals"
                 },
-                "highway/path/crossing/marked": {},
-                "highway/path/crossing/informal": {},
+                "highway/path/crossing/marked": {
+                    "name": "Cycle & Foot Crossing"
+                },
+                "highway/path/crossing/informal": {
+                    "name": "Informal Crossing"
+                },
                 "highway/footway/traffic_island": {
                     "name": "Refuge Island",
                     "aliases": "Crosswalk Island\nTraffic Island\nPedestrian Island",
@@ -5512,6 +5522,10 @@
                 "highway/cycleway/moped_link-NL": {
                     "name": "Moped Link"
                 },
+                "highway/cycleway/bicycle_foot_yes": {
+                    "name": "Cycle & Foot Path",
+                    "terms": "bicycle and foot path,bike and pedestrian path,green way,greenway,mixed-use trail,multi-use path,multi-use trail,rail trail,segregated trail,shared path,shared use path"
+                },
                 "highway/cycleway/bicycle_foot": {
                     "name": "Cycle & Foot Path",
                     "terms": "bicycle and foot path,bike and pedestrian path,green way,greenway,mixed-use trail,multi-use path,multi-use trail,rail trail,segregated trail,shared path,shared use path"
@@ -5535,7 +5549,9 @@
                     "name": "Cycle & Foot Crossing",
                     "terms": "bicycle and foot crosswalk,bike and pedestrian crossing,cycleway,cycling,cyclist"
                 },
-                "highway/cycleway/crossing/marked": {},
+                "highway/cycleway/crossing/marked": {
+                    "name": "Cycle & Foot Crossing"
+                },
                 "highway/crossing/unmarked": {
                     "name": "Unmarked Crossing",
                     "terms": "unmarked crosswalk,unmarked foot path crossing,unmarked pedestrian crossing"
