@@ -9959,8 +9959,28 @@
   },
   "natural/tree/needleleaved": {
     "icon": "roentgen-needleleaved_tree",
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "diameter",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "obstacle_blind",
+      "min_height_obstacle"
+    ],
+    "moreFields": [
+      "leaf_type_singular",
+      "leaf_cycle_singular",
+      "leaf_type_singular",
+      "leaf_cycle_singular",
+      "denotation",
+      "height",
+      "circumference",
+      "genus",
+      "species",
+      "species/wikidata",
+      "taxon",
+      "diameter_crown",
+      "ref"
+    ],
     "geometry": [
       "point",
       "vertex"
@@ -9969,13 +9989,32 @@
       "natural": "tree",
       "leaf_type": "needleleaved"
     },
-    "searchable": false,
-    "readOnly": true
+    "searchable": false
   },
   "natural/tree/broadleaved": {
     "icon": "maki-park",
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "diameter",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "obstacle_blind",
+      "min_height_obstacle"
+    ],
+    "moreFields": [
+      "leaf_type_singular",
+      "leaf_cycle_singular",
+      "leaf_type_singular",
+      "leaf_cycle_singular",
+      "denotation",
+      "height",
+      "circumference",
+      "genus",
+      "species",
+      "species/wikidata",
+      "taxon",
+      "diameter_crown",
+      "ref"
+    ],
     "geometry": [
       "point",
       "vertex"
@@ -9984,13 +10023,34 @@
       "natural": "tree",
       "leaf_type": "broadleaved"
     },
-    "searchable": false,
-    "readOnly": true
+    "searchable": false
   },
   "natural/tree/needleleaved/evergreen": {
     "icon": "roentgen-needleleaved_tree",
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "diameter",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "obstacle_blind",
+      "min_height_obstacle"
+    ],
+    "moreFields": [
+      "leaf_type_singular",
+      "leaf_cycle_singular",
+      "leaf_type_singular",
+      "leaf_cycle_singular",
+      "leaf_type_singular",
+      "leaf_cycle_singular",
+      "denotation",
+      "height",
+      "circumference",
+      "genus",
+      "species",
+      "species/wikidata",
+      "taxon",
+      "diameter_crown",
+      "ref"
+    ],
     "geometry": [
       "point",
       "vertex"
@@ -9999,13 +10059,34 @@
       "natural": "tree",
       "leaf_type": "needleleaved",
       "leaf_cycle": "evergreen"
-    },
-    "readOnly": true
+    }
   },
   "natural/tree/needleleaved/deciduous": {
     "icon": "roentgen-needleleaved_tree",
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "diameter",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "obstacle_blind",
+      "min_height_obstacle"
+    ],
+    "moreFields": [
+      "leaf_type_singular",
+      "leaf_cycle_singular",
+      "leaf_type_singular",
+      "leaf_cycle_singular",
+      "leaf_type_singular",
+      "leaf_cycle_singular",
+      "denotation",
+      "height",
+      "circumference",
+      "genus",
+      "species",
+      "species/wikidata",
+      "taxon",
+      "diameter_crown",
+      "ref"
+    ],
     "geometry": [
       "point",
       "vertex"
@@ -10015,13 +10096,34 @@
       "leaf_type": "needleleaved",
       "leaf_cycle": "deciduous"
     },
-    "matchScore": 0.99,
-    "readOnly": true
+    "matchScore": 0.99
   },
   "natural/tree/broadleaved/evergreen": {
     "icon": "maki-park",
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "diameter",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "obstacle_blind",
+      "min_height_obstacle"
+    ],
+    "moreFields": [
+      "leaf_type_singular",
+      "leaf_cycle_singular",
+      "leaf_type_singular",
+      "leaf_cycle_singular",
+      "leaf_type_singular",
+      "leaf_cycle_singular",
+      "denotation",
+      "height",
+      "circumference",
+      "genus",
+      "species",
+      "species/wikidata",
+      "taxon",
+      "diameter_crown",
+      "ref"
+    ],
     "geometry": [
       "point",
       "vertex"
@@ -10031,13 +10133,34 @@
       "leaf_type": "broadleaved",
       "leaf_cycle": "evergreen"
     },
-    "matchScore": 0.99,
-    "readOnly": true
+    "matchScore": 0.99
   },
   "natural/tree/broadleaved/deciduous": {
     "icon": "maki-park",
-    "fields": [],
-    "moreFields": [],
+    "fields": [
+      "diameter",
+      "obstacle_wheelchair",
+      "maxwidth/physical",
+      "obstacle_blind",
+      "min_height_obstacle"
+    ],
+    "moreFields": [
+      "leaf_type_singular",
+      "leaf_cycle_singular",
+      "leaf_type_singular",
+      "leaf_cycle_singular",
+      "leaf_type_singular",
+      "leaf_cycle_singular",
+      "denotation",
+      "height",
+      "circumference",
+      "genus",
+      "species",
+      "species/wikidata",
+      "taxon",
+      "diameter_crown",
+      "ref"
+    ],
     "geometry": [
       "point",
       "vertex"
@@ -10046,8 +10169,7 @@
       "natural": "tree",
       "leaf_type": "broadleaved",
       "leaf_cycle": "deciduous"
-    },
-    "readOnly": true
+    }
   },
   "military/trench": {
     "icon": "temaki-trench",

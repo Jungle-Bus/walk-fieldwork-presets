@@ -397,7 +397,7 @@
                         "sliding": "porte coulissante",
                         "revolving": "porte tambour",
                         "folding": "porte accordéon",
-                        "yes": "non spécifié",
+                        "yes": "porte non spécifiée",
                         "no": "pas de porte"
                     }
                 },
@@ -553,7 +553,7 @@
                     }
                 },
                 "kerb/height": {
-                    "label": "Hauteur de la Bordure de Trottoir (mètres)"
+                    "label": "Hauteur de la Marche (mètres)"
                 },
                 "kerb/kerb_barrier": {
                     "label": "Type"
@@ -652,7 +652,8 @@
                     "placeholder": "30, 50, 70, 90, etc."
                 },
                 "maxweight": {
-                    "label": "« Poids » max (en précisant l'unité)"
+                    "label": "« Poids » max (en précisant l'unité)",
+                    "placeholder": "800 kg, 1.2 T"
                 },
                 "maxwidth": {
                     "label": "Largeur maximale"
@@ -1332,7 +1333,7 @@
                         "-8%": "très pentu (-8%)",
                         "-12%": "vraiment très pentu (-12%)"
                     },
-                    "label": "Incline"
+                    "label": "Pente"
                 },
                 "incline_across_percentage": {
                     "label": "Pente Latérale",
