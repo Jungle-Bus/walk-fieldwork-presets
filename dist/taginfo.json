@@ -9293,6 +9293,16 @@
             "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-compress-arrows-alt.svg"
         },
         {
+            "key": "elevator:type",
+            "value": "cabin_free",
+            "description": "🄿 Small Elevator",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/elevator.svg"
+        },
+        {
             "key": "highway",
             "value": "elevator",
             "description": "🄿 Inclined Elevator, 🄿 Elevator",

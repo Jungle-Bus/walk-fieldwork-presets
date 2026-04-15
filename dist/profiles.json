@@ -562,6 +562,21 @@
           "level_semi"
         ]
       },
+      "highway/elevator_without_cabin": {
+        "required": [
+          "door/width",
+          "width",
+          "length",
+          "announcement",
+          "audio_loop",
+          "emergency_button",
+          "automatic_door",
+          "tactile_paving",
+          "tactile_paving_condition",
+          "indoor",
+          "level_semi"
+        ]
+      },
       "highway/footway": {
         "required": [
           "surface",

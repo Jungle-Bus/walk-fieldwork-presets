@@ -16195,6 +16195,55 @@
     "readOnly": true,
     "moreFields": []
   },
+  "highway/elevator_without_cabin": {
+    "icon": "temaki-elevator",
+    "fields": [
+      "level_semi",
+      "indoor",
+      "door/width",
+      "width",
+      "length",
+      "announcement",
+      "audio_loop",
+      "emergency_button",
+      "automatic_door",
+      "tactile_paving",
+      "tactile_paving_condition"
+    ],
+    "moreFields": [
+      "ref",
+      "operator",
+      "access_simple",
+      "wheelchair",
+      "maxweight",
+      "elevator_mirror",
+      "lit",
+      "handrail_side",
+      "handrail_height",
+      "wheelchair_turning_cycle_simple",
+      "wheelchair_turning_cycle_simple_diameter",
+      "maxweight",
+      "smoothness_simple",
+      "supervised",
+      "dog",
+      "manufacturer",
+      "maxheight",
+      "ref",
+      "operator",
+      "access_simple",
+      "wheelchair",
+      "opening_hours"
+    ],
+    "geometry": [
+      "vertex",
+      "point",
+      "area"
+    ],
+    "tags": {
+      "highway": "elevator",
+      "elevator:type": "cabin_free"
+    }
+  },
   "highway/elevator_line": {
     "icon": "temaki-elevator",
     "fields": [

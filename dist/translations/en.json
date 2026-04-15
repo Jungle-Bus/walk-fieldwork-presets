@@ -5383,6 +5383,10 @@
                     "aliases": "Emergency Location Marker\nRescue Point",
                     "terms": "elm,emergency,emergency marker,rescue"
                 },
+                "highway/elevator_without_cabin": {
+                    "name": "Small Elevator",
+                    "terms": "lift"
+                },
                 "highway/elevator_line": {
                     "name": "Inclined Elevator",
                     "aliases": "Inclined Lift",

@@ -7938,6 +7938,10 @@
                 },
                 "amenity/reception_desk": {
                     "name": "Accueil"
+                },
+                "highway/elevator_without_cabin": {
+                    "name": "Élévateur",
+                    "terms": "lift"
                 }
             }
         }
