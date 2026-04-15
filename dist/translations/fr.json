@@ -518,7 +518,7 @@
                     "label": "Sens de l'Inclinaison"
                 },
                 "indoor": {
-                    "label": "Intérieur"
+                    "label": "En intérieur"
                 },
                 "informal": {
                     "label": "Informel"
@@ -1192,7 +1192,7 @@
                         "limited": "Limité",
                         "no": "Non",
                         "yes": "Oui",
-                        "designated": "Designated"
+                        "designated": "À destination exclusive des UFR"
                     },
                     "terms": "accès en fauteuil roulant,fauteuil roulant,handicapé"
                 },
@@ -7937,7 +7937,7 @@
                     "terms": "gallery,hall,hallway,indoor,passage,passageway"
                 },
                 "amenity/reception_desk": {
-                    "name": "Reception Desk"
+                    "name": "Accueil"
                 }
             }
         }

@@ -670,7 +670,7 @@
                     "label": "Levels",
                     "terms": "building floors,decks,storeys,stories,storys",
                     "options": {
-                        "0": "0 (Rez-de-chaussée)",
+                        "0": "0",
                         "1": "1",
                         "2": "2",
                         "-2": "-2",
@@ -681,7 +681,7 @@
                     "label": "Level",
                     "terms": "building floor,deck,storey,story",
                     "options": {
-                        "0": "0 (Rez-de-chaussée)",
+                        "0": "0",
                         "1": "1",
                         "2": "2",
                         "-2": "-2",

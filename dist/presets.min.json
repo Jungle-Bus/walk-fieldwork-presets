@@ -16220,7 +16220,7 @@
       "maxheight",
       "ref",
       "operator",
-      "level_semi",
+      "indoor",
       "access_simple",
       "wheelchair",
       "opening_hours",
@@ -16247,7 +16247,7 @@
     "icon": "temaki-elevator",
     "fields": [
       "level_semi",
-      "level_semi",
+      "indoor",
       "door/width",
       "width",
       "length",
