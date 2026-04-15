@@ -16370,6 +16370,7 @@
     "icon": "temaki-pedestrian_walled",
     "fields": [
       "width",
+      "level",
       "smoothness_simple",
       "lit",
       "incline_percentage",
@@ -16380,7 +16381,6 @@
     ],
     "moreFields": [
       "name",
-      "level",
       "access_simple",
       "wheelchair",
       "maxheight",
@@ -17422,6 +17422,7 @@
     "icon": "temaki-pedestrian_walled",
     "fields": [
       "width",
+      "level",
       "smoothness_simple",
       "lit",
       "incline_percentage",
@@ -17432,7 +17433,6 @@
     ],
     "moreFields": [
       "name",
-      "level",
       "access_simple",
       "wheelchair",
       "maxheight",
