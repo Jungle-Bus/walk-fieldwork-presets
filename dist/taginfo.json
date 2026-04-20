@@ -7560,7 +7560,7 @@
         {
             "key": "indoor",
             "value": "yes",
-            "description": "🄿 Indoor Playground",
+            "description": "🄿 Indoor Playground, 🄿 Indoor Footway",
             "object_types": [
                 "area",
                 "node"
@@ -9293,6 +9293,16 @@
             "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-compress-arrows-alt.svg"
         },
         {
+            "key": "elevator:type",
+            "value": "cabin_free",
+            "description": "🄿 Small Elevator",
+            "object_types": [
+                "node",
+                "area"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/elevator.svg"
+        },
+        {
             "key": "highway",
             "value": "elevator",
             "description": "🄿 Inclined Elevator, 🄿 Elevator",
@@ -9518,7 +9528,7 @@
         {
             "key": "crossing",
             "value": "marked",
-            "description": "🄿 Marked Cycle & Foot Crossing (unsearchable), 🄿 Marked Cycle Crossing (unsearchable), 🄿 Marked Crossing (unsearchable)",
+            "description": "🄿 Cycle & Foot Crossing (unsearchable), 🄿 Marked Crossing (unsearchable)",
             "object_types": [
                 "way"
             ],
@@ -9602,6 +9612,15 @@
                 "way"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/fontawesome/fas-motorcycle.svg"
+        },
+        {
+            "key": "foot",
+            "value": "yes",
+            "description": "🄿 Cycle & Foot Path, 🄵🅅 Foot access: `yes`, 🄵🅅 Allowed Access: `yes`",
+            "object_types": [
+                "way"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/rapideditor/temaki/icons/pedestrian_and_cyclist.svg"
         },
         {
             "key": "foot",
@@ -12523,6 +12542,15 @@
                 "area"
             ],
             "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/recycling.svg"
+        },
+        {
+            "key": "amenity",
+            "value": "reception_desk",
+            "description": "🄿 Reception Desk",
+            "object_types": [
+                "node"
+            ],
+            "icon_url": "https://cdn.jsdelivr.net/gh/mapbox/maki/icons/information.svg"
         },
         {
             "key": "amenity",
@@ -15641,6 +15669,11 @@
         },
         {
             "key": "tactile_warning",
+            "value": "bar",
+            "description": "🄵🅅 Walking stick detectable warning: Low bar, at 40cm max"
+        },
+        {
+            "key": "tactile_warning",
             "value": "pole",
             "description": "🄵🅅 Walking stick detectable warning: Pole on floor, at 40cm max"
         },
@@ -15683,31 +15716,38 @@
             "description": "🄵 Tactile Paving Defects"
         },
         {
-            "key": "tactile_paving:defectscurved",
+            "key": "tactile_paving:defects",
+            "value": "curved",
             "description": "🄵🅅 Tactile Paving Defects: Curved"
         },
         {
-            "key": "tactile_paving:defectsacross",
+            "key": "tactile_paving:defects",
+            "value": "across",
             "description": "🄵🅅 Tactile Paving Defects: Across"
         },
         {
-            "key": "tactile_paving:defectstoo_large",
+            "key": "tactile_paving:defects",
+            "value": "too_large",
             "description": "🄵🅅 Tactile Paving Defects: Too large"
         },
         {
-            "key": "tactile_paving:defectsinsufficient_width",
+            "key": "tactile_paving:defects",
+            "value": "insufficient_width",
             "description": "🄵🅅 Tactile Paving Defects: Insufficient width"
         },
         {
-            "key": "tactile_paving:defectsinsufficient_depth",
+            "key": "tactile_paving:defects",
+            "value": "insufficient_depth",
             "description": "🄵🅅 Tactile Paving Defects: insufficient depth"
         },
         {
-            "key": "tactile_paving:defectsnon_contrasted",
+            "key": "tactile_paving:defects",
+            "value": "non_contrasted",
             "description": "🄵🅅 Tactile Paving Defects: non contrasted"
         },
         {
-            "key": "tactile_paving:defectsnone",
+            "key": "tactile_paving:defects",
+            "value": "none",
             "description": "🄵🅅 Tactile Paving Defects: no defects"
         },
         {
@@ -15750,18 +15790,28 @@
         },
         {
             "key": "surface",
-            "value": "artificial_turf",
-            "description": "🄵🅅 Surface: Artificial Turf"
-        },
-        {
-            "key": "surface",
             "value": "asphalt",
             "description": "🄵🅅 Surface: Asphalt"
         },
         {
             "key": "surface",
-            "value": "clay",
-            "description": "🄵🅅 Surface: Clay"
+            "value": "concrete",
+            "description": "🄵🅅 Surface: Concrete"
+        },
+        {
+            "key": "surface",
+            "value": "grass_paver",
+            "description": "🄵🅅 Surface: Grass Paver"
+        },
+        {
+            "key": "surface",
+            "value": "sett",
+            "description": "🄵🅅 Surface: Sett"
+        },
+        {
+            "key": "surface",
+            "value": "paved",
+            "description": "🄵🅅 Surface: Other Paved, 🄵🅅 Surface: Paved"
         },
         {
             "key": "surface",
@@ -15770,8 +15820,63 @@
         },
         {
             "key": "surface",
-            "value": "concrete",
-            "description": "🄵🅅 Surface: Concrete"
+            "value": "fine_gravel",
+            "description": "🄵🅅 Surface: Fine Gravel"
+        },
+        {
+            "key": "surface",
+            "value": "ground",
+            "description": "🄵🅅 Surface: Ground"
+        },
+        {
+            "key": "surface",
+            "value": "grass",
+            "description": "🄵🅅 Surface: Grass"
+        },
+        {
+            "key": "surface",
+            "value": "unpaved",
+            "description": "🄵🅅 Surface: Other Unpaved, 🄵🅅 Surface: Unpaved"
+        },
+        {
+            "key": "surface",
+            "value": "tiles",
+            "description": "🄵🅅 Surface: Tiles"
+        },
+        {
+            "key": "surface",
+            "value": "metal",
+            "description": "🄵🅅 Surface: Metal"
+        },
+        {
+            "key": "surface",
+            "value": "metal_grid",
+            "description": "🄵🅅 Surface: Metal Grid"
+        },
+        {
+            "key": "surface",
+            "value": "carpet",
+            "description": "🄵🅅 Surface: Carpet"
+        },
+        {
+            "key": "surface",
+            "value": "linoleum",
+            "description": "🄵🅅 Surface: Linoleum"
+        },
+        {
+            "key": "surface",
+            "value": "wood",
+            "description": "🄵🅅 Surface: Wood"
+        },
+        {
+            "key": "surface",
+            "value": "artificial_turf",
+            "description": "🄵🅅 Surface: Artificial Turf"
+        },
+        {
+            "key": "surface",
+            "value": "clay",
+            "description": "🄵🅅 Surface: Clay"
         },
         {
             "key": "surface",
@@ -15790,43 +15895,13 @@
         },
         {
             "key": "surface",
-            "value": "fine_gravel",
-            "description": "🄵🅅 Surface: Fine Gravel"
-        },
-        {
-            "key": "surface",
-            "value": "grass",
-            "description": "🄵🅅 Surface: Grass"
-        },
-        {
-            "key": "surface",
-            "value": "grass_paver",
-            "description": "🄵🅅 Surface: Grass Paver"
-        },
-        {
-            "key": "surface",
             "value": "gravel",
             "description": "🄵🅅 Surface: Gravel"
         },
         {
             "key": "surface",
-            "value": "ground",
-            "description": "🄵🅅 Surface: Ground"
-        },
-        {
-            "key": "surface",
-            "value": "metal",
-            "description": "🄵🅅 Surface: Metal"
-        },
-        {
-            "key": "surface",
             "value": "mud",
             "description": "🄵🅅 Surface: Persistently Muddy"
-        },
-        {
-            "key": "surface",
-            "value": "paved",
-            "description": "🄵🅅 Surface: Paved"
         },
         {
             "key": "surface",
@@ -15850,11 +15925,6 @@
         },
         {
             "key": "surface",
-            "value": "sett",
-            "description": "🄵🅅 Surface: Sett"
-        },
-        {
-            "key": "surface",
             "value": "tartan",
             "description": "🄵🅅 Surface: Tartan"
         },
@@ -15862,16 +15932,6 @@
             "key": "surface",
             "value": "unhewn_cobblestone",
             "description": "🄵🅅 Surface: Cobblestone (uncut, rounded stones)"
-        },
-        {
-            "key": "surface",
-            "value": "unpaved",
-            "description": "🄵🅅 Surface: Unpaved"
-        },
-        {
-            "key": "surface",
-            "value": "wood",
-            "description": "🄵🅅 Surface: Wood"
         },
         {
             "key": "surface",
@@ -16489,7 +16549,7 @@
         },
         {
             "key": "maxweight",
-            "description": "🄵 Weight Limit"
+            "description": "🄵 Weight Limit, 🄵 Weight Limit (with units)"
         },
         {
             "key": "maxspeed",
@@ -16505,108 +16565,13 @@
         },
         {
             "key": "material",
-            "value": "adobe",
-            "description": "🄵🅅 Material: Adobe"
-        },
-        {
-            "key": "material",
-            "value": "aluminium",
-            "description": "🄵🅅 Material: Aluminum"
-        },
-        {
-            "key": "material",
-            "value": "brass",
-            "description": "🄵🅅 Material: Brass"
-        },
-        {
-            "key": "material",
-            "value": "brick",
-            "description": "🄵🅅 Material: Brick"
-        },
-        {
-            "key": "material",
-            "value": "bronze",
-            "description": "🄵🅅 Material: Bronze"
-        },
-        {
-            "key": "material",
-            "value": "concrete",
-            "description": "🄵🅅 Material: Concrete"
-        },
-        {
-            "key": "material",
-            "value": "dry_stone",
-            "description": "🄵🅅 Material: Dry Stone"
-        },
-        {
-            "key": "material",
             "value": "glass",
             "description": "🄵🅅 Material: Glass"
         },
         {
             "key": "material",
-            "value": "granite",
-            "description": "🄵🅅 Material: Granite"
-        },
-        {
-            "key": "material",
-            "value": "iron",
-            "description": "🄵🅅 Material: Iron"
-        },
-        {
-            "key": "material",
-            "value": "limestone",
-            "description": "🄵🅅 Material: Limestone"
-        },
-        {
-            "key": "material",
-            "value": "marble",
-            "description": "🄵🅅 Material: Marble"
-        },
-        {
-            "key": "material",
             "value": "metal",
             "description": "🄵🅅 Material: Metal"
-        },
-        {
-            "key": "material",
-            "value": "plastic",
-            "description": "🄵🅅 Material: Plastic"
-        },
-        {
-            "key": "material",
-            "value": "reinforced_concrete",
-            "description": "🄵🅅 Material: Reinforced Concrete"
-        },
-        {
-            "key": "material",
-            "value": "rock",
-            "description": "🄵🅅 Material: Rock"
-        },
-        {
-            "key": "material",
-            "value": "sand",
-            "description": "🄵🅅 Material: Sand"
-        },
-        {
-            "key": "material",
-            "value": "sandstone",
-            "description": "🄵🅅 Material: Sandstone"
-        },
-        {
-            "key": "material",
-            "value": "soil",
-            "description": "🄵🅅 Material: Soil, Earth"
-        },
-        {
-            "key": "material",
-            "value": "steel",
-            "description": "🄵🅅 Material: Steel"
-        },
-        {
-            "key": "material",
-            "value": "stone",
-            "description": "🄵🅅 Material: Stone"
         },
         {
             "key": "material",
@@ -16660,6 +16625,31 @@
         {
             "key": "level",
             "description": "🄵 Levels, 🄵 Level"
+        },
+        {
+            "key": "level",
+            "value": "0",
+            "description": "🄵🅅 Levels: 0, 🄵🅅 Level: 0"
+        },
+        {
+            "key": "level",
+            "value": "1",
+            "description": "🄵🅅 Levels: 1, 🄵🅅 Level: 1"
+        },
+        {
+            "key": "level",
+            "value": "2",
+            "description": "🄵🅅 Levels: 2, 🄵🅅 Level: 2"
+        },
+        {
+            "key": "level",
+            "value": "-2",
+            "description": "🄵🅅 Levels: -2, 🄵🅅 Level: -2"
+        },
+        {
+            "key": "level",
+            "value": "-1",
+            "description": "🄵🅅 Levels: -1, 🄵🅅 Level: -1"
         },
         {
             "key": "length:buffer",
@@ -16918,23 +16908,8 @@
         },
         {
             "key": "foot",
-            "value": "yes",
-            "description": "🄵🅅 Foot access: `yes`, 🄵🅅 Allowed Access: `yes`"
-        },
-        {
-            "key": "foot",
-            "value": "no",
-            "description": "🄵🅅 Foot access: `no`, 🄵🅅 Allowed Access: `no`"
-        },
-        {
-            "key": "foot",
             "value": "permissive",
             "description": "🄵🅅 Foot access: `permissive`, 🄵🅅 Allowed Access: `permissive`"
-        },
-        {
-            "key": "foot",
-            "value": "private",
-            "description": "🄵🅅 Foot access: `private`, 🄵🅅 Allowed Access: `private`"
         },
         {
             "key": "foot",
@@ -16943,13 +16918,8 @@
         },
         {
             "key": "foot",
-            "value": "customers",
-            "description": "🄵🅅 Foot access: `customers`, 🄵🅅 Allowed Access: `customers`"
-        },
-        {
-            "key": "foot",
-            "value": "permit",
-            "description": "🄵🅅 Foot access: `permit`, 🄵🅅 Allowed Access: `permit`"
+            "value": "no",
+            "description": "🄵🅅 Foot access: `no`, 🄵🅅 Allowed Access: `no`"
         },
         {
             "key": "foot",
@@ -17070,6 +17040,36 @@
             "description": "🄵 Door"
         },
         {
+            "key": "door",
+            "value": "hinged",
+            "description": "🄵🅅 Door: hinged"
+        },
+        {
+            "key": "door",
+            "value": "sliding",
+            "description": "🄵🅅 Door: sliding"
+        },
+        {
+            "key": "door",
+            "value": "revolving",
+            "description": "🄵🅅 Door: revolving"
+        },
+        {
+            "key": "door",
+            "value": "folding",
+            "description": "🄵🅅 Door: folding"
+        },
+        {
+            "key": "door",
+            "value": "yes",
+            "description": "🄵🅅 Door: unspecified"
+        },
+        {
+            "key": "door",
+            "value": "no",
+            "description": "🄵🅅 Door: no door"
+        },
+        {
             "key": "dog",
             "description": "🄵 Dogs"
         },
@@ -17118,7 +17118,7 @@
         },
         {
             "key": "diameter",
-            "description": "🄵 Diameter"
+            "description": "🄵 Diameter (with units)"
         },
         {
             "key": "departures_board",
@@ -17455,8 +17455,23 @@
         },
         {
             "key": "foot",
+            "value": "private",
+            "description": "🄵🅅 Allowed Access: `private`"
+        },
+        {
+            "key": "foot",
+            "value": "customers",
+            "description": "🄵🅅 Allowed Access: `customers`"
+        },
+        {
+            "key": "foot",
             "value": "dismount",
             "description": "🄵🅅 Allowed Access: `dismount`"
+        },
+        {
+            "key": "foot",
+            "value": "permit",
+            "description": "🄵🅅 Allowed Access: `permit`"
         },
         {
             "key": "motor_vehicle",

@@ -204,6 +204,7 @@
                     "label": "Walking stick detectable warning",
                     "options": {
                         "kerb": "Kerb on floor, behind obstacle (at least 3cm)",
+                        "bar": "Low bar, at 40cm max",
                         "pole": "Pole on floor, at 40cm max",
                         "yes": "Other tactile warning",
                         "no": "No tactile warning"
@@ -243,6 +244,51 @@
                 },
                 "tactile_paving": {
                     "label": "Tactile Paving"
+                },
+                "surface_parking_space": {
+                    "label": "Surface",
+                    "options": {
+                        "asphalt": "Asphalt",
+                        "concrete": "Concrete",
+                        "grass_paver": "Grass Paver",
+                        "sett": "Sett",
+                        "paved": "Other Paved",
+                        "compacted": "Compacted",
+                        "fine_gravel": "Fine Gravel",
+                        "ground": "Ground",
+                        "grass": "Grass",
+                        "unpaved": "Other Unpaved"
+                    }
+                },
+                "surface_indoor": {
+                    "label": "Surface",
+                    "options": {
+                        "tiles": "Tiles",
+                        "metal": "Metal",
+                        "metal_grid": "Metal Grid",
+                        "carpet": "Carpet",
+                        "linoleum": "Linoleum",
+                        "sett": "Sett",
+                        "wood": "Wood",
+                        "asphalt": "Asphalt",
+                        "concrete": "Concrete"
+                    }
+                },
+                "surface_footway": {
+                    "label": "Surface",
+                    "options": {
+                        "asphalt": "Asphalt",
+                        "concrete": "Concrete",
+                        "sett": "Sett",
+                        "metal": "Metal",
+                        "wood": "Wood",
+                        "paved": "Other Paved",
+                        "compacted": "Compacted",
+                        "fine_gravel": "Fine Gravel",
+                        "ground": "Ground",
+                        "grass": "Grass",
+                        "unpaved": "Other Unpaved"
+                    }
                 },
                 "surface": {
                     "label": "Surface",
@@ -602,7 +648,8 @@
                     "label": "Weight Limit"
                 },
                 "maxweight": {
-                    "label": "Weight Limit"
+                    "label": "Weight Limit (with units)",
+                    "placeholder": "800 kg, 1.2 T"
                 },
                 "maxspeed": {
                     "label": "Speed Limit",
@@ -615,27 +662,8 @@
                 "material": {
                     "label": "Material",
                     "options": {
-                        "adobe": "Adobe",
-                        "aluminium": "Aluminum",
-                        "brass": "Brass",
-                        "brick": "Brick",
-                        "bronze": "Bronze",
-                        "concrete": "Concrete",
-                        "dry_stone": "Dry Stone",
                         "glass": "Glass",
-                        "granite": "Granite",
-                        "iron": "Iron",
-                        "limestone": "Limestone",
-                        "marble": "Marble",
                         "metal": "Metal",
-                        "plastic": "Plastic",
-                        "reinforced_concrete": "Reinforced Concrete",
-                        "rock": "Rock",
-                        "sand": "Sand",
-                        "sandstone": "Sandstone",
-                        "soil": "Soil, Earth",
-                        "steel": "Steel",
-                        "stone": "Stone",
                         "wood": "Wood"
                     }
                 },
@@ -667,11 +695,25 @@
                 },
                 "level_semi": {
                     "label": "Levels",
-                    "terms": "building floors,decks,storeys,stories,storys"
+                    "terms": "building floors,decks,storeys,stories,storys",
+                    "options": {
+                        "0": "0",
+                        "1": "1",
+                        "2": "2",
+                        "-2": "-2",
+                        "-1": "-1"
+                    }
                 },
                 "level": {
                     "label": "Level",
-                    "terms": "building floor,deck,storey,story"
+                    "terms": "building floor,deck,storey,story",
+                    "options": {
+                        "0": "0",
+                        "1": "1",
+                        "2": "2",
+                        "-2": "-2",
+                        "-1": "-1"
+                    }
                 },
                 "length_buffer": {
                     "label": "Extra length (Meters)"
@@ -833,33 +875,21 @@
                             "title": "Allowed",
                             "description": "Access allowed by law; a right of way"
                         },
-                        "no": {
-                            "title": "Prohibited",
-                            "description": "Access not allowed to the general public"
+                        "designated": {
+                            "title": "Designated",
+                            "description": "Access allowed according to signs or specific local laws"
                         },
                         "permissive": {
                             "title": "Permissive",
                             "description": "Access allowed until such time as the owner revokes the permission"
                         },
-                        "private": {
-                            "title": "Private",
-                            "description": "Access allowed only with permission of the owner on an individual basis"
-                        },
-                        "designated": {
-                            "title": "Designated",
-                            "description": "Access allowed according to signs or specific local laws"
-                        },
                         "destination": {
                             "title": "Destination",
                             "description": "Access allowed only to reach a destination"
                         },
-                        "customers": {
-                            "title": "Customers",
-                            "description": "Restricted to customers at the destination"
-                        },
-                        "permit": {
-                            "title": "Permit",
-                            "description": "Access allowed only with a valid permit or license"
+                        "no": {
+                            "title": "Prohibited",
+                            "description": "Access not allowed to the general public"
                         },
                         "unknown": {
                             "title": "Unknown",
@@ -933,7 +963,15 @@
                     "label": "Drive-Through"
                 },
                 "door": {
-                    "label": "Door"
+                    "label": "Door",
+                    "options": {
+                        "hinged": "hinged",
+                        "sliding": "sliding",
+                        "revolving": "revolving",
+                        "folding": "folding",
+                        "yes": "unspecified",
+                        "no": "no door"
+                    }
                 },
                 "dog": {
                     "label": "Dogs",
@@ -966,8 +1004,8 @@
                     "placeholder": "4 m, 9', …"
                 },
                 "diameter": {
-                    "label": "Diameter",
-                    "placeholder": "5 mm, 10 cm, 15 in…"
+                    "label": "Diameter (with units)",
+                    "placeholder": "0.5 mm, 10 cm, 15 in…"
                 },
                 "departures_board": {
                     "label": "Departures/Arrivals Board",
@@ -5220,7 +5258,9 @@
                     "name": "Traffic Signals",
                     "terms": "light,stoplight,traffic light"
                 },
-                "highway/traffic_sign": {},
+                "highway/traffic_sign": {
+                    "name": "Traffic Sign"
+                },
                 "highway/traffic_mirror": {
                     "name": "Traffic Mirror",
                     "terms": "blind spot,convex,corner,curved,roadside,round,safety,sphere,visibility"
@@ -5370,6 +5410,10 @@
                     "aliases": "Emergency Location Marker\nRescue Point",
                     "terms": "elm,emergency,emergency marker,rescue"
                 },
+                "highway/elevator_without_cabin": {
+                    "name": "Small Elevator",
+                    "terms": "lift"
+                },
                 "highway/elevator_line": {
                     "name": "Inclined Elevator",
                     "aliases": "Inclined Lift",
@@ -5445,7 +5489,9 @@
                     "name": "Karting Racetrack",
                     "terms": "carting,go carts,go karts,go-karts,gokarts,kart racing,karting track,motorsports,shifter karts,superkarts"
                 },
-                "highway/path/traffic_island_shared": {},
+                "highway/path/traffic_island_shared": {
+                    "name": "Cycle & Foot Refuge Island"
+                },
                 "highway/path/informal": {
                     "name": "Informal Path",
                     "terms": "bootleg trail,cow path,desire line,desire path,desireline,desirepath,elephant path,game trail,goat track,herd path,pig trail,shortcut,social trail,use trail"
@@ -5454,11 +5500,15 @@
                     "name": "Boardwalk",
                     "terms": "pier,plank walkway,wooden raised foot path"
                 },
-                "highway/path/bicycle_foot": {},
+                "highway/path/bicycle_foot": {
+                    "name": "Cycle & Foot Path"
+                },
                 "highway/path/crossing": {
                     "name": "Cycle & Foot Crossing"
                 },
-                "highway/path/crossing/bicycle_foot": {},
+                "highway/path/crossing/bicycle_foot": {
+                    "name": "Cycle & Foot Crossing"
+                },
                 "highway/path/crossing/unmarked": {
                     "name": "Unmarked Cycle & Foot Crossing"
                 },
@@ -5468,8 +5518,12 @@
                 "highway/path/crossing/traffic_signals": {
                     "name": "Cycle & Foot Crossing With Pedestrian Signals"
                 },
-                "highway/path/crossing/marked": {},
-                "highway/path/crossing/informal": {},
+                "highway/path/crossing/marked": {
+                    "name": "Cycle & Foot Crossing"
+                },
+                "highway/path/crossing/informal": {
+                    "name": "Informal Crossing"
+                },
                 "highway/footway/traffic_island": {
                     "name": "Refuge Island",
                     "aliases": "Crosswalk Island\nTraffic Island\nPedestrian Island",
@@ -5484,6 +5538,10 @@
                 },
                 "highway/footway/platform": {
                     "name": "Platform"
+                },
+                "highway/footway/indoor": {
+                    "name": "Indoor Footway",
+                    "terms": "gallery,hall,hallway,indoor,passage,passageway"
                 },
                 "highway/footway/crossing": {
                     "name": "Pedestrian Crossing",
@@ -5513,6 +5571,10 @@
                 "highway/cycleway/moped_link-NL": {
                     "name": "Moped Link"
                 },
+                "highway/cycleway/bicycle_foot_yes": {
+                    "name": "Cycle & Foot Path",
+                    "terms": "bicycle and foot path,bike and pedestrian path,green way,greenway,mixed-use trail,multi-use path,multi-use trail,rail trail,segregated trail,shared path,shared use path"
+                },
                 "highway/cycleway/bicycle_foot": {
                     "name": "Cycle & Foot Path",
                     "terms": "bicycle and foot path,bike and pedestrian path,green way,greenway,mixed-use trail,multi-use path,multi-use trail,rail trail,segregated trail,shared path,shared use path"
@@ -5536,7 +5598,9 @@
                     "name": "Cycle & Foot Crossing",
                     "terms": "bicycle and foot crosswalk,bike and pedestrian crossing,cycleway,cycling,cyclist"
                 },
-                "highway/cycleway/crossing/marked": {},
+                "highway/cycleway/crossing/marked": {
+                    "name": "Cycle & Foot Crossing"
+                },
                 "highway/crossing/unmarked": {
                     "name": "Unmarked Crossing",
                     "terms": "unmarked crosswalk,unmarked foot path crossing,unmarked pedestrian crossing"
@@ -6691,6 +6755,9 @@
                     "name": "Recycling Center",
                     "terms": "bottle,can,dump,garbage,glass,recycle,rubbish,scrap,trash"
                 },
+                "amenity/reception_desk": {
+                    "name": "Reception Desk"
+                },
                 "amenity/ranger_station": {
                     "name": "Ranger Station",
                     "terms": "backcountry office,permit center,permit centre,visitor center,visitor centre,warden center,warden office"
@@ -7431,7 +7498,6 @@
                     "name": "Irish Pub",
                     "terms": "irish bar"
                 },
-                "amenity/post_box/post_box-US": {},
                 "amenity/place_of_worship/taoist": {
                     "name": "Taoist Temple",
                     "terms": "daoist,monastery,temple"

@@ -206,6 +206,7 @@
         "customValues": false,
         "options": [
             "kerb",
+            "bar",
             "pole",
             "yes",
             "no"
@@ -225,7 +226,7 @@
     },
     "tactile_paving_defects": {
         "key": "tactile_paving:defects",
-        "type": "multiCombo",
+        "type": "semiCombo",
         "autoSuggestions": false,
         "prerequisiteTag": {
             "key": "tactile_paving",
@@ -263,6 +264,70 @@
     "tactile_paving": {
         "key": "tactile_paving",
         "type": "check"
+    },
+    "surface_parking_space": {
+        "key": "surface",
+        "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique le matériau de revêtement au sol.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/7/7e/Concrete_lanes.png/522px-Concrete_lanes.png",
+                    "credits": "Contributeur OpenStreetMap, CC-BY-SA 2.0"
+                }
+            },
+            "en": {
+                "text": "Indicates the floor covering material.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/7/7e/Concrete_lanes.png/522px-Concrete_lanes.png",
+                    "credits": "Contributeur OpenStreetMap, CC-BY-SA 2.0"
+                }
+            }
+        },
+        "options": [
+            "asphalt",
+            "concrete",
+            "grass_paver",
+            "sett",
+            "paved",
+            "compacted",
+            "fine_gravel",
+            "ground",
+            "grass",
+            "unpaved"
+        ]
+    },
+    "surface_indoor": {
+        "key": "surface",
+        "type": "combo",
+        "options": [
+            "tiles",
+            "metal",
+            "metal_grid",
+            "carpet",
+            "linoleum",
+            "sett",
+            "wood",
+            "asphalt",
+            "concrete"
+        ]
+    },
+    "surface_footway": {
+        "key": "surface",
+        "type": "combo",
+        "options": [
+            "asphalt",
+            "concrete",
+            "sett",
+            "metal",
+            "wood",
+            "paved",
+            "compacted",
+            "fine_gravel",
+            "ground",
+            "grass",
+            "unpaved"
+        ]
     },
     "surface": {
         "key": "surface",
@@ -683,7 +748,8 @@
     },
     "maxweight": {
         "key": "maxweight",
-        "type": "combo",
+        "type": "number",
+        "minValue": 0,
         "snake_case": false
     },
     "maxspeed": {
@@ -699,27 +765,8 @@
         "key": "material",
         "type": "combo",
         "options": [
-            "adobe",
-            "aluminium",
-            "brass",
-            "brick",
-            "bronze",
-            "concrete",
-            "dry_stone",
             "glass",
-            "granite",
-            "iron",
-            "limestone",
-            "marble",
             "metal",
-            "plastic",
-            "reinforced_concrete",
-            "rock",
-            "sand",
-            "sandstone",
-            "soil",
-            "steel",
-            "stone",
             "wood"
         ]
     },
@@ -759,14 +806,32 @@
     },
     "level_semi": {
         "key": "level",
-        "type": "semiCombo"
+        "type": "semiCombo",
+        "prerequisiteTag": {
+            "key": "indoor",
+            "value": "yes"
+        },
+        "options": [
+            "0",
+            "1",
+            "2",
+            "-2",
+            "-1"
+        ]
     },
     "level": {
         "key": "level",
         "type": "combo",
         "prerequisiteTag": {
             "keyNot": "building"
-        }
+        },
+        "options": [
+            "0",
+            "1",
+            "2",
+            "-2",
+            "-1"
+        ]
     },
     "length_buffer": {
         "key": "length:buffer",
@@ -962,13 +1027,10 @@
         "type": "combo",
         "options": [
             "yes",
-            "no",
-            "permissive",
-            "private",
             "designated",
+            "permissive",
             "destination",
-            "customers",
-            "permit",
+            "no",
             "unknown"
         ]
     },
@@ -1049,7 +1111,15 @@
     },
     "door": {
         "key": "door",
-        "type": "combo"
+        "type": "combo",
+        "options": [
+            "hinged",
+            "sliding",
+            "revolving",
+            "folding",
+            "yes",
+            "no"
+        ]
     },
     "dog": {
         "key": "dog",
@@ -1097,7 +1167,8 @@
     },
     "diameter": {
         "key": "diameter",
-        "type": "combo",
+        "minValue": 0,
+        "type": "number",
         "snake_case": false
     },
     "departures_board": {
