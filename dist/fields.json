@@ -8,6 +8,22 @@
         "key": "wheelchair:turning_cycle:diameter",
         "type": "number",
         "minValue": 0,
+        "help": {
+            "fr": {
+                "text": "Indique le diamètre de giration. Il s'agit du diamètre de la zone de manœuvre pour les usagers en fauteuil roulant, leur permettant de faire demi-tour ou changer de direction. On le mesure une fois la palette ou la plate-forme élévatrice déployée, en mètres arrondis au cm.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Boarding_bus_Gibbon_Street_-_10_bus_stop_New_Farm_P1430128.jpg/330px-Boarding_bus_Gibbon_Street_-_10_bus_stop_New_Farm_P1430128.jpg",
+                    "credits": "John Robert McPherson, CC-BY-SA 4.0"
+                }
+            },
+            "en": {
+                "text": "Indicates the turning diameter, in meters rounded to the nearest centimeter. This is the diameter of the maneuvering area for wheelchair users. It is measured once the pallet or lifting platform has been deployed.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Boarding_bus_Gibbon_Street_-_10_bus_stop_New_Farm_P1430128.jpg/330px-Boarding_bus_Gibbon_Street_-_10_bus_stop_New_Farm_P1430128.jpg",
+                    "credits": "John Robert McPherson, CC-BY-SA 4.0"
+                }
+            }
+        },
         "prerequisiteTag": {
             "key": "wheelchair:turning_cycle",
             "valueNot": "no"
@@ -20,6 +36,17 @@
     "wheelchair_turning_cycle_ramp": {
         "key": "wheelchair:turning_cycle",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique la présence d'une aire de rotation (ou espace de manœuvre) pour les fauteuils roulants en bas et/ou en haut de la rampe.",
+                "schema": {
+                    "url": "https://gitlab.com/yukaimaps/yukaidi-tagging-schema/-/raw/main/doc/help_ManoeuvringDiameter.png?ref_type=heads"
+                }
+            },
+            "en": {
+                "text": "Indicates the presence of a turning area (or maneuvering space) for wheelchairs at the bottom and/or top of the ramp."
+            }
+        },
         "options": [
             "up",
             "down",
@@ -30,6 +57,22 @@
     "wheelchair_turning_cycle_entrance": {
         "key": "wheelchair:turning_cycle",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique la présence, à proximité immédiate de la porte, d'un espace pour la manœuvrer correctement (au minimum un diamètre d'1,5m).",
+                "schema": {
+                    "url": "https://gitlab.com/yukaimaps/yukaidi-tagging-schema/-/raw/main/doc/help_TurningSpacePosition_CAWaB.png?ref_type=heads",
+                    "credits": "© CAWaB"
+                }
+            },
+            "en": {
+                "text": "Indicates the presence, in the immediate vicinity of the door, of a space sufficient to operate it correctly (minimum diameter of 1.5 m).",
+                "schema": {
+                    "url": "https://gitlab.com/yukaimaps/yukaidi-tagging-schema/-/raw/main/doc/help_TurningSpacePosition_CAWaB.png?ref_type=heads",
+                    "credits": "© CAWaB"
+                }
+            }
+        },
         "options": [
             "inside",
             "outside",
@@ -78,11 +121,43 @@
     },
     "visual_contrast": {
         "key": "visual_contrast",
-        "type": "check"
+        "type": "check",
+        "help": {
+            "fr": {
+                "text": "Indique si l'obstacle est visuellement contrasté. Le contraste visuel peut être entre l'obstacle et son environnement immédiat, mais aussi entre la partie haute (ou à hauteur d'yeux) et le reste de l'obstacle.",
+                "picture": {
+                    "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252FlF3GAOOFRISrcLhaaeOK%252Frep2.PNG%3Falt%3Dmedia%26token%3D74c03611-9273-46e0-b512-6aec441ba994&width=768&dpr=1&quality=100&sign=ecd7d17f&sv=2",
+                    "credits": "© CNIG"
+                }
+            },
+            "en": {
+                "text": "Indicates whether the obstacle is visually contrasting. The visual contrast may be between the obstacle and its immediate surroundings, but also between the upper part (or eye level) and the rest of the obstacle.",
+                "picture": {
+                    "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252FlF3GAOOFRISrcLhaaeOK%252Frep2.PNG%3Falt%3Dmedia%26token%3D74c03611-9273-46e0-b512-6aec441ba994&width=768&dpr=1&quality=100&sign=ecd7d17f&sv=2",
+                    "credits": "© CNIG"
+                }
+            }
+        }
     },
     "visual_announcement": {
         "key": "visual_announcement",
-        "type": "check"
+        "type": "check",
+        "help": {
+            "fr": {
+                "text": "Indique si l'ascenseur est équipé d'un écran d’affichage en cabine indiquant au moins l’étage.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Elevator_floor_indicator.jpg/330px-Elevator_floor_indicator.jpg",
+                    "credits": "Bidgee, CC-BY-SA 4.0"
+                }
+            },
+            "en": {
+                "text": "Indicates whether the elevator is equipped with a display screen in the cabin showing at least the floor number.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Elevator_floor_indicator.jpg/330px-Elevator_floor_indicator.jpg",
+                    "credits": "Bidgee, CC-BY-SA 4.0"
+                }
+            }
+        }
     },
     "visibility": {
         "key": "visibility",
@@ -219,6 +294,22 @@
     "tactile_paving_steps": {
         "key": "tactile_paving",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique la présence de la bande d'éveil vigilance (surface contrastée visuellement et tactilement permettant de signaler un danger, comme une traversée de route ou un risque de chute).",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/6/62/FR84087_tactile_paving%26steps_2023-03-05.jpg/480px-FR84087_tactile_paving%26steps_2023-03-05.jpg",
+                    "credits": "Jean-Louis ZIMMERMANN, CC-BY-SA 4.0"
+                }
+            },
+            "en": {
+                "text": "Indicates the presence of the warning strip (a visually and tactilely contrasting surface used to signal danger, such as a road crossing or risk of falling).",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/6/62/FR84087_tactile_paving%26steps_2023-03-05.jpg/480px-FR84087_tactile_paving%26steps_2023-03-05.jpg",
+                    "credits": "Jean-Louis ZIMMERMANN, CC-BY-SA 4.0"
+                }
+            }
+        },
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -231,6 +322,22 @@
     "tactile_paving_defects": {
         "key": "tactile_paving:defects",
         "type": "semiCombo",
+        "help": {
+            "fr": {
+                "text": "Indique si la bande d'éveil à la vigilance est correctement implantée.",
+                "picture": {
+                    "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252FBsbwOpBZBJzd4BwVnWAO%252FBEV%2520en%2520courbe2.jpg%3Falt%3Dmedia%26token%3Dff9bd899-a4fa-42e1-82c2-0bbabf163ffa&width=768&dpr=1&quality=100&sign=5f5ac9cc&sv=2",
+                    "credits": "© CNIG"
+                }
+            },
+            "en": {
+                "text": "Indicates whether the warning strip is correctly implanted.",
+                "picture": {
+                    "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252FBsbwOpBZBJzd4BwVnWAO%252FBEV%2520en%2520courbe2.jpg%3Falt%3Dmedia%26token%3Dff9bd899-a4fa-42e1-82c2-0bbabf163ffa&width=768&dpr=1&quality=100&sign=5f5ac9cc&sv=2",
+                    "credits": "© CNIG"
+                }
+            }
+        },
         "autoSuggestions": false,
         "prerequisiteTag": {
             "key": "tactile_paving",
@@ -267,14 +374,30 @@
     },
     "tactile_paving": {
         "key": "tactile_paving",
-        "type": "check"
+        "type": "check",
+        "help": {
+            "fr": {
+                "text": "Indique la présence de la bande d'éveil vigilance (surface contrastée visuellement et tactilement permettant de signaler un danger, comme une traversée de route ou un risque de chute).",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/6/62/FR84087_tactile_paving%26steps_2023-03-05.jpg/480px-FR84087_tactile_paving%26steps_2023-03-05.jpg",
+                    "credits": "Jean-Louis ZIMMERMANN, CC-BY-SA 4.0"
+                }
+            },
+            "en": {
+                "text": "Indicates the presence of the warning strip (a visually and tactilely contrasting surface used to signal danger, such as a road crossing or risk of falling).",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/6/62/FR84087_tactile_paving%26steps_2023-03-05.jpg/480px-FR84087_tactile_paving%26steps_2023-03-05.jpg",
+                    "credits": "Jean-Louis ZIMMERMANN, CC-BY-SA 4.0"
+                }
+            }
+        }
     },
     "surface_parking_space": {
         "key": "surface",
         "type": "combo",
         "help": {
             "fr": {
-                "text": "Indique le matériau de revêtement au sol.",
+                "text": "Indique le matériau de revêtement de la place de parking.",
                 "picture": {
                     "url": "https://wiki.openstreetmap.org/w/images/thumb/7/7e/Concrete_lanes.png/522px-Concrete_lanes.png",
                     "credits": "Contributeur OpenStreetMap, CC-BY-SA 2.0"
@@ -304,6 +427,22 @@
     "surface_indoor": {
         "key": "surface",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique le matériau de revêtement au sol.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/7/7e/Concrete_lanes.png/522px-Concrete_lanes.png",
+                    "credits": "Contributeur OpenStreetMap, CC-BY-SA 2.0"
+                }
+            },
+            "en": {
+                "text": "Indicates the floor covering material.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/7/7e/Concrete_lanes.png/522px-Concrete_lanes.png",
+                    "credits": "Contributeur OpenStreetMap, CC-BY-SA 2.0"
+                }
+            }
+        },
         "options": [
             "tiles",
             "metal",
@@ -319,6 +458,22 @@
     "surface_footway": {
         "key": "surface",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique le matériau de revêtement au sol.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/7/7e/Concrete_lanes.png/522px-Concrete_lanes.png",
+                    "credits": "Contributeur OpenStreetMap, CC-BY-SA 2.0"
+                }
+            },
+            "en": {
+                "text": "Indicates the floor covering material.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/7/7e/Concrete_lanes.png/522px-Concrete_lanes.png",
+                    "credits": "Contributeur OpenStreetMap, CC-BY-SA 2.0"
+                }
+            }
+        },
         "options": [
             "asphalt",
             "concrete",
@@ -409,22 +564,86 @@
     },
     "step_stair_nosing": {
         "key": "step:stair_nosing",
-        "type": "check"
+        "type": "check",
+        "help": {
+            "fr": {
+                "text": "Indique la présence et l'état du dispositif contrastant sur la bordure des marches. Il s'agit d'une bande visuellement contrastée et parfois antidérapante, de 5cm de profondeur et présente sur toute la largeur de chaque marche. Elle permet d'aider les personnes mal-voyantes à repérer le bord des marches.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/e/e5/Contrasted_step_edge_example.jpeg/360px-Contrasted_step_edge_example.jpeg",
+                    "credits": "nlehuby, Jungle Bus, CC-BY-SA 4.0"
+                }
+            },
+            "en": {
+                "text": "Indicates the presence and condition of the contrasting device on the edge of the steps. This is a visually contrasting and sometimes non-slip strip, 5 cm deep and covering the entire width of each step. It helps visually impaired people to locate the edge of the steps.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/e/e5/Contrasted_step_edge_example.jpeg/360px-Contrasted_step_edge_example.jpeg",
+                    "credits": "nlehuby, Jungle Bus, CC-BY-SA 4.0"
+                }
+            }
+        }
     },
     "step_length": {
         "key": "step:length",
         "type": "number",
-        "minValue": 0
+        "minValue": 0,
+        "help": {
+            "fr": {
+                "text": "Indique la longueur de marche (aussi appelé le giron), en en mètres arrondis au cm. La prise de mesure se fait à l'aide d'un mètre ruban ou d'un télémètre laser entre le nez de marche et la contremarche.",
+                "picture": {
+                    "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252FTihRJfplCc6GBive28Jx%252Fgiron.JPG%3Falt%3Dmedia%26token%3D6d346ff5-066e-439a-a7b4-ed21d2bdab74&width=768&dpr=1&quality=100&sign=a250e7a6&sv=2",
+                    "credits": "© CNIG"
+                }
+            },
+            "en": {
+                "text": "Indicates the length of the step, in meters rounded to the nearest centimeter. Measurements are taken using a tape measure or laser rangefinder between the front edge of the step and the riser.",
+                "picture": {
+                    "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252FTihRJfplCc6GBive28Jx%252Fgiron.JPG%3Falt%3Dmedia%26token%3D6d346ff5-066e-439a-a7b4-ed21d2bdab74&width=768&dpr=1&quality=100&sign=a250e7a6&sv=2",
+                    "credits": "© CNIG"
+                }
+            }
+        }
     },
     "step_height": {
         "key": "step:height",
         "type": "number",
-        "minValue": 0
+        "minValue": 0,
+        "help": {
+            "fr": {
+                "text": "Mesure la hauteur de marche, en mètres arrondis au cm. La prise de mesure se fait à l'aide d'un mètre ruban ou d'un télémètre laser au droit de la contremarche.",
+                "picture": {
+                    "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252FBs21EuUiLzGyYjVoDob6%252Fhauteur%2520marche.JPG%3Falt%3Dmedia%26token%3D2f75f466-0df0-4593-b023-99318f7aa060&width=768&dpr=1&quality=100&sign=17d8f424&sv=2",
+                    "credits": "© CNIG"
+                }
+            },
+            "en": {
+                "text": "Measure the height of the step in meters, rounded to the nearest centimeter. Measurements are taken using a tape measure or laser rangefinder at the riser.",
+                "picture": {
+                    "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252FBs21EuUiLzGyYjVoDob6%252Fhauteur%2520marche.JPG%3Falt%3Dmedia%26token%3D2f75f466-0df0-4593-b023-99318f7aa060&width=768&dpr=1&quality=100&sign=17d8f424&sv=2",
+                    "credits": "© CNIG"
+                }
+            }
+        }
     },
     "step_count": {
         "key": "step_count",
         "type": "number",
-        "minValue": 0
+        "minValue": 0,
+        "help": {
+            "fr": {
+                "text": "Indique le nombre de marches. Dans le cas d'un escalier avec plusieurs volées de marches, c'est le nombre de marches total.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/0/02/Stairs_without_contrast_on_step_edge.jpg/360px-Stairs_without_contrast_on_step_edge.jpg",
+                    "credits": "nlehuby, Jungle Bus, CC-BY-SA 4.0"
+                }
+            },
+            "en": {
+                "text": "Indicates the number of steps. In the case of a staircase with several flights of steps, this is the total number of steps.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/0/02/Stairs_without_contrast_on_step_edge.jpg/360px-Stairs_without_contrast_on_step_edge.jpg",
+                    "credits": "nlehuby, Jungle Bus, CC-BY-SA 4.0"
+                }
+            }
+        }
     },
     "speech_output": {
         "key": "speech_output",
@@ -448,6 +667,22 @@
     "smoothness_simple": {
         "key": "smoothness",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Caractérise l'état et la praticabilité du revêtement. Cet état est fonction de son usure et concerne notamment la présence de dégradations entraînant un risque d'accroche du pied ou de secousses dans le cas de déplacement en fauteuil roulant.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/1/10/Potholes_at_the_Level_Crossing%2C_Barrow_Haven_-_geograph.org.uk_-_1621073.jpg",
+                    "credits": "David Wright, CC-BY-SA 2.0"
+                }
+            },
+            "en": {
+                "text": "Characterizes the condition and practicability of the surface. This condition depends on its wear and tear and concerns in particular the presence of damage that could cause the foot to catch or jolt when moving in a wheelchair.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/1/10/Potholes_at_the_Level_Crossing%2C_Barrow_Haven_-_geograph.org.uk_-_1621073.jpg",
+                    "credits": "David Wright, CC-BY-SA 2.0"
+                }
+            }
+        },
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -569,7 +804,21 @@
     "platform_height": {
         "key": "platform:height",
         "type": "number",
-        "minValue": 0
+        "minValue": 0,
+        "help": {
+            "fr": {
+                "text": "Mesure la différence de niveau entre le quai et la chaussée, en mètres arrondi au cm.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/d/d7/Approach_aid_2_lane_guidance.jpg/480px-Approach_aid_2_lane_guidance.jpg"
+                }
+            },
+            "en": {
+                "text": "Measures the difference in level between the platform and the roadway, in meters rounded to the nearest centimeter.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/d/d7/Approach_aid_2_lane_guidance.jpg/480px-Approach_aid_2_lane_guidance.jpg"
+                }
+            }
+        }
     },
     "phone": {
         "key": "phone",
@@ -727,6 +976,18 @@
         "key": "min_height",
         "minValue": 0,
         "type": "number",
+        "help": {
+            "fr": {
+                "text": "Indique la hauteur entre le sol et le bas de l'obstacle dans le cas d'un obstacle en saillie, lorsqu'on passe en dessous de l'obstacle.",
+                "schema": {
+                    "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252Fh7aHGa8TFjKQd5X5FESO%252Fho2.PNG%3Falt%3Dmedia%26token%3D80c72a50-bc08-4c96-933b-c58641a05786&width=768&dpr=1&quality=100&sign=c87218cf&sv=2",
+                    "credits": "© CNIG"
+                }
+            },
+            "en": {
+                "text": "Indicates the height between the ground and the bottom of the obstacle in the case of a protruding obstacle, when passing underneath the obstacle."
+            }
+        },
         "prerequisiteTag": {
             "key": "obstacle:blind",
             "value": "yes"
@@ -754,6 +1015,22 @@
         "key": "maxweight",
         "type": "number",
         "minValue": 0,
+        "help": {
+            "fr": {
+                "text": "Indique la masse maximale supportée, en précisant l'unité (kg ou T). En effet, certains fauteuils roulants (notamment électriques) peuvent peser très lourd. Il est donc important de pouvoir connaître le poids supporté par les équipements installés. La prise de mesure consiste en un contrôle visuel : cette valeur est généralement indiquée sur une plaque apparente sur l'équipement.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/0/0f/Int%C3%A9rieur_ascenseur_ratp.jpg/360px-Int%C3%A9rieur_ascenseur_ratp.jpg",
+                    "credits": "nlehuby, Jungle Bus, CC-BY-SA 4.0"
+                }
+            },
+            "en": {
+                "text": "Indicates the maximum weight supported. Some wheelchairs (particularly electric ones) can be very heavy. It is therefore important to know the weight supported by the installed equipment. The measurement consists of a visual inspection: this value is usually indicated on a plate visible on the equipment.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/0/0f/Int%C3%A9rieur_ascenseur_ratp.jpg/360px-Int%C3%A9rieur_ascenseur_ratp.jpg",
+                    "credits": "nlehuby, Jungle Bus, CC-BY-SA 4.0"
+                }
+            }
+        },
         "snake_case": false
     },
     "maxspeed": {
@@ -798,7 +1075,21 @@
     },
     "lit": {
         "key": "lit",
-        "type": "check"
+        "type": "check",
+        "help": {
+            "fr": {
+                "text": "Indique la présence d'un éclairage nocturne.",
+                "picture": {
+                    "url": "https://gitlab.com/yukaimaps/yukaimaps-android/-/raw/main/app/src/main/res/drawable-hdpi/wdm_lighting_yes.jpg?ref_type=heads"
+                }
+            },
+            "en": {
+                "text": "Indicates the presence of nighttime lighting.",
+                "picture": {
+                    "url": "https://gitlab.com/yukaimaps/yukaimaps-android/-/raw/main/app/src/main/res/drawable-hdpi/wdm_lighting_yes.jpg?ref_type=heads"
+                }
+            }
+        }
     },
     "line_management": {
         "key": "line_management",
@@ -811,6 +1102,14 @@
     "level_semi": {
         "key": "level",
         "type": "semiCombo",
+        "help": {
+            "fr": {
+                "text": "Indique les étages desservis sous forme de liste, lorsque le tronçon de cheminement permet de réaliser un changement d'étage."
+            },
+            "en": {
+                "text": "Indicates the floors served in list form, when the path section allows for a change of floor."
+            }
+        },
         "prerequisiteTag": {
             "key": "indoor",
             "value": "yes"
@@ -840,7 +1139,23 @@
     "length_buffer": {
         "key": "length:buffer",
         "type": "number",
-        "minValue": 0
+        "minValue": 0,
+        "help": {
+            "fr": {
+                "text": "Dimension de la sur-longueur sur la voie de circulation (en mètre). Il s'agit d'une zone à l'arrière de la place, hors marquage, permettant l'accès au coffre du véhicule. Elle peut être matérialisée par des chevrons blanc en peinture sur une voie circulée.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Empty_disabled_spaces_-_geograph.org.uk_-_7637842.jpg/330px-Empty_disabled_spaces_-_geograph.org.uk_-_7637842.jpg",
+                    "credits": "John H Darch, CC-BY-SA 2.0"
+                }
+            },
+            "en": {
+                "text": "Dimension of the excess length on the traffic lane (in metres). This is an area at the rear of the parking space, outside the marked area, allowing access to the vehicle's boot. It may be marked by white chevrons painted on a traffic lane.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Empty_disabled_spaces_-_geograph.org.uk_-_7637842.jpg/330px-Empty_disabled_spaces_-_geograph.org.uk_-_7637842.jpg",
+                    "credits": "John H Darch, CC-BY-SA 2.0"
+                }
+            }
+        }
     },
     "length": {
         "key": "length",
@@ -895,6 +1210,22 @@
     "kerb": {
         "key": "kerb",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Qualifie l'aménagement de la bordure de trottoir, à l'extrémité d'un passage piéton.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Curb_cut_for_wheelchair_ramp_%28DSC_3616%29.jpg/330px-Curb_cut_for_wheelchair_ramp_%28DSC_3616%29.jpg",
+                    "credits": "Nick-philly, CC-BY-SA 4.0"
+                }
+            },
+            "en": {
+                "text": "Describes the curb design at the end of a crosswalk.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Curb_cut_for_wheelchair_ramp_%28DSC_3616%29.jpg/330px-Curb_cut_for_wheelchair_ramp_%28DSC_3616%29.jpg",
+                    "credits": "Nick-philly, CC-BY-SA 4.0"
+                }
+            }
+        },
         "icons": {
             "raised": "temaki-kerb-raised",
             "lowered": "temaki-kerb-lowered",
@@ -931,6 +1262,18 @@
     "incline_percentage": {
         "key": "incline",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique la pente (c'est-à-dire l'inclinaison la plus défavorable constatée sur le terrain). On la mesure en pourcentage. La valeur attendue est un entier positif.",
+                "schema": {
+                    "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252FE9qSdGTiRQYxBwrvMWv9%252Fpente_troncon.png%3Falt%3Dmedia%26token%3D99450981-f521-4e9f-a93e-d6165685c26e&width=768&dpr=1&quality=100&sign=e0c867b7&sv=2",
+                    "credits": "© CNIG"
+                }
+            },
+            "en": {
+                "text": "Indicates the slope (i.e., the steepest incline observed on the terrain).It is measured as a percentage. The expected value is a positive integer."
+            }
+        },
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -948,6 +1291,19 @@
     "incline_across_percentage": {
         "key": "incline:across",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique l'inclinaison perpendiculaire au tronçon de cheminement. On la mesure en pourcentage. La valeur attendue est un entier positif. Voir l'attribut devers du guide de collecte CNIG pour plus d'informations.",
+                "link": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/#id-2.2-troncon-de-cheminement",
+                "schema": {
+                    "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252FsPkIISQQ8DqZX2aHuLTL%252Fdevers_troncon.jpg%3Falt%3Dmedia%26token%3D2955a40f-fc3a-48e0-8db1-f130aa71db1c&width=768&dpr=1&quality=100&sign=fa3cc06b&sv=2",
+                    "credits": "© CNIG"
+                }
+            },
+            "en": {
+                "text": "Indicates the tilt (slope perpendicular to the path link). It is measured as a percentage. The expected value is a positive integer."
+            }
+        },
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -979,6 +1335,14 @@
     "highway_shape": {
         "key": "highway:shape",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique si la traversée est convexe ou bombée (elle monte puis descend). Bien souvent, la chaussée au niveau du passage piéton peut-être en pente à des degrés divers générant des difficultés de circulation et parfois des difficultés à regagner le trottoir."
+            },
+            "en": {
+                "text": "Indicates whether the crossing is convex (it rises and then falls). Very often, the road surface at pedestrian crossings can be sloped to varying degrees, causing pedestrian traffic problems and sometimes making it difficult to get back onto the sidewalk."
+            }
+        },
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -994,9 +1358,25 @@
     "handrail_side": {
         "key": "handrail",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique la présence d'une main courante sur laquelle on peut poser la main pour prendre appui, se soutenir et diminuer une position inconfortable en montée ou en descente.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/8/82/FR92_handrail%3Dcenter_2023-03-18.jpg/240px-FR92_handrail%3Dcenter_2023-03-18.jpg",
+                    "credits": "Jean-Louis ZIMMERMANN, CC-BY-SA 4.0"
+                }
+            },
+            "en": {
+                "text": "Indicates the presence of a handrail on which you can place your hand for support, to steady yourself, and to reduce discomfort when going up or down.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/8/82/FR92_handrail%3Dcenter_2023-03-18.jpg/240px-FR92_handrail%3Dcenter_2023-03-18.jpg",
+                    "credits": "Jean-Louis ZIMMERMANN, CC-BY-SA 4.0"
+                }
+            }
+        },
         "autoSuggestions": false,
         "options": [
-            "rigth",
+            "right",
             "left",
             "both",
             "center",
@@ -1120,6 +1500,22 @@
     "door": {
         "key": "door",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique les caractéristiques de la porte principale de l'entrée. Cet attribut est à renseigner uniquement s'il y a une porte au niveau de l'entrée.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Via_della_colonna_22%2C_casa_con_stemma_02.JPG/500px-Via_della_colonna_22%2C_casa_con_stemma_02.JPG",
+                    "credits": "Sailko, CC-BY-SA 3.0"
+                }
+            },
+            "en": {
+                "text": "Indicates the characteristics of the main entrance door. This attribute should only be filled in if there is a door at the entrance.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Via_della_colonna_22%2C_casa_con_stemma_02.JPG/500px-Via_della_colonna_22%2C_casa_con_stemma_02.JPG",
+                    "credits": "Sailko, CC-BY-SA 3.0"
+                }
+            }
+        },
         "options": [
             "hinged",
             "sliding",
@@ -1259,11 +1655,35 @@
     },
     "conveying_motion_sensor": {
         "key": "conveying:motion_sensor",
-        "type": "check"
+        "type": "check",
+        "help": {
+            "fr": {
+                "text": "Indique si le tapis roulant ou l'escalator se déclenche lorsque des usagers s'engagent dessus. Cet attribut permet de prévenir les usagers qui pourraient être surpris ou déstabilisés par un sol qui se met à bouger sous leurs pieds, sans préavis."
+            },
+            "en": {
+                "text": "Indicates whether the moving walkway or escalator starts moving when users step onto it. This attribute warns users who might be surprised or destabilized by a floor that starts moving under their feet without warning."
+            }
+        }
     },
     "conveying": {
         "key": "conveying",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique la direction de déplacement d'un escalator ou tapis roulant par rapport au sens du tracé.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Escalator_looped_animation.gif/330px-Escalator_looped_animation.gif",
+                    "credits": "JanAinali & Jahobr, CC-BY-SA 4.0"
+                }
+            },
+            "en": {
+                "text": "Indicates the conveying direction of an escalator or moving walkway relative to the trace direction.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Escalator_looped_animation.gif/330px-Escalator_looped_animation.gif",
+                    "credits": "JanAinali & Jahobr, CC-BY-SA 4.0"
+                }
+            }
+        },
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -1373,11 +1793,43 @@
     },
     "automatic_door": {
         "key": "automatic_door",
-        "type": "check"
+        "type": "check",
+        "help": {
+            "fr": {
+                "text": "Indique si la porte s'ouvre automatiquement.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Oorlogsmuseum_Overloon.JPG/330px-Oorlogsmuseum_Overloon.JPG",
+                    "credits": "Pvt pauline, CC-BY-SA 3.0"
+                }
+            },
+            "en": {
+                "text": "Indicates whether the door is automatic.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Oorlogsmuseum_Overloon.JPG/330px-Oorlogsmuseum_Overloon.JPG",
+                    "credits": "Pvt pauline, CC-BY-SA 3.0"
+                }
+            }
+        }
     },
     "audio_loop": {
         "key": "audio_loop",
-        "type": "check"
+        "type": "check",
+        "help": {
+            "fr": {
+                "text": "Signale la présence d'un équipement boucle à induction magnétique (BIM). On s'appuiera sur la présence sur le symbole de la boucle à induction magnétique sur le panneau de commande comme indiqué ci dessous.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Noun_telecoil_audio_induction_hearing_loop_symbol_2011213.svg/250px-Noun_telecoil_audio_induction_hearing_loop_symbol_2011213.svg.png",
+                    "credits": "Carl Holderness, CC-BY-SA 4.0"
+                }
+            },
+            "en": {
+                "text": "Indicates the presence of magnetic induction loop equipment. This is indicated by the magnetic induction loop symbol on the control panel, as shown below.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Noun_telecoil_audio_induction_hearing_loop_symbol_2011213.svg/250px-Noun_telecoil_audio_induction_hearing_loop_symbol_2011213.svg.png",
+                    "credits": "Carl Holderness, CC-BY-SA 4.0"
+                }
+            }
+        }
     },
     "announcement": {
         "key": "announcement",
@@ -1475,6 +1927,22 @@
     "traffic_signals/sound": {
         "key": "traffic_signals:sound",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique la présence et l'état des feux sonores (répétiteurs sonores d'aide acoustique à la traversée). La prise de mesure se fait en déclenchant la balise sonore par pression sur la “télécommande accessibilité”. Il faut vérifier s'il y a un message vocal indiquant la couleur du feu piéton et s'il est audible.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/2/21/Feu_sonore.jpg/283px-Feu_sonore.jpg",
+                    "credits": "nlehuby, Jungle Bus, CC-BY-SA 4.0"
+                }
+            },
+            "en": {
+                "text": "Indicates the presence and status of audible signals (audible repeaters providing acoustic assistance for crossing). The measurement is taken by activating the audible signal using the “accessibility remote control”. It is necessary to check whether there is a voice message indicating the color of the pedestrian signal and whether it is audible.",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/2/21/Feu_sonore.jpg/283px-Feu_sonore.jpg",
+                    "credits": "nlehuby, Jungle Bus, CC-BY-SA 4.0"
+                }
+            }
+        },
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -1524,6 +1992,22 @@
     "orientation/orientation_parking": {
         "key": "orientation",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique la disposition de la place de stationnement et comment on doit procéder pour s'y garer.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Diagonal_parking_on_cobblestones_%2843866248802%29.jpg/320px-Diagonal_parking_on_cobblestones_%2843866248802%29.jpg",
+                    "credits": "Eric Fischer, CC-BY-SA 4.0"
+                }
+            },
+            "en": {
+                "text": "Indicates the layout of the parking space and how to park there.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Diagonal_parking_on_cobblestones_%2843866248802%29.jpg/320px-Diagonal_parking_on_cobblestones_%2843866248802%29.jpg",
+                    "credits": "Eric Fischer, CC-BY-SA 4.0"
+                }
+            }
+        },
         "options": [
             "parallel",
             "diagonal",
@@ -1582,7 +2066,20 @@
     "maxwidth/physical": {
         "key": "maxwidth:physical",
         "type": "number",
-        "minValue": 0
+        "minValue": 0,
+        "help": {
+            "fr": {
+                "text": "Indique la largeur de passage utile. Dans le cas d'un obstacle, il s'agit de la largeur restante lorsqu'on souhaite contourner cet obstacle, soit la distance entre le bord du cheminement et l'obstacle, au niveau du rétrécissement le plus pénalisant.",
+                "link": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/#id-2.4-obstacles",
+                "schema": {
+                    "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252FhVTSFfg75EYzJbKXZrq3%252Flarg%25202.PNG%3Falt%3Dmedia%26token%3D2b6e15d4-04dc-45b7-8800-229b128971c3&width=768&dpr=1&quality=100&sign=b24b3284&sv=2",
+                    "credits": "© CNIG"
+                }
+            },
+            "en": {
+                "text": "Indicates the usable passage width at the obstacle. It is the width remaining when you want to go around the obstacle, i.e., the distance between the edge of the path and the obstacle, at the point of narrowing that is most restrictive."
+            }
+        }
     },
     "lift_gate/type": {
         "key": "lift_gate:type",
@@ -1598,12 +2095,37 @@
     },
     "kerb/width": {
         "key": "kerb:width",
-        "type": "roadheight",
+        "type": "number",
+        "minValue": 0,
+        "help": {
+            "fr": {
+                "text": "Indique la longueur de l'abaissé de trottoir (en mètres), c'est-à-dire la distance sur laquelle la hauteur de bordure de trottoir est réduite à son maximum, dans le cas d'un abaissement de trottoir (bateau). Correspond en général à la largeur utile du passage piéton.",
+                "schema": {
+                    "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252FQ6jD75KhMlx6rNEHr50s%252Fabaisse%2520trottoir.jpg%3Falt%3Dmedia%26token%3Deb28ce0a-2088-4c09-ba75-da79df7b7f4b&width=768&dpr=1&quality=100&sign=5b422965&sv=2",
+                    "credits": "© CNIG"
+                }
+            },
+            "en": {
+                "text": "Indicates the length of the lowered curb, i.e., the distance over which the curb height is reduced to its maximum in the case of a lowered ramp."
+            }
+        },
         "snake_case": false
     },
     "kerb/visibility_obstacle": {
         "key": "kerb:visibility:obstacle",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique le type d'obstacle ou de masque visuel. Il s'agit d'un élément, positionné jusqu'à 5 mètres en amont de la traversée, et qui gêne le piéton pour voir et être vu au moment de traverser.",
+                "schema": {
+                    "url": "https://gitlab.com/yukaimaps/yukaidi-tagging-schema/-/raw/main/doc/help_VisualObstacle_Cerema.png?ref_type=heads",
+                    "credits": "© Cerema"
+                }
+            },
+            "en": {
+                "text": "Indicates the type of obstacle or visual barrier. This is an element positioned up to 5 meters upstream of the crossing that prevents pedestrians from seeing and being seen when crossing."
+            }
+        },
         "autoSuggestions": false,
         "prerequisiteTag": {
             "key": "kerb:visibility",
@@ -1645,6 +2167,22 @@
     "kerb/incline": {
         "key": "kerb:incline",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique la pente due à l’inclinaison du trottoir vers la chaussée. On la mesure en pourcentage.",
+                "schema": {
+                    "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252F5myOEObS82XPTK5dWCBp%252Fabaisse%2520pente.jpg%3Falt%3Dmedia%26token%3D4d17db80-19db-4655-b5d1-d700940454e4&width=768&dpr=1&quality=100&sign=45503df3&sv=2",
+                    "credits": "© CNIG"
+                }
+            },
+            "en": {
+                "text": "Indicates the slope caused by the incline of the sidewalk toward the roadway. It is measured as a percentage.",
+                "schema": {
+                    "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252F5myOEObS82XPTK5dWCBp%252Fabaisse%2520pente.jpg%3Falt%3Dmedia%26token%3D4d17db80-19db-4655-b5d1-d700940454e4&width=768&dpr=1&quality=100&sign=45503df3&sv=2",
+                    "credits": "© CNIG"
+                }
+            }
+        },
         "options": [
             "0%",
             "3%",
@@ -1656,7 +2194,19 @@
     "kerb/height": {
         "key": "kerb:height",
         "type": "number",
-        "minValue": 0
+        "minValue": 0,
+        "help": {
+            "fr": {
+                "text": "Indique la hauteur du ressaut, à mesurer entre le haut de la bordure du trottoir et la chaussée, en mètres arrondis au cm.",
+                "schema": {
+                    "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252FnRC94skedIgmcOXB7zUr%252Fhauteur%2520ressaut.jpg%3Falt%3Dmedia%26token%3D87f70bf3-d20a-4df9-8a0c-377c1de72980&width=768&dpr=1&quality=100&sign=487a3b02&sv=2",
+                    "credits": "© CNIG"
+                }
+            },
+            "en": {
+                "text": "Indicates the height of the curb, measured between the top of the sidewalk edge and the roadway, in meters rounded to the nearest centimeter."
+            }
+        }
     },
     "gnis/feature_id-US": {
         "key": "gnis:feature_id",
@@ -1722,11 +2272,39 @@
     },
     "crossing/signals": {
         "key": "crossing:signals",
-        "type": "check"
+        "type": "check",
+        "help": {
+            "fr": {
+                "text": "Indique la présence de feux lumineux à destination des piétons (de type R12, R24 ou R25).",
+                "schema": {
+                    "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252F8ewMmEFVopXK2S18L159%252FfeuxPietons.jpg%3Falt%3Dmedia%26token%3D8087ea3f-3509-4b71-97a5-59ee5d0c1358&width=768&dpr=1&quality=100&sign=fa2fd47&sv=2",
+                    "credits": "© CNIG"
+                }
+            },
+            "en": {
+                "text": "Indicates the presence of lights for pedestrians."
+            }
+        }
     },
     "crossing/markings_condition": {
         "key": "crossing:markings:condition",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Qualifie l'état du marquage au sol au niveau d'un passage piéton",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/c/c6/Zebra_marquage_degrade.jpg/768px-Zebra_marquage_degrade.jpg",
+                    "credits": "nlehuby, CC-BY-SA 4.0"
+                }
+            },
+            "en": {
+                "text": "Indicates the condition of road markings at a pedestrian crossing",
+                "picture": {
+                    "url": "https://wiki.openstreetmap.org/w/images/thumb/c/c6/Zebra_marquage_degrade.jpg/768px-Zebra_marquage_degrade.jpg",
+                    "credits": "nlehuby, CC-BY-SA 4.0"
+                }
+            }
+        },
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -1741,6 +2319,22 @@
     "crossing/markings": {
         "key": "crossing:markings",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique le type de marquage au sol au niveau de la traversée.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/%D0%9F%D0%B5%D1%88%D0%B5%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9_%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B4_%D0%B2_%D0%A1%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%86%D0%B5.jpg/330px-%D0%9F%D0%B5%D1%88%D0%B5%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9_%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B4_%D0%B2_%D0%A1%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%86%D0%B5.jpg",
+                    "credits": "Красный, CC-BY-SA 4.0"
+                }
+            },
+            "en": {
+                "text": "Indicates the type of ground marking at the crossing.",
+                "picture": {
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/%D0%9F%D0%B5%D1%88%D0%B5%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9_%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B4_%D0%B2_%D0%A1%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%86%D0%B5.jpg/330px-%D0%9F%D0%B5%D1%88%D0%B5%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9_%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B4_%D0%B2_%D0%A1%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%86%D0%B5.jpg",
+                    "credits": "Красный, CC-BY-SA 4.0"
+                }
+            }
+        },
         "icons": {
             "zebra": "iD-crossing_markings-zebra",
             "lines": "iD-crossing_markings-lines",

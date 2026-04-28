@@ -851,7 +851,7 @@
                 "handrail_side": {
                     "label": "Handrail",
                     "options": {
-                        "rigth": "Rigth only",
+                        "right": "Right only",
                         "left": "Left only",
                         "both": "Both sides",
                         "center": "Only one handrail, on the center of the stairs",
