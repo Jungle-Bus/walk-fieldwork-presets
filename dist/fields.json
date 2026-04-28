@@ -296,7 +296,7 @@
         "type": "combo",
         "help": {
             "fr": {
-                "text": "Indique la présence de la bande d'éveil vigilance (surface contrastée visuellement et tactilement permettant de signaler un danger, comme une traversée de route ou un risque de chute).",
+                "text": "Indique s'il y a une bande d'éveil à la vigilance (BEV) : surface contrastée visuellement et tactilement permettant de signaler un danger, comme une traversée de route ou un risque de chute.",
                 "picture": {
                     "url": "https://wiki.openstreetmap.org/w/images/thumb/6/62/FR84087_tactile_paving%26steps_2023-03-05.jpg/480px-FR84087_tactile_paving%26steps_2023-03-05.jpg",
                     "credits": "Jean-Louis ZIMMERMANN, CC-BY-SA 4.0"
@@ -377,7 +377,7 @@
         "type": "check",
         "help": {
             "fr": {
-                "text": "Indique la présence de la bande d'éveil vigilance (surface contrastée visuellement et tactilement permettant de signaler un danger, comme une traversée de route ou un risque de chute).",
+                "text": "Indique s'il y a une bande d'éveil à la vigilance (BEV) : surface contrastée visuellement et tactilement permettant de signaler un danger, comme une traversée de route ou un risque de chute.",
                 "picture": {
                     "url": "https://wiki.openstreetmap.org/w/images/thumb/6/62/FR84087_tactile_paving%26steps_2023-03-05.jpg/480px-FR84087_tactile_paving%26steps_2023-03-05.jpg",
                     "credits": "Jean-Louis ZIMMERMANN, CC-BY-SA 4.0"
@@ -567,14 +567,14 @@
         "type": "check",
         "help": {
             "fr": {
-                "text": "Indique la présence et l'état du dispositif contrastant sur la bordure des marches. Il s'agit d'une bande visuellement contrastée et parfois antidérapante, de 5cm de profondeur et présente sur toute la largeur de chaque marche. Elle permet d'aider les personnes mal-voyantes à repérer le bord des marches.",
+                "text": "Indique s'il y a un dispositif contrastant sur la bordure des marches. Il s'agit d'une bande visuellement contrastée et parfois antidérapante, de 5cm de profondeur et présente sur toute la largeur de chaque marche. Elle permet d'aider les personnes mal-voyantes à repérer le bord des marches.",
                 "picture": {
                     "url": "https://wiki.openstreetmap.org/w/images/thumb/e/e5/Contrasted_step_edge_example.jpeg/360px-Contrasted_step_edge_example.jpeg",
                     "credits": "nlehuby, Jungle Bus, CC-BY-SA 4.0"
                 }
             },
             "en": {
-                "text": "Indicates the presence and condition of the contrasting device on the edge of the steps. This is a visually contrasting and sometimes non-slip strip, 5 cm deep and covering the entire width of each step. It helps visually impaired people to locate the edge of the steps.",
+                "text": "Indicates the presence of the contrasting device on the edge of the steps. This is a visually contrasting and sometimes non-slip strip, 5 cm deep and covering the entire width of each step. It helps visually impaired people to locate the edge of the steps.",
                 "picture": {
                     "url": "https://wiki.openstreetmap.org/w/images/thumb/e/e5/Contrasted_step_edge_example.jpeg/360px-Contrasted_step_edge_example.jpeg",
                     "credits": "nlehuby, Jungle Bus, CC-BY-SA 4.0"
@@ -1125,6 +1125,14 @@
     "level": {
         "key": "level",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique l'étage où est situé l'objet."
+            },
+            "en": {
+                "text": "Indicates the floor where the item is located."
+            }
+        },
         "prerequisiteTag": {
             "keyNot": "building"
         },
@@ -1247,11 +1255,27 @@
     },
     "indoor": {
         "key": "indoor",
-        "type": "defaultCheck"
+        "type": "defaultCheck",
+        "help": {
+            "fr": {
+                "text": "Indique si l'objet est situé en intérieur."
+            },
+            "en": {
+                "text": "Is it indoor ?"
+            }
+        }
     },
     "incline_steps": {
         "key": "incline",
         "type": "combo",
+        "help": {
+            "fr": {
+                "text": "Indique de quel côté se situe le haut. On utilisera *Ça monte* si la flèche indique un déplacement du bas de l'escalier ou de la rampe vers le haut."
+            },
+            "en": {
+                "text": "Indicates which way is up. Use *Up* if the arrow points upward from the bottom of the stairs or ramp."
+            }
+        },
         "autoSuggestions": false,
         "customValues": false,
         "options": [
@@ -1264,14 +1288,14 @@
         "type": "combo",
         "help": {
             "fr": {
-                "text": "Indique la pente (c'est-à-dire l'inclinaison la plus défavorable constatée sur le terrain). On la mesure en pourcentage. La valeur attendue est un entier positif.",
+                "text": "Indique la pente (c'est-à-dire l'inclinaison la plus défavorable constatée sur le terrain). On la mesure en pourcentage (positif si la pente est dans le sens du tracé, négatif sinon).",
                 "schema": {
                     "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252FE9qSdGTiRQYxBwrvMWv9%252Fpente_troncon.png%3Falt%3Dmedia%26token%3D99450981-f521-4e9f-a93e-d6165685c26e&width=768&dpr=1&quality=100&sign=e0c867b7&sv=2",
                     "credits": "© CNIG"
                 }
             },
             "en": {
-                "text": "Indicates the slope (i.e., the steepest incline observed on the terrain).It is measured as a percentage. The expected value is a positive integer."
+                "text": "Indicates the slope (i.e., the steepest incline observed on the terrain).It is measured as a percentage."
             }
         },
         "autoSuggestions": false,
@@ -1293,8 +1317,7 @@
         "type": "combo",
         "help": {
             "fr": {
-                "text": "Indique l'inclinaison perpendiculaire au tronçon de cheminement. On la mesure en pourcentage. La valeur attendue est un entier positif. Voir l'attribut devers du guide de collecte CNIG pour plus d'informations.",
-                "link": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/#id-2.2-troncon-de-cheminement",
+                "text": "Indique l'inclinaison perpendiculaire au tronçon de cheminement. On la mesure en pourcentage.",
                 "schema": {
                     "url": "https://cnig.gitbook.io/guide-methodo-cnig-accessibilite/-MXq6T5es7-649ZBvnFX/~gitbook/image?url=https%3A%2F%2F2024293913-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MX1AXdLCYiy7mmHVEmR%252Fuploads%252FsPkIISQQ8DqZX2aHuLTL%252Fdevers_troncon.jpg%3Falt%3Dmedia%26token%3D2955a40f-fc3a-48e0-8db1-f130aa71db1c&width=768&dpr=1&quality=100&sign=fa3cc06b&sv=2",
                     "credits": "© CNIG"
@@ -1398,11 +1421,39 @@
     },
     "guiding_strips_indoor": {
         "key": "guiding_strips",
-        "type": "check"
+        "type": "check",
+        "help": {
+            "fr": {
+                "text": "Indique s'il y a des bandes podotactiles en relief au sol qui peuvent être détectés et suivis avec une canne.",
+                "schema": {
+                    "url": "https://gitlab.com/yukaimaps/yukaimaps-android/-/raw/main/app/src/main/res/drawable-hdpi/wdm_tactile_guiding_strip.jpg?ref_type=heads"
+                }
+            },
+            "en": {
+                "text": "Indicates whether there are linear elements on the ground that can be detected and followed with a cane, such as a tactile guidance strip.",
+                "schema": {
+                    "url": "https://gitlab.com/yukaimaps/yukaimaps-android/-/raw/main/app/src/main/res/drawable-hdpi/wdm_tactile_guiding_strip.jpg?ref_type=heads"
+                }
+            }
+        }
     },
     "guiding_strips": {
         "key": "guiding_strips",
-        "type": "defaultCheck"
+        "type": "defaultCheck",
+        "help": {
+            "fr": {
+                "text": "Indique s'il y a des bandes podotactiles en relief au sol qui peuvent être détectés et suivis avec une canne.",
+                "schema": {
+                    "url": "https://gitlab.com/yukaimaps/yukaimaps-android/-/raw/main/app/src/main/res/drawable-hdpi/wdm_tactile_guiding_strip.jpg?ref_type=heads"
+                }
+            },
+            "en": {
+                "text": "Indicates whether there are linear elements on the ground that can be detected and followed with a cane, such as a tactile guidance strip.",
+                "schema": {
+                    "url": "https://gitlab.com/yukaimaps/yukaimaps-android/-/raw/main/app/src/main/res/drawable-hdpi/wdm_tactile_guiding_strip.jpg?ref_type=heads"
+                }
+            }
+        }
     },
     "genus": {
         "key": "genus",
